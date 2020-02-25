@@ -1,0 +1,42 @@
+pipeline {
+    agent { label ' nodejs ' }
+    stages {
+        stage('Clone master branch and build') {
+            steps {
+                checkout([$class: 'GitSCM', 
+                    branches: [[name: '*/master']], 
+                    doGenerateSubmoduleConfigurations: false, 
+                    extensions: [[$class: 'RelativeTargetDirectory', 
+                                    relativeTargetDir: 'master']], 
+                    submoduleCfg: [], 
+                    userRemoteConfigs: [[url: 'https://github.com/jncc/peru-mapping.git']]])
+                dir('./master') {
+                    sh 'node -v'
+                    sh 'yarn -v'
+                    sh 'yarn'
+                    sh 'yarn build'
+                }
+            }
+        }
+        stage('Clone deployment branch and push updates to it') {
+            steps {
+                dir('./gh-pages')  {
+                    deleteDir()
+                    withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: env.GIT_CREDENTIALS_ID,
+                        usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD']]) {
+                        sh 'git clone https://github.com/jncc/peru-mapping.git . --branch=gh-pages --depth 1'
+                        sh 'git config --local credential.helper "!p() { echo username=\\$GIT_USERNAME; echo password=\\$GIT_PASSWORD; }; p"'
+                        sh 'cp -r ../master/dist/* .'
+                        sh 'echo "Creating Github Pages CNAME file..."'
+                        sh 'echo "peru-mapping.jncc.gov.uk" > CNAME'
+                        sh 'cat CNAME'
+                        sh 'ls'
+                        sh 'git add --all'
+                        sh 'git commit -a -m "Jenkins build ' + env.BUILD_NUMBER + '" --author "Jenkins <jenkins@jncc.gov.uk>" || echo \'Commit failed. There is probably nothing to commit.\''
+                        sh 'git push --force || echo \'Push failed. There is possibly nothing to commit.\''
+                    }
+                }
+            }
+        }
+    }
+}

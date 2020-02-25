@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    // https://www.npmjs.com/package/ts-polyfill
+    // assume these libs will be present https://basarat.gitbooks.io/typescript/docs/types/lib.d.ts.html#lib-option
+    "lib": [
+        "dom",
+        "dom.iterable",
+        "es2015",
+        "es2016.array.include",
+        "es2017.object",
+        "es2017.string"
+    ],
+    "jsx": "react",
+    "outDir": "./tsc/", // .gitignored directory for when `tsc` is run so .js files are not written out next to source files
+    "resolveJsonModule": true, // resolve and type json files!
+    "strict": true, // use typescript's strict type-checking
+    "target": "es5", // target older es5 browsers
+    "esModuleInterop": true // support lodash imports in parcel.js 
+  },
+  "include": [
+    "./src/**/**/*"
+  ],
+  "plugins": [
+    {
+      "name": "typescript-tslint-plugin",
+      "alwaysShowRuleFailuresAsWarnings": false,
+      "ignoreDefinitionFiles": true,
+      "configFile": "./tslint.json",
+      "suppressWhileTypeErrorsPresent": false,
+      "mockTypeScriptVersion": false
+    }
+  ]
+}

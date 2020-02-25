@@ -1,0 +1,14 @@
+
+# node packages
+node_modules/
+
+# typescript compiler output
+tsc/
+
+# parcel.js
+.cache
+dist/
+
+*.log
+
+.env
