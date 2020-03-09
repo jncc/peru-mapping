@@ -111,16 +111,16 @@ export function createMap(container: HTMLElement, config: Config) {
   }
 
   // setup underlays  
-  for (let underlay of keys(content.underlay_layers)) {
-    let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/colombia_eo4_cultivar/wms?tiled=true', {
-      layers: content.underlay_layers[underlay].wms_name,
-      transparent: true,
-      format: 'image/png',
-      opacity: 1,
-      attribution: content.underlay_layers[underlay].attribution[config.language]
-    })
-    Object.assign(underlayMaps, { [underlay]: layer })
-  }
+  // for (let underlay of keys(content.underlay_layers)) {
+  //   let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/colombia_eo4_cultivar/wms?tiled=true', {
+  //     layers: content.underlay_layers[underlay].wms_name,
+  //     transparent: true,
+  //     format: 'image/png',
+  //     opacity: 1,
+  //     attribution: content.underlay_layers[underlay].attribution[config.language]
+  //   })
+  //   Object.assign(underlayMaps, { [underlay]: layer })
+  // }
   //updateUnderlay('satellite_imagery', true) // sentinel layer on as landing page view
 
   return map
