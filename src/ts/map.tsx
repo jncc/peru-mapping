@@ -88,7 +88,7 @@ export function createMap(container: HTMLElement, config: Config) {
 
   // setup base maps
   for (let baseLayer of keys(content.base_layers)) {
-    let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/colombia_eo4_cultivar/wms?tiled=true', {
+    let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/peru_eo4_cultivar/wms?tiled=true', {
       layers: content.base_layers[baseLayer].wms_name,
       transparent: true,
       format: 'image/png',
@@ -100,7 +100,7 @@ export function createMap(container: HTMLElement, config: Config) {
 
   // setup overlays  
   for (let overlay of keys(content.overlay_layers)) {
-    let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/colombia_eo4_cultivar/wms?tiled=true', {
+    let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/peru_eo4_cultivar/wms?tiled=true', {
       layers: content.overlay_layers[overlay].wms_name,
       transparent: true,
       format: 'image/png',
@@ -112,7 +112,7 @@ export function createMap(container: HTMLElement, config: Config) {
 
   // setup underlays  
   // for (let underlay of keys(content.underlay_layers)) {
-  //   let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/colombia_eo4_cultivar/wms?tiled=true', {
+  //   let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/peru_eo4_cultivar/wms?tiled=true', {
   //     layers: content.underlay_layers[underlay].wms_name,
   //     transparent: true,
   //     format: 'image/png',
