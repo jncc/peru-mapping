@@ -20,7 +20,7 @@ let currentLayer: string | undefined = undefined
 export function createMap(container: HTMLElement, config: Config) {
 
   map = L.map(container, { zoomControl: false, wheelDebounceTime: 300 })
-    .setView([10.8034027, -74.15481], 11)
+    .setView([-8.35, -78.8], 11)
   new L.Control.Zoom({ position: 'bottomright' }).addTo(map)
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -121,7 +121,7 @@ export function createMap(container: HTMLElement, config: Config) {
     })
     Object.assign(underlayMaps, { [underlay]: layer })
   }
-  updateUnderlay('satellite_imagery', true) // sentinel layer on as landing page view
+  //updateUnderlay('satellite_imagery', true) // sentinel layer on as landing page view
 
   return map
 }

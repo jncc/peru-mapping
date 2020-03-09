@@ -2,159 +2,642 @@
     "no_layer": {
         "legend_entries": []
     },
+    "moderate_surface_water_runoff": {
+        "legend_entries": [
+            {
+                "entry_id": "moderate_surface_water_runoff",
+                "type": "ramp",
+                "labels": {
+                    "en": [
+                        "Low potential of land to slow runoff",
+                        "",
+                        "High potential of land to slow runoff"
+                    ],
+                    "es": [
+                        "?",
+                        "",
+                        "?"
+                    ]
+                },
+                "stops": [
+                    "#f7fbff",
+                    "#6baed6",
+                    "#08306b"
+                ]
+            }
+        ]
+    },
+    "enhance_surface_water_regulation": {
+        "legend_entries": [
+            {
+                "entry_id": "upper_catchment",
+                "fill": "#4623e4",
+                "type": "value",
+                "label": {
+                    "en": "Upper catchment",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "mid_catchment",
+                "fill": "#38b6f4",
+                "type": "value",
+                "label": {
+                    "en": "Mid catchment",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "lower_catchment",
+                "fill": "#306b10",
+                "type": "value",
+                "label": {
+                    "en": "Lower catchment",
+                    "es": "?"
+                }
+            }
+        ]
+    },
+    "enhance_surface_water_regulation_high_volumes": {
+        "legend_entries": [
+            {
+                "entry_id": "upper_catchment",
+                "fill": "#4623e4",
+                "type": "value",
+                "label": {
+                    "en": "Upper catchment",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "mid_catchment",
+                "fill": "#38b6f4",
+                "type": "value",
+                "label": {
+                    "en": "Mid catchment",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "lower_catchment",
+                "fill": "#306b10",
+                "type": "value",
+                "label": {
+                    "en": "Lower catchment",
+                    "es": "?"
+                }
+            }
+        ]
+    },
+    "erosion_risk": {
+        "legend_entries": [
+            {
+                "entry_id": "erosion_channel",
+                "type": "line",
+                "fill": "#8a17ef",
+                "label": {
+                    "en": "Erosion channel",
+                    "es": "Canal de erosión"
+                }
+            },
+            {
+                "entry_id": "urban_and_roads",
+                "fill": "#000000",
+                "type": "value",
+                "label": {
+                    "en": "Urban and roads",
+                    "es": "Zona urbana y carreteras"
+                }
+            },
+            {
+                "entry_id": "area_excluded_from_erosion_risk_analysis",
+                "fill": "#67766c",
+                "type": "value",
+                "label": {
+                    "en": "Area excluded from erosion risk analysis",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "risk_of_erosion_caused_by_precipitation",
+                "type": "ramp",
+                "labels": {
+                    "en": [
+                        "Low risk of erosion",
+                        "",
+                        "",
+                        "",
+                        "High risk of erosion"
+                    ],
+                    "es": [
+                        "?",
+                        "",
+                        "",
+                        "",
+                        "?"
+                    ]
+                },
+                "stops": [
+                    "#a2d5f2",
+                    "#405b3c",
+                    "#f1f137",
+                    "#fdae61",
+                    "#d7191c"
+                ]
+            }
+        ]
+    },
+    "network_sources": {
+        "legend_entries": [
+            {
+                "entry_id": "grassland_cactus_habitats",
+                "fill": "#d99550",
+                "type": "value",
+                "label": {
+                    "en": "Grassland & cactus habitats",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "wetland_habitats_including_ephemeral_watercourses",
+                "fill": "#347adb",
+                "type": "value",
+                "label": {
+                    "en": "Wetland habitats (including ephemeral watercourses)",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "woodland_habitats",
+                "fill": "#386234",
+                "type": "value",
+                "label": {
+                    "en": "Woodland habitats",
+                    "es": "?"
+                }
+            }
+        ]
+    },
+    "multi_es_benefits_water_regulation": {
+        "legend_entries": [
+            {
+                "entry_id": "areas_important_for_both_biodiversity_and_surface_water_regulation",
+                "fill": "#4aa933",
+                "type": "value",
+                "label": {
+                    "en": "Areas important for both biodiversity and surface water regulation",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "urban_and_roads",
+                "fill": "#b3b3b3",
+                "type": "value",
+                "label": {
+                    "en": "Urban and roads",
+                    "es": "Zona urbana y carreteras"
+                }
+            }
+        ]
+    },
+    "woodland_ecosystem": {
+        "legend_entries": [
+            {
+                "entry_id": "source_woodland",
+                "fill": "#615e5e",
+                "type": "value",
+                "label": {
+                    "en": "Woodland Network Source",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "woodland_ecological_network",
+                "type": "ramp",
+                "labels": {
+                    "en": [
+                        "Highly connected",
+                        "",
+                        "Poorly connected"
+                    ],
+                    "es": [
+                        "?",
+                        "",
+                        "?"
+                    ]
+                },
+                "stops": [
+                    "#00441b",
+                    "#74c476",
+                    "#f7fcf5"
+                ]
+            }
+        ]
+    },
+    "wetland_ecosystem": {
+        "legend_entries": [
+            {
+                "entry_id": "source_wetland",
+                "fill": "#000000",
+                "type": "value",
+                "label": {
+                    "en": "Wetland Network Source",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "wetland_ecological_network",
+                "type": "ramp",
+                "labels": {
+                    "en": [
+                        "Highly connected",
+                        "",
+                        "Poorly connected"
+                    ],
+                    "es": [
+                        "?",
+                        "",
+                        "?"
+                    ]
+                },
+                "stops": [
+                    "#08306b",
+                    "#6baed6",
+                    "#f7fbff"
+                ]
+            }
+        ]
+    },
+    "grassland_ecosystem": {
+        "legend_entries": [
+            {
+                "entry_id": "source_grassland_cactus_habitat",
+                "fill": "#000000",
+                "type": "value",
+                "label": {
+                    "en": "Grassland/cactus Network Source",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "grassland_cactus_ecological_network",
+                "type": "ramp",
+                "labels": {
+                    "en": [
+                        "Highly connected",
+                        "",
+                        "Poorly connected"
+                    ],
+                    "es": [
+                        "?",
+                        "",
+                        "?"
+                    ]
+                },
+                "stops": [
+                    "#7f2704",
+                    "#fd8d3c",
+                    "#fff5eb"
+                ]
+            }
+        ]
+    },
+    "habitat_opportunities": {
+        "legend_entries": [
+            {
+                "entry_id": "wetlandhigh",
+                "type": "value",
+                "fill": "#4217ea",
+                "label": {
+                    "en": "Wetland opportunity: High",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "wetlandmedium",
+                "type": "value",
+                "fill": "#798ce8",
+                "label": {
+                    "en": "Wetland opportunity: Medium",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "wetlandlow",
+                "type": "value",
+                "fill": "#c8e8fa",
+                "label": {
+                    "en": "Wetland opportunity: Low",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "woodlandhigh",
+                "type": "value",
+                "fill": "#144222",
+                "label": {
+                    "en": "Woodland opportunity: High",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "woodlandmedium",
+                "type": "value",
+                "fill": "#2ce044",
+                "label": {
+                    "en": "Woodland opportunity: Medium",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "woodlandlow",
+                "type": "value",
+                "fill": "#9ff280",
+                "label": {
+                    "en": "Woodland opportunity: Low",
+                    "es": "?"
+                }
+            }            
+        ]
+    },
+    "priority_habitat": {
+        "legend_entries": [
+            {
+                "entry_id": "wetlandhigh",
+                "type": "value",
+                "fill": "#4217ea",
+                "label": {
+                    "en": "Wetland opportunity: High",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "wetlandmedium",
+                "type": "value",
+                "fill": "#798ce8",
+                "label": {
+                    "en": "Wetland opportunity: Medium",
+                    "es": ""
+                }
+            },
+            {
+                "entry_id": "wetlandlow",
+                "type": "value",
+                "fill": "#c8e8fa",
+                "label": {
+                    "en": "Wetland opportunity: Low",
+                    "es": ""
+                }
+            },
+            {
+                "entry_id": "woodlandhigh",
+                "type": "value",
+                "fill": "#144222",
+                "label": {
+                    "en": "Woodland opportunity: High",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "woodlandmedium",
+                "type": "value",
+                "fill": "#2ce044",
+                "label": {
+                    "en": "Woodland opportunity: Medium",
+                    "es": ""
+                }
+            },
+            {
+                "entry_id": "woodlandlow",
+                "type": "value",
+                "fill": "#9ff280",
+                "label": {
+                    "en": "Woodland opportunity: Low",
+                    "es": ""
+                }
+            }            
+        ]
+    },
+    "habitat_water_regulation": {
+        "legend_entries": [
+            {
+                "entry_id": "wetland",
+                "type": "value",
+                "fill": "#4217ea",
+                "label": {
+                    "en": "Wetland opportunity",
+                    "es": ""
+                }
+            },
+            {
+                "entry_id": "woodland",
+                "type": "value",
+                "fill": "#2ce044",
+                "label": {
+                    "en": "Woodland opportunity",
+                    "es": ""
+                }
+            }    
+        ]
+    },
     "habitat_map": {
         "legend_entries": [
             {
-                "entry_id": "agriculture",
-                "fill": "#73e2ec",
+                "entry_id": "acacia_tree_belts",
+                "fill": "#bfe457",
                 "type": "value",
                 "label": {
-                    "en": "Agriculture",
-                    "es": "Agricultura"
+                    "en": "Acacia tree belts",
+                    "es": "?"
                 }
             },
             {
-                "entry_id": "banana",
-                "fill": "#c1bc15",
+                "entry_id": "bare_rock",
+                "fill": "#878787",
                 "type": "value",
                 "label": {
-                    "en": "Banana",
-                    "es": "Banana"
+                    "en": "Bare rock",
+                    "es": "?"
                 }
             },
             {
-                "entry_id": "bare_ground",
-                "fill": "#e9d4e6",
+                "entry_id": "bare_sand",
+                "fill": "#ffff00",
                 "type": "value",
                 "label": {
-                    "en": "Bare ground",
-                    "es": "Terreno desnudo"
+                    "en": "Bare sand",
+                    "es": "?"
                 }
             },
             {
-                "entry_id": "forest",
-                "fill": "#266b3a",
+                "entry_id": "bare_sand_coastal_beach",
+                "fill": "#fb9a99",
                 "type": "value",
                 "label": {
-                    "en": "Forest",
-                    "es": "Bosque"
+                    "en": "Bare sand - coastal - beach",
+                    "es": "?"
                 }
             },
             {
-                "entry_id": "forest_agriculture_mix",
-                "fill": "#1ede45",
+                "entry_id": "croplands_permanent_cover",
+                "fill": "#e4e4e4",
                 "type": "value",
                 "label": {
-                    "en": "Forest/agriculture mix",
-                    "es": "Mezcla bosque/agricultura"
+                    "en": "Croplands - permanent cover",
+                    "es": "?"
                 }
             },
             {
-                "entry_id": "forest_agriculture_grassland_mix",
-                "fill": "#e26e7b",
+                "entry_id": "croplands_trees_scrub_bushes_dense",
+                "fill": "#e31a1c",
                 "type": "value",
                 "label": {
-                    "en": "Forest/agriculture/grassland mix",
-                    "es": "Mezcla Bosque/agricultura/pradera"
+                    "en": "Croplands - trees & scrub/bushes - dense",
+                    "es": "?"
                 }
             },
             {
-                "entry_id": "grassland",
-                "fill": "#e77919",
+                "entry_id": "croplands_trees_scrub_bushes_scattered",
+                "fill": "#fdbf6f",
                 "type": "value",
                 "label": {
-                    "en": "Grassland",
-                    "es": "Pradera"
+                    "en": "Croplands - trees & scrub/bushes - scattered",
+                    "es": "?"
                 }
             },
             {
-                "entry_id": "mangrove",
-                "fill": "#9f148f",
+                "entry_id": "ephemeral_river_channel",
+                "fill": "#1f78b4",
                 "type": "value",
                 "label": {
-                    "en": "Mangrove",
-                    "es": "Mangle"
+                    "en": "Ephemeral river channel",
+                    "es": "?"
                 }
             },
             {
-                "entry_id": "palm",
-                "fill": "#0ddd9f",
+                "entry_id": "erosion_gully_bare_rock",
+                "fill": "#2ceffc",
                 "type": "value",
                 "label": {
-                    "en": "Palm",
-                    "es": "Palma"
+                    "en": "Erosion gully - bare rock",
+                    "es": "?"
                 }
             },
             {
-                "entry_id": "páramo",
-                "fill": "#c398cb",
+                "entry_id": "erosion_gully_dense_scrub",
+                "fill": "#33a02c",
                 "type": "value",
                 "label": {
-                    "en": "Páramo",
-                    "es": "Páramo"
+                    "en": "Erosion gully - dense scrub",
+                    "es": "?"
                 }
             },
             {
-                "entry_id": "rivers",
-                "fill": "#480df8",
+                "entry_id": "erosion_gully_scattered_scrub",
+                "fill": "#b2df8a",
                 "type": "value",
                 "label": {
-                    "en": "Rivers",
-                    "es": "Ríos"
+                    "en": "Erosion gully - scattered scrub",
+                    "es": "?"
                 }
             },
             {
-                "entry_id": "scrub",
-                "fill": "#643913",
+                "entry_id": "linear_vegetated_areas",
+                "fill": "#33a02c",
                 "type": "value",
                 "label": {
-                    "en": "Scrub",
-                    "es": "Matorral"
+                    "en": "Linear Vegetated Areas",
+                    "es": "?"
                 }
             },
             {
-                "entry_id": "snow",
-                "fill": "#fafff7",
+                "entry_id": "permanent_river_channel",
+                "fill": "#0c08fc",
                 "type": "value",
                 "label": {
-                    "en": "Snow",
-                    "es": "Nieve"
+                    "en": "Permanent river channel",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "reservoir",
+                "fill": "#ff02ff",
+                "type": "value",
+                "label": {
+                    "en": "Reservoir",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "sand_dune_with_vegetation",
+                "fill": "#cafb1c",
+                "type": "value",
+                "label": {
+                    "en": "Sand dune with vegetation",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "scrub_bushes_dense_andean",
+                "fill": "#007500",
+                "type": "value",
+                "label": {
+                    "en": "Scrub/bushes - dense - Andean",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "scrub_bushes_scattered_andean",
+                "fill": "#ff7f00",
+                "type": "value",
+                "label": {
+                    "en": "Scrub/bushes - scattered - Andean",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "scrub_bushes_scattered_andean_seasonal_grass_flushes",
+                "fill": "#00ff00",
+                "type": "value",
+                "label": {
+                    "en": "Scrub/bushes - scattered - Andean - seasonal grass flushes",
+                    "es": "?"
+                }
+            },
+            {
+                "entry_id": "shelter_belts",
+                "fill": "#5a6cc8",
+                "type": "value",
+                "label": {
+                    "en": "Shelter belts",
+                    "es": "?"
                 }
             },
             {
                 "entry_id": "urban",
-                "fill": "#232323",
+                "fill": "#000000",
                 "type": "value",
                 "label": {
                     "en": "Urban",
-                    "es": "Urbano"
+                    "es": "?"
                 }
             },
             {
-                "entry_id": "waterbodies",
-                "fill": "#480df8",
+                "entry_id": "water_regions",
+                "fill": "#00adc0",
                 "type": "value",
                 "label": {
-                    "en": "Waterbodies",
-                    "es": "Masas de agua"
+                    "en": "Water regions",
+                    "es": "?"
                 }
             },
             {
                 "entry_id": "wetland",
-                "fill": "#7f2edb",
+                "fill": "#793ede",
                 "type": "value",
                 "label": {
                     "en": "Wetland",
-                    "es": "Humedal"
-                }
-            },
-            {
-                "entry_id": "wetland_open_water",
-                "fill": "#4868d2",
-                "type": "value",
-                "label": {
-                    "en": "Wetland (open water)",
-                    "es": "Humedal (aguas abiertas)"
+                    "es": "?"
                 }
             }
         ]
