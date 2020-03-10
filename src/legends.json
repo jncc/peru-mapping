@@ -14,9 +14,9 @@
                         "High potential of land to slow runoff"
                     ],
                     "es": [
-                        "?",
+                        "Bajo potencial de la tierra para reducir la escorrentía",
                         "",
-                        "?"
+                        "Alto potencial de la tierra para reducir la escorrentía"
                     ]
                 },
                 "stops": [
@@ -34,8 +34,8 @@
                 "fill": "#4623e4",
                 "type": "value",
                 "label": {
-                    "en": "Upper catchment",
-                    "es": "?"
+                    "en": "Opportunity in the upper catchment",
+                    "es": "Oportunidad en la cuenca alta"
                 }
             },
             {
@@ -43,8 +43,8 @@
                 "fill": "#38b6f4",
                 "type": "value",
                 "label": {
-                    "en": "Mid catchment",
-                    "es": "?"
+                    "en": "Opportunity in the mid catchment",
+                    "es": "Oportunidad en la cuenca media"
                 }
             },
             {
@@ -52,8 +52,8 @@
                 "fill": "#306b10",
                 "type": "value",
                 "label": {
-                    "en": "Lower catchment",
-                    "es": "?"
+                    "en": "Opportunity in the lower catchment",
+                    "es": "Oportunidad en la cuenca baja"
                 }
             }
         ]
@@ -66,7 +66,7 @@
                 "type": "value",
                 "label": {
                     "en": "Upper catchment",
-                    "es": "?"
+                    "es": "Oportunidad en la cuenca alta"
                 }
             },
             {
@@ -74,8 +74,8 @@
                 "fill": "#38b6f4",
                 "type": "value",
                 "label": {
-                    "en": "Mid catchment",
-                    "es": "?"
+                    "en": "Opportunity in the mid catchment",
+                    "es": "Oportunidad en la cuenca media"
                 }
             },
             {
@@ -83,8 +83,8 @@
                 "fill": "#306b10",
                 "type": "value",
                 "label": {
-                    "en": "Lower catchment",
-                    "es": "?"
+                    "en": "Opportunity in the lower catchment",
+                    "es": "Oportunidad en la cuenca baja"
                 }
             }
         ]
@@ -114,8 +114,8 @@
                 "fill": "#67766c",
                 "type": "value",
                 "label": {
-                    "en": "Area excluded from erosion risk analysis",
-                    "es": "?"
+                    "en": "Not assessed",
+                    "es": "Zona no evaluada"
                 }
             },
             {
@@ -130,11 +130,11 @@
                         "High risk of erosion"
                     ],
                     "es": [
-                        "?",
+                        "Bajo riesgo de erosión",
                         "",
                         "",
                         "",
-                        "?"
+                        "Alto riesgo de erosión"
                     ]
                 },
                 "stops": [
@@ -155,7 +155,7 @@
                 "type": "value",
                 "label": {
                     "en": "Grassland & cactus habitats",
-                    "es": "?"
+                    "es": "Hábitat de pastizales & cactus"
                 }
             },
             {
@@ -164,7 +164,7 @@
                 "type": "value",
                 "label": {
                     "en": "Wetland habitats (including ephemeral watercourses)",
-                    "es": "?"
+                    "es": "Hábitat de humedal"
                 }
             },
             {
@@ -173,7 +173,7 @@
                 "type": "value",
                 "label": {
                     "en": "Woodland habitats",
-                    "es": "?"
+                    "es": "Hábitat de bosque"
                 }
             }
         ]
@@ -186,7 +186,7 @@
                 "type": "value",
                 "label": {
                     "en": "Areas important for both biodiversity and surface water regulation",
-                    "es": "?"
+                    "es": "Áreas importantes tanto para la biodiversidad como para la regulación de aguas superficiales"
                 }
             },
             {
@@ -194,8 +194,8 @@
                 "fill": "#b3b3b3",
                 "type": "value",
                 "label": {
-                    "en": "Urban and roads",
-                    "es": "Zona urbana y carreteras"
+                    "en": "Roads and urban",
+                    "es": "Carreteras y zona urbana"
                 }
             }
         ]
