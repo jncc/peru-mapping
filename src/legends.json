@@ -92,7 +92,7 @@
     "erosion_risk": {
         "legend_entries": [
             {
-                "entry_id": "erosion_channel",
+                "entry_id": "erosion_channels",
                 "type": "line",
                 "fill": "#8a17ef",
                 "label": {
@@ -150,7 +150,7 @@
     "network_sources": {
         "legend_entries": [
             {
-                "entry_id": "grassland_cactus_habitats",
+                "entry_id": "grassland",
                 "fill": "#d99550",
                 "type": "value",
                 "label": {
@@ -159,7 +159,7 @@
                 }
             },
             {
-                "entry_id": "wetland_habitats_including_ephemeral_watercourses",
+                "entry_id": "wetland_core",
                 "fill": "#347adb",
                 "type": "value",
                 "label": {
@@ -168,7 +168,7 @@
                 }
             },
             {
-                "entry_id": "woodland_habitats",
+                "entry_id": "woodland_core",
                 "fill": "#386234",
                 "type": "value",
                 "label": {

@@ -31,6 +31,7 @@ def fullMergeDict(D1, D2):
 def formatStr(input):
     input = re.sub(r'([\(\)\{\}\[\]])', '', input)
     input = re.sub(r'([^\w])', '_', input.lower())
+    input = re.sub(r'[_]+', '_', input)
     return input
 
 
@@ -153,7 +154,7 @@ def getRasterStatsByLocation(input, zones, min=None, max=None):
         'INPUT_RASTER': input,
         'INPUT_VECTOR': zones_output,
         'RASTER_BAND': 1,
-        'STATS': [5, 6]}
+        'STATISTICS': [5, 6]}
     )
     output = {}
 
@@ -201,150 +202,142 @@ def normalize(min, max, outmin, outmax, value):
 
 maps = [
     {
-        'name': 'Map_1',
-        'output_name': 'water_runoff_moderation',
+        'name': '1. Ability of the land to moderate surface water runoff',
+        'output_name': 'moderate_surface_water_runoff',
         'vector': {},
         'ramp': {
             'Ability of the land to moderate surface water runoff': {
-                'name': 'water_runoff_moderation_ramp',
-                'min': 10.0,
-                'max': 620.0
+                'name': 'moderate_surface_water_runoff',
+                'min': 41.0,
+                'max': 266
 
             }
         }
     },
     {
-        'name': 'Map_2',
-        'output_name': 'key_biodiversity_habitats',
+        'name': '2. Opportunities to enhance surface water regulation',
+        'output_name': 'enhance_surface_water_regulation',
         'vector': {
-            'Colombia_network_source_habitat_wetland': 'Core',
-            'Colombia_network_source_habitat_grassland': 'Core',
-            'Colombia_network_source_habitat_woodland': 'Core'
+            'Opportunities to enhance surface water regulation': 'Catchmnt'
         },
         'ramp': {}
     },
     {
-        'name': 'Map_3',
-        'output_name': 'woodland_ecological_connectivity',
+        'name': '3. Opportunities to enhance surface water regulation: places receieving high volumes of surface water flow',
+        'output_name': 'enhance_surface_water_regulation_high_volumes',
         'vector': {
-            'Colombia_network_source_habitat_woodland': 'Core',
+            'Opportunities to enhance surface water regulation: places receieving high volumes of surface water flow': 'Catchmnt',
+        },
+        'ramp': {}
+    },
+    {
+        'name': '4. Risk of erosion caused by precipitation',
+        'output_name': 'erosion_risk',
+        'vector': {
+            'Erosion channels': None,
+            'Urban and roads': None,
+            'Area_excluded_from_erosion_risk_analysis': None
         },
         'ramp': {
-            'Woodland ecological network': {
-                'name': 'woodland_ecological_network',
+            '4. Risk of erosion caused by precipitation': {
+                'name': 'risk_of_erosion_caused_by_precipitation',
                 'min': 0.0,
-                'max': 300500.0
+                'max': 0.899
             }
         }
     },
     {
-        'name': 'Map_4',
-        'output_name': 'wetland_ecological_connectivity',
+        'name': '5. Places with habitat of key importance for biodiversity',
+        'output_name': 'network_sources',
         'vector': {
-            'Colombia_network_source_habitat_wetland': 'Core',
+            'Grassland and cactus habitats': 'Core',
+            'Wetland habitats (including ephemeral watercourses)': 'Core',
+            'Woodland habitats': 'Core'
+        },
+        'ramp': {}
+    },
+    {
+        'name': '6. Places delivering multiple ecosystem service benefits; key areas for biodiversity and surface water regulation',
+        'output_name': 'multi_es_benefits_water_regulation',
+        'vector': {
+            'Areas important for both biodiversity and surface water regulation': None,
+            'Urban and roads': None
+        },
+        'ramp': {}
+    },
+    {
+        'name': '7. Ecological Network Connectivity - Woodland Ecosystem',
+        'output_name': 'woodland_ecosystem',
+        'vector': {
+            'Source woodland': None
+        },
+        'ramp': {
+            'Woodland Ecological network': {
+                'name': 'woodland_ecological_network',
+                'min': 0.0,
+                'max': 140000.0
+            }
+        }
+    },
+    {
+        'name': '8. Ecological Network Connectivity - Wetland Ecosystem',
+        'output_name': 'wetland_ecosystem',
+        'vector': {
+            'Source wetland': None
         },
         'ramp': {
             'Wetland ecological network': {
                 'name': 'wetland_ecological_network',
                 'min': 0.0,
-                'max': 43500.0
+                'max': 30000.0
             }
         }
     },
     {
-        'name': 'Map_5',
-        'output_name': 'grassland_ecological_connectivity',
+        'name': '9. Ecological network connectivity - Grassland Ecosystem',
+        'output_name': 'grassland_ecosystem',
         'vector': {
-            'Colombia_network_source_habitat_grassland': 'Core',
+            'Source grassland/cactus habitat': None
         },
         'ramp': {
-            'Grassland ecological network': {
-                'name': 'grassland_ecological_network',
+            'Grassland/cactus ecological network': {
+                'name': 'grassland_cactus_ecological_network',
                 'min': 0.0,
-                'max': 160000.0
+                'max': 90000.0
             }
         }
     },
     {
-        'name': 'Map_6',
-        'output_name': 'key_ecosystem_service_areas',
+        'name': '10. Opportunities to strengthen ecological networks',
+        'output_name': 'habitat_opportunities',
         'vector': {
-            'Urban and roads': None,
-            'Colombia_multiple_ES_stock_biodiv_surface_water_reg': 'Stock'
+            'Opportunities to strengthen ecological networks': 'Legend'
         },
         'ramp': {}
     },
     {
-        'name': 'Map_7',
-        'output_name': 'precipitation_erosion_risk',
+        'name': '11. Opportunities to strengthen ecological networks: priority places for action',
+        'output_name': 'priority_habitat',
         'vector': {
-            'Area_excluded_from_erosion_risk_analysis': 'AltZone',
-            'Erosion channel': None,
-            'Urban and roads': None,
-        },
-        'ramp': {
-            'Colombia_Precip_Erosion_Risk': {
-                'name': 'colombia_precip_erosion_risk',
-                'min': 0.0,
-                'max': 0.0667042
-            }
-        }
-    },
-    {
-        'name': 'Map_8',
-        'output_name': 'wind_erosion_risk',
-        'vector': {
-            'Urban and roads': None,
-            'Rivers': None,
-            'colombia_soil_wind_erosion_risk': 'WindErosio',
+            'Opportunities to strengthen ecological networks: priority places for action': 'Legend',
         },
         'ramp': {}
     },
     {
-        'name': 'Map_9',
-        'output_name': 'water_regulation_opportunities',
+        'name': '12. Opportunities to deliver multiple ecosystem services: ecological connectivity and surface water regulation',
+        'output_name': 'habitat_water_regulation',
         'vector': {
-            'Colombia_RioFrio_all_ops_to_enhance_surface_water_reg_revised': 'Catchment'
+            'Opportunities to deliver multiple ecosystem services: ecological connectivity and surface water regulation': 'FinOp',
         },
         'ramp': {}
     },
     {
-        'name': 'Map_10',
-        'output_name': 'water_regulation_opportunities_high_volume',
-        'vector': {
-            'Colombia_RioFrio_ops_to_enhance_surface_water_reg_receiving_high_flow_volume': 'RioFrio'
-        },
-        'ramp': {}
-    },
-    {
-        'name': 'Map_11',
-        'output_name': 'ecological_opportunities',
-        'vector': {
-            'Ease of restoration': 'Legend',
-        },
-        'ramp': {}
-    },
-    {
-        'name': 'Map_12',
-        'output_name': 'priority_ecological_opportunities',
-        'vector': {
-            'Colombia_habitat_opportunities_next_to_existing_source_habitat': 'Legend',
-        },
-        'ramp': {}
-    },
-    {
-        'name': 'Map_13',
-        'output_name': 'multi_benefit_ecological_opportunities',
-        'vector': {
-            'Colombia_multibenefit_opportunities_habitat_water_regulation': 'MainOp',
-        },
-        'ramp': {}
-    },
-    {
-        'name': 'Map_14',
+        'name': '13. Habitat map',
         'output_name': 'habitat_map',
         'vector': {
-            'Colombia_habitat_map_20191127_Final-fixed-unicode': 'Summary'
+            'ExtractedFeatureOutputs': 'Context',
+            'Peru_Viru_HabitatMap_20190524_Final': 'Class'
+
         },
         'ramp': {}
     }
@@ -418,8 +411,7 @@ for mapGroup in maps:
                     )]['min'], mapGroup['ramp'][layer.name()]['max'])
                 else:
                     extracted = getRasterStatsByLocation(layer, zones)
-                outputs[mapGroup['output_name']]['ramp'][mapGroup['ramp']
-                                                         [layer.name()]['name']] = extracted
+                outputs[mapGroup['output_name']]['ramp'][mapGroup['ramp'][layer.name()]['name']] = extracted
             else:
                 print('Skipping layer ' + layer.name())
         else:
