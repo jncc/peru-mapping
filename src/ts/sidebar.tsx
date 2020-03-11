@@ -313,7 +313,7 @@ export class LayerControls extends React.Component {
               <span>{content.overlay_layers['grid_5k'].short_title[getConfig(window.location.search).language]}</span>
             </label>
           </div>
-          {/* {underlayOptions} */}
+          {underlayOptions}
           {overlayOptions}
           <hr />
           <select id="baselayer-select" className="form-control" onChange={this.changeBaseLayer}>
