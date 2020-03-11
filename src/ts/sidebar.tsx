@@ -246,20 +246,20 @@ export class LayerControls extends React.Component {
       }
     }
 
-    // let underlayOptions = []
-    // for (let layer of keys(content.underlay_layers)) {
-    //   underlayOptions.push(
-    //     <div key={layer} className="checkbox">
-    //       <div className="form-inline">
-    //         <label className="form-check-label">
-    //           <input id={layer + '-checkbox'} className="form-check-input" type="checkbox"
-    //             onChange={this.changeUnderlay} value={layer} checked={this.state.underlays[layer]} />
-    //           {content.underlay_layers[layer].short_title[getConfig(window.location.search).language]}
-    //         </label>
-    //       </div>
-    //     </div>
-    //   )
-    // }
+    let underlayOptions = []
+    for (let layer of keys(content.underlay_layers)) {
+      underlayOptions.push(
+        <div key={layer} className="checkbox">
+          <div className="form-inline">
+            <label className="form-check-label">
+              <input id={layer + '-checkbox'} className="form-check-input" type="checkbox"
+                onChange={this.changeUnderlay} value={layer} checked={this.state.underlays[layer]} />
+              {content.underlay_layers[layer].short_title[getConfig(window.location.search).language]}
+            </label>
+          </div>
+        </div>
+      )
+    }
 
     let legend = []
     if (!this.state.hideBaseLayer) {

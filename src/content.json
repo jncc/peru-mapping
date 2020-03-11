@@ -408,6 +408,16 @@
         }
     },
     "underlay_layers": {
-
+        "satellite_imagery": {
+            "wms_name": "peru_eo4_cultivar:peru_satellite_image",
+            "short_title": {
+                "en": "Satellite imagery",
+                "es": "Capa satelital"
+            },
+            "attribution": {
+                "en": "European Space Agency - ESA",
+                "es": "Agencia Espacial Europea - ESA"
+            }
+        }
     }
 }
