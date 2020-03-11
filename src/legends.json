@@ -9,9 +9,9 @@
                 "type": "ramp",
                 "labels": {
                     "en": [
-                        "Low potential of land to slow runoff",
+                        "High potential of land to slow runoff",
                         "",
-                        "High potential of land to slow runoff"
+                        "Low potential of land to slow runoff"
                     ],
                     "es": [
                         "?",
@@ -20,9 +20,9 @@
                     ]
                 },
                 "stops": [
-                    "#f7fbff",
+                    "#08306b",
                     "#6baed6",
-                    "#08306b"
+                    "#f7fbff"
                 ]
             }
         ]
@@ -123,11 +123,11 @@
                 "type": "ramp",
                 "labels": {
                     "en": [
-                        "Low risk of erosion",
+                        "High risk of erosion",
                         "",
                         "",
                         "",
-                        "High risk of erosion"
+                        "Low risk of erosion"
                     ],
                     "es": [
                         "?",
@@ -138,11 +138,11 @@
                     ]
                 },
                 "stops": [
-                    "#a2d5f2",
-                    "#405b3c",
-                    "#f1f137",
+                    "#d7191c",
                     "#fdae61",
-                    "#d7191c"
+                    "#f1f137",
+                    "#405b3c",
+                    "#a2d5f2"
                 ]
             }
         ]

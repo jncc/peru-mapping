@@ -44,7 +44,7 @@ export function createMap(container: HTMLElement, config: Config) {
         let layerKeys = keys(feature.properties.legends)
         let orderedLayerKeys = keys(content.base_layers)
         orderedLayerKeys.forEach(layerKey => {
-          if (layerKeys.lastIndexOf(layerKey) > 0) {
+          if (layerKeys.lastIndexOf(layerKey) >= 0) {
             let currentGroupLegendEntries = feature.properties.legends[layerKey]
             let layer: MapLegend = {
               layerName: content.base_layers[layerKey as keyof typeof content.base_layers].short_title[config.language],
