@@ -6,9 +6,9 @@ import re
 # A Zone file (i.e. grids) that we want to scan through when, could be practically any standard
 # polygon/multipolygon, the only requirement is that each zone/grid must have a unique id attribute
 # field, example for this project is stored alongside this script
-zoneFile = 'Z:\\Programme 061 Sustainability Advice\\Sustainable Livelihoods\\EO4cultivar\\Case Study Development\\Peru\\Data\\geoserver_outputs\\wgs84_5k_grid.geojson'
+zoneFile = './wgs84_5k_grid.geojson'
 # Output file location
-output = 'Z:\\Programme 061 Sustainability Advice\\Sustainable Livelihoods\\EO4cultivar\\Case Study Development\\Peru\\Data\\geoserver_outputs\\gridsout.geojson'
+output = './gridsout.geojson'
 
 
 def fullMergeDict(D1, D2):
