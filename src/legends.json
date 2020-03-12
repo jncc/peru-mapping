@@ -9,9 +9,9 @@
                 "type": "ramp",
                 "labels": {
                     "en": [
-                        "Low potential of land to slow runoff",
+                        "High potential of land to slow runoff",
                         "",
-                        "High potential of land to slow runoff"
+                        "Low potential of land to slow runoff"
                     ],
                     "es": [
                         "Bajo potencial de la tierra para reducir la escorrentía",
@@ -20,10 +20,11 @@
                     ]
                 },
                 "stops": [
-                    "#f7fbff",
+                    "#08306b",
                     "#6baed6",
-                    "#08306b"
-                ]
+                    "#f7fbff"
+                ],
+                "grid_invert_min_max": false
             }
         ]
     },
@@ -123,11 +124,11 @@
                 "type": "ramp",
                 "labels": {
                     "en": [
-                        "Low risk of erosion",
+                        "High risk of erosion",
                         "",
                         "",
                         "",
-                        "High risk of erosion"
+                        "Low risk of erosion"
                     ],
                     "es": [
                         "Bajo riesgo de erosión",
@@ -138,12 +139,13 @@
                     ]
                 },
                 "stops": [
-                    "#a2d5f2",
-                    "#405b3c",
-                    "#f1f137",
+                    "#d7191c",
                     "#fdae61",
-                    "#d7191c"
-                ]
+                    "#f1f137",
+                    "#405b3c",
+                    "#a2d5f2"
+                ],
+                "grid_invert_min_max": true
             }
         ]
     },
@@ -230,7 +232,8 @@
                     "#00441b",
                     "#74c476",
                     "#f7fcf5"
-                ]
+                ],
+                "grid_invert_min_max": true
             }
         ]
     },
@@ -264,7 +267,8 @@
                     "#08306b",
                     "#6baed6",
                     "#f7fbff"
-                ]
+                ],
+                "grid_invert_min_max": true
             }
         ]
     },
@@ -298,7 +302,8 @@
                     "#7f2704",
                     "#fd8d3c",
                     "#fff5eb"
-                ]
+                ],
+                "grid_invert_min_max": true
             }
         ]
     },

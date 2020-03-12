@@ -44,7 +44,7 @@ export function createMap(container: HTMLElement, config: Config) {
         let layerKeys = keys(feature.properties.legends)
         let orderedLayerKeys = keys(content.base_layers)
         orderedLayerKeys.forEach(layerKey => {
-          if (layerKeys.lastIndexOf(layerKey) > 0) {
+          if (layerKeys.lastIndexOf(layerKey) >= 0) {
             let currentGroupLegendEntries = feature.properties.legends[layerKey]
             let layer: MapLegend = {
               layerName: content.base_layers[layerKey as keyof typeof content.base_layers].short_title[config.language],
@@ -111,17 +111,17 @@ export function createMap(container: HTMLElement, config: Config) {
   }
 
   // setup underlays  
-  // for (let underlay of keys(content.underlay_layers)) {
-  //   let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/peru_eo4_cultivar/wms?tiled=true', {
-  //     layers: content.underlay_layers[underlay].wms_name,
-  //     transparent: true,
-  //     format: 'image/png',
-  //     opacity: 1,
-  //     attribution: content.underlay_layers[underlay].attribution[config.language]
-  //   })
-  //   Object.assign(underlayMaps, { [underlay]: layer })
-  // }
-  //updateUnderlay('satellite_imagery', true) // sentinel layer on as landing page view
+  for (let underlay of keys(content.underlay_layers)) {
+    let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/peru_eo4_cultivar/wms?tiled=true', {
+      layers: content.underlay_layers[underlay].wms_name,
+      transparent: true,
+      format: 'image/png',
+      opacity: 1,
+      attribution: content.underlay_layers[underlay].attribution[config.language]
+    })
+    Object.assign(underlayMaps, { [underlay]: layer })
+  }
+  updateUnderlay('satellite_imagery', true) // sentinel layer on as landing page view
 
   return map
 }
