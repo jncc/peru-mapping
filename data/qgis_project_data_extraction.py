@@ -94,7 +94,7 @@ def getVectorFeaturesInLocation(input, zones, attributeField, strFormattingFunct
     return output
 
 
-def getRasterStatsByLocation(input, zones, min=None, max=None):
+def getRasterStatsByLocation(input, zones, invert_grid_min_max=False, min=None, max=None, stops=None):
     # If we aren't supplied with a min / max to the range then extract it from the source
     # raster
     if (not (min != None and max != None)):
@@ -161,11 +161,53 @@ def getRasterStatsByLocation(input, zones, min=None, max=None):
     # Do a little bit of housekeeping the results (reduce to 2 decimal places) and
     # normalize the data to be in the min/max range (between 0 and 1)
     for zone in zones_output.getFeatures():
+        input_min = zone.attribute('_min')
+        input_max = zone.attribute('_max')
+
+        output_min = 0.0
+        output_max = 1.0
+
+        if (stops != None):
+            stop_percentage = (1 / len(stops)) 
+            max_stop = len(stops) - 1
+
+            if (input_min > min):
+                min_stop = 0
+                for stop in range(len(stops)):
+                    if stops[stop] <= input_min:
+                        min_stop = stop
+                        break
+                if stop == 0:
+                    output_min = ((stops[min_stop + 1] - stops[min_stop]) / (input_min)) * stop_percentage
+                else:
+                    output_min = (stop_percentage * (min_stop - 1)) + (((stops[min_stop] - stops[min_stop - 1]) / (input_min - stops[min_stop - 1])) * stop_percentage)
+            
+            if (input_max < max):
+                for stop in range(len(stops)):
+                    if stops[stop] >= input_max:
+                        max_stop = stop
+                        break
+                if input_max == 0:
+                    output_max = 0.0
+                elif stop == 0:
+                    output_max = ((stops[max_stop + 1] - stops[max_stop]) / (input_max)) * stop_percentage
+                else:
+                    output_max = (stop_percentage * (max_stop - 1)) + (((stops[max_stop] - stops[max_stop - 1]) / (input_max - stops[max_stop -1])) * stop_percentage)
+
+        else:
+            output_min = float('%.2f' % (normalize(min, max, 0, 1, input_min)))
+            output_max = float('%.2f' % (normalize(min, max, 0, 1, input_max)))
+
+        if (invert_grid_min_max):
+            inverted_output_min = 1 - output_max
+            inverted_output_max = 1 - output_min
+            output_min = float('%.2f' % inverted_output_min)
+            output_max = float('%.2f' % inverted_output_max)
 
         output[zone['id']] = {
-            'min': float('%.2f' % (normalize(min, max, 0, 1, zone.attribute('_min')))),
-            'max': float('%.2f' % (normalize(min, max, 0, 1, zone.attribute('_max'))))
-        }
+                'min': output_min,
+                'max': output_max
+            }
 
     proj.removeMapLayer(zones_output)
 
@@ -209,8 +251,8 @@ maps = [
             'Ability of the land to moderate surface water runoff': {
                 'name': 'moderate_surface_water_runoff',
                 'min': 41.0,
-                'max': 266
-
+                'max': 266,
+                'inverted': False
             }
         }
     },
@@ -242,7 +284,15 @@ maps = [
             '4. Risk of erosion caused by precipitation': {
                 'name': 'risk_of_erosion_caused_by_precipitation',
                 'min': 0.0,
-                'max': 0.899
+                'max': 0.899,
+                'stops': [
+                    0,
+                    0.0167,
+                    0.0334,
+                    0.05,
+                    0.899
+                ],
+                'inverted': False
             }
         }
     },
@@ -275,7 +325,8 @@ maps = [
             'Woodland Ecological network': {
                 'name': 'woodland_ecological_network',
                 'min': 0.0,
-                'max': 140000.0
+                'max': 140000.0,
+                'inverted': True
             }
         }
     },
@@ -289,7 +340,8 @@ maps = [
             'Wetland ecological network': {
                 'name': 'wetland_ecological_network',
                 'min': 0.0,
-                'max': 30000.0
+                'max': 30000.0,
+                'inverted': True
             }
         }
     },
@@ -303,7 +355,8 @@ maps = [
             'Grassland/cactus ecological network': {
                 'name': 'grassland_cactus_ecological_network',
                 'min': 0.0,
-                'max': 90000.0
+                'max': 90000.0,
+                'inverted': True
             }
         }
     },
@@ -337,7 +390,6 @@ maps = [
         'vector': {
             'ExtractedFeatureOutputs': 'Context',
             'Peru_Viru_HabitatMap_20190524_Final': 'Class'
-
         },
         'ramp': {}
     }
@@ -407,8 +459,7 @@ for mapGroup in maps:
             elif (layer.name() in mapGroup['ramp'].keys()):
                 print('Extracting raster ramp layer ' + layer.name())
                 if ('min' in mapGroup['ramp'][layer.name()] and 'max' in mapGroup['ramp'][layer.name()]):
-                    extracted = getRasterStatsByLocation(layer, zones, mapGroup['ramp'][layer.name(
-                    )]['min'], mapGroup['ramp'][layer.name()]['max'])
+                    extracted = getRasterStatsByLocation(layer, zones, mapGroup['ramp'][layer.name()]['inverted'], mapGroup['ramp'][layer.name()]['min'], mapGroup['ramp'][layer.name()]['max'], (mapGroup['ramp'][layer.name()]['stops'] if 'stops' in mapGroup['ramp'][layer.name()] else None))
                 else:
                     extracted = getRasterStatsByLocation(layer, zones)
                 outputs[mapGroup['output_name']]['ramp'][mapGroup['ramp'][layer.name()]['name']] = extracted

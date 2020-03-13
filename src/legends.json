@@ -23,8 +23,7 @@
                     "#08306b",
                     "#6baed6",
                     "#f7fbff"
-                ],
-                "grid_invert_min_max": false
+                ]
             }
         ]
     },
@@ -144,8 +143,7 @@
                     "#f1f137",
                     "#405b3c",
                     "#a2d5f2"
-                ],
-                "grid_invert_min_max": true
+                ]
             }
         ]
     },
@@ -232,8 +230,7 @@
                     "#00441b",
                     "#74c476",
                     "#f7fcf5"
-                ],
-                "grid_invert_min_max": true
+                ]
             }
         ]
     },
@@ -267,8 +264,7 @@
                     "#08306b",
                     "#6baed6",
                     "#f7fbff"
-                ],
-                "grid_invert_min_max": true
+                ]
             }
         ]
     },
@@ -302,8 +298,7 @@
                     "#7f2704",
                     "#fd8d3c",
                     "#fff5eb"
-                ],
-                "grid_invert_min_max": true
+                ]
             }
         ]
     },
