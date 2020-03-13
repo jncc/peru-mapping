@@ -836,7 +836,7 @@
                         "es": "Mapa de hábitat"
                     },
                     "section_content": {
-                        "en": "<p>Habitat maps are a key component to understanding the distribution and extent of features across the landscape.  They help facilitate better management practices, ecosystem service mapping, interpreting and targeting biodiversity monitoring and delivering policies such as those related to sustainable livelihood development.  The map provides a baseline of type, extent and distribution of current land use and habitats.</p><p>The current map was created in 2017 and is based on 10m resolution Sentinel 1 and Sentinel 2 imagery, 2m resolution Pleiades data and 12m resolution WorldDEM elevation data.</p>",
+                        "en": "<p>Habitat maps are a key component to understanding the distribution and extent of features across the landscape. They help facilitate better management practices, ecosystem service mapping, interpreting and targeting biodiversity monitoring and delivering policies such as those related to sustainable livelihood development.  The map provides a baseline of type, extent and distribution of current land use and habitats.</p><p>The current map was created in 2017 and is based on 10m resolution Sentinel 1 and Sentinel 2 imagery, 2m resolution Pleiades data and 12m resolution WorldDEM elevation data.</p>",
                         "es": "?"
                     }
                 }

@@ -92,15 +92,16 @@ function createRampLegendEntry(legendEntry: LegendEntry, lang: string) {
     if (legendEntry.min != undefined && legendEntry.max != undefined) {
       var miny = 0
       var height = 0
-      
-      if (legendEntry.grid_invert_min_max != undefined && legendEntry.grid_invert_min_max) {
+
+      if (legendEntry.grid_invert_min_max != undefined && legendEntry.grid_invert_min_max == true) {
+        miny = ((overallHeight - 4) * legendEntry.min) + 2
+        height = Math.max(1, (((overallHeight - 4) * legendEntry.max) - miny + 2))
+      } else {
+        // 0,0 point is top left of object, not bottom left, so invert min max to get correct ranges
         let invertedMin = 1 - legendEntry.max
         let invertedMax = 1 - legendEntry.min
         miny = ((overallHeight - 4) * invertedMin) + 2
         height = Math.max(1, (((overallHeight - 4) * invertedMax) - miny + 2))
-      } else {
-        miny = ((overallHeight - 4) * legendEntry.min) + 2
-        height = Math.max(1, (((overallHeight - 4) * legendEntry.max) - miny + 2))        
       }
 
       boundary = <rect x={1} y={miny} width={8} height={height} rx={0.1}

@@ -210,7 +210,7 @@
                 "type": "value",
                 "label": {
                     "en": "Woodland Network Source",
-                    "es": "?"
+                    "es": "Bosque fuente"
                 }
             },
             {
@@ -219,13 +219,13 @@
                 "labels": {
                     "en": [
                         "Highly connected",
-                        "",
+                        "Moderately connected",
                         "Poorly connected"
                     ],
                     "es": [
-                        "?",
-                        "",
-                        "?"
+                        "Altamente conectada",
+                        "Conectada moderadamente",
+                        "Poco conectada"
                     ]
                 },
                 "stops": [
@@ -245,7 +245,7 @@
                 "type": "value",
                 "label": {
                     "en": "Wetland Network Source",
-                    "es": "?"
+                    "es": "Humedal fuente"
                 }
             },
             {
@@ -254,13 +254,13 @@
                 "labels": {
                     "en": [
                         "Highly connected",
-                        "",
+                        "Moderately connected",
                         "Poorly connected"
                     ],
                     "es": [
-                        "?",
-                        "",
-                        "?"
+                        "Altamente conectada",
+                        "Conectada moderadamente",
+                        "Poco conectada"
                     ]
                 },
                 "stops": [
@@ -280,7 +280,7 @@
                 "type": "value",
                 "label": {
                     "en": "Grassland/cactus Network Source",
-                    "es": "?"
+                    "es": "Pastizales/cactus fuente"
                 }
             },
             {
@@ -289,13 +289,13 @@
                 "labels": {
                     "en": [
                         "Highly connected",
-                        "",
+                        "Moderately connected",
                         "Poorly connected"
                     ],
                     "es": [
-                        "?",
-                        "",
-                        "?"
+                        "Altamente conectada",
+                        "Conectada moderadamente",
+                        "Poco conectada"
                     ]
                 },
                 "stops": [
@@ -315,7 +315,7 @@
                 "fill": "#4217ea",
                 "label": {
                     "en": "Wetland opportunity: High",
-                    "es": "?"
+                    "es": "Oportunidad para humedales: Alta"
                 }
             },
             {
@@ -324,7 +324,7 @@
                 "fill": "#798ce8",
                 "label": {
                     "en": "Wetland opportunity: Medium",
-                    "es": "?"
+                    "es": "Oportunidad para humedales: Media"
                 }
             },
             {
@@ -333,7 +333,7 @@
                 "fill": "#c8e8fa",
                 "label": {
                     "en": "Wetland opportunity: Low",
-                    "es": "?"
+                    "es": "Oportunidad para humedales: Baja"
                 }
             },
             {
@@ -342,7 +342,7 @@
                 "fill": "#144222",
                 "label": {
                     "en": "Woodland opportunity: High",
-                    "es": "?"
+                    "es": "Oportunidad para bosque: Alta"
                 }
             },
             {
@@ -351,7 +351,7 @@
                 "fill": "#2ce044",
                 "label": {
                     "en": "Woodland opportunity: Medium",
-                    "es": "?"
+                    "es": "Oportunidad para bosque: Media"
                 }
             },
             {
@@ -360,7 +360,7 @@
                 "fill": "#9ff280",
                 "label": {
                     "en": "Woodland opportunity: Low",
-                    "es": "?"
+                    "es": "Oportunidad para bosque: Baja"
                 }
             }            
         ]
@@ -373,7 +373,7 @@
                 "fill": "#4217ea",
                 "label": {
                     "en": "Wetland opportunity: High",
-                    "es": "?"
+                    "es": "Oportunidad para humedales: Alta"
                 }
             },
             {
@@ -382,7 +382,7 @@
                 "fill": "#798ce8",
                 "label": {
                     "en": "Wetland opportunity: Medium",
-                    "es": ""
+                    "es": "Oportunidad para humedales: Media"
                 }
             },
             {
@@ -391,7 +391,7 @@
                 "fill": "#c8e8fa",
                 "label": {
                     "en": "Wetland opportunity: Low",
-                    "es": ""
+                    "es": "Oportunidad para humedales: Baja"
                 }
             },
             {
@@ -400,7 +400,7 @@
                 "fill": "#144222",
                 "label": {
                     "en": "Woodland opportunity: High",
-                    "es": "?"
+                    "es": "Oportunidad para bosque: Alta"
                 }
             },
             {
@@ -409,7 +409,7 @@
                 "fill": "#2ce044",
                 "label": {
                     "en": "Woodland opportunity: Medium",
-                    "es": ""
+                    "es": "Oportunidad para bosque: Media"
                 }
             },
             {
@@ -418,7 +418,7 @@
                 "fill": "#9ff280",
                 "label": {
                     "en": "Woodland opportunity: Low",
-                    "es": ""
+                    "es": "Oportunidad para bosque: Baja"
                 }
             }            
         ]
@@ -431,7 +431,7 @@
                 "fill": "#4217ea",
                 "label": {
                     "en": "Wetland opportunity",
-                    "es": ""
+                    "es": "Oportunidad para humedalesOportunidad para humedales"
                 }
             },
             {
@@ -440,7 +440,7 @@
                 "fill": "#2ce044",
                 "label": {
                     "en": "Woodland opportunity",
-                    "es": ""
+                    "es": "Oportunidad para bosque"
                 }
             }    
         ]
@@ -643,610 +643,6 @@
                 "label": {
                     "en": "Wetland",
                     "es": "?"
-                }
-            }
-        ]
-    },
-    "water_runoff_moderation": {
-        "legend_entries": [
-            {
-                "entry_id": "water_runoff_moderation_ramp",
-                "type": "ramp",
-                "labels": {
-                    "en": [
-                        "Low potential of land to slow runoff",
-                        "",
-                        "High potential of land to slow runoff"
-                    ],
-                    "es": [
-                        "Bajo potencial de la tierra para reducir la escorrentía",
-                        "",
-                        "Alto potencial de la tierra para reducir la escorrentía"
-                    ]
-                },
-                "stops": [
-                    "#f7fbff",
-                    "#6baed6",
-                    "#08306b"
-                ]
-            }
-        ]
-    },
-    "water_regulation_opportunities": {
-        "legend_entries": [
-            {
-                "entry_id": "lower_catchment",
-                "fill": "#306b10",
-                "type": "value",
-                "label": {
-                    "en": "Opportunities in the lower catchment",
-                    "es": "Oportunidad en la cuenca baja"
-                }
-            },
-            {
-                "entry_id": "mid_catchment",
-                "fill": "#38b6f4",
-                "type": "value",
-                "label": {
-                    "en": "Opportunities in the mid catchment",
-                    "es": "Oportunidad en la cuenca media"
-                }
-            },
-            {
-                "entry_id": "upper_catchment",
-                "fill": "#4623e4",
-                "type": "value",
-                "label": {
-                    "en": "Opportunities in the upper catchment",
-                    "es": "Oportunidad en la cuenca alta"
-                }
-            }
-        ]
-    },
-    "water_regulation_opportunities_high_volume": {
-        "legend_entries": [
-            {
-                "entry_id": "basin_touches_main_river_channel",
-                "type": "value",
-                "fill": "#8f3d3b",
-                "label": {
-                    "en": "High priority opportunity area adjoining main channel",
-                    "es": "Área de oportunidad de alta prioridad adyacente a un canal principal"
-                }
-            },
-            {
-                "entry_id": "high_priority_opportunity_area",
-                "type": "value",
-                "fill": "#e5b636",
-                "label": {
-                    "en": "High priority opportunity area",
-                    "es": "Otras áreas de oportunidad de alta prioridad"
-                }
-            }
-        ]
-    },
-    "precipitation_erosion_risk": {
-        "legend_entries": [
-            {
-                "entry_id": "valley",
-                "type": "value",
-                "fill": "#67766c",
-                "label": {
-                    "en": "Area excluded from erosion risk analysis",
-                    "es": "Zona no evaluada"
-                }
-            },
-            {
-                "entry_id": "urban_and_roads",
-                "fill": "#000000",
-                "type": "value",
-                "label": {
-                    "en": "Urban and roads",
-                    "es": "Zona urbana y carreteras"
-                }
-            },
-            {
-                "entry_id": "erosion_channel",
-                "type": "line",
-                "fill": "#8a17ef",
-                "label": {
-                    "en": "Erosion channel",
-                    "es": "Canal de erosión"
-                }
-            },
-            {
-                "entry_id": "colombia_precip_erosion_risk",
-                "type": "ramp",
-                "labels": {
-                    "en": [
-                        "Low risk of erosion",
-                        "",
-                        "",
-                        "",
-                        "High risk of erosion"
-                    ],
-                    "es": [
-                        "Bajo riesgo de erosión",
-                        "",
-                        "",
-                        "",
-                        "Alto riesgo de erosión"
-                    ]
-                },
-                "stops": [
-                    "#a2d5f2",
-                    "#405b3c",
-                    "#f1f138",
-                    "#fdae61",
-                    "#d7191c"
-                ]
-            }
-        ]
-    },
-    "wind_erosion_risk": {
-        "legend_entries": [
-            {
-                "entry_id": "urban_and_roads",
-                "fill": "#000000",
-                "type": "value",
-                "label": {
-                    "en": "Urban and roads",
-                    "es": "Zona urbana y carreteras"
-                }
-            },
-            {
-                "entry_id": "rivers",
-                "fill": "#390bf1",
-                "type": "value",
-                "label": {
-                    "en": "Rivers",
-                    "es": "Ríos"
-                }
-            },
-            {
-                "entry_id": "low",
-                "type": "value",
-                "fill": "#e8fcfc",
-                "label": {
-                    "en": "Soils of low susceptibility to wind erosion",
-                    "es": "Suelos con baja susceptibilidad a la erosión eólica"
-                }
-            },
-            {
-                "entry_id": "medium",
-                "type": "value",
-                "fill": "#ec9410",
-                "label": {
-                    "en": "Soils of moderate susceptibility to wind erosion",
-                    "es": "Suelos con moderada susceptibilidad a la erosión eólica"
-                }
-            },
-            {
-                "entry_id": "high",
-                "type": "value",
-                "fill": "#d7191c",
-                "label": {
-                    "en": "Soils of highest susceptibility to wind erosion",
-                    "es": "Suelos con alta susceptibilidad a la erosión eólica"
-                }
-            }
-        ]
-    },
-    "key_biodiversity_habitats": {
-        "legend_entries": [
-            {
-                "entry_id": "wetland_core",
-                "type": "value",
-                "fill": "#347adb",
-                "label": {
-                    "en": "Wetland habitat",
-                    "es": "Hábitat de humedal"
-                }
-            },
-            {
-                "entry_id": "grassland",
-                "type": "value",
-                "fill": "#d5893c",
-                "label": {
-                    "en": "Grassland habitat",
-                    "es": "Hábitat de pradera"
-                }
-            },
-            {
-                "entry_id": "woodland_core",
-                "type": "value",
-                "fill": "#386234",
-                "label": {
-                    "en": "Woodland habitat",
-                    "es": "Hábitat de bosque"
-                }
-            }
-        ]
-    },
-    "key_ecosystem_service_areas": {
-        "legend_entries": [
-            {
-                "entry_id": "areas_important_for_both_biodiversity_and_surface_water_regulation",
-                "fill": "#4aa933",
-                "type": "value",
-                "label": {
-                    "en": "Areas important for both biodiversity and surface water regulation",
-                    "es": "Áreas importantes tanto para la biodiversidad como para la regulación de aguas superficiales"
-                }
-            },
-            {
-                "entry_id": "urban_and_roads",
-                "fill": "#bbbbbb",
-                "type": "value",
-                "label": {
-                    "en": "Urban and roads",
-                    "es": "Carreteras y zona urbana"
-                }
-            }
-        ]
-    },
-    "woodland_ecological_connectivity": {
-        "legend_entries": [
-            {
-                "entry_id": "woodland_core",
-                "type": "value",
-                "fill": "#626262",
-                "label": {
-                    "en": "Woodland",
-                    "es": "Bosque fuente"
-                }
-            },
-            {
-                "entry_id": "woodland_ecological_network",
-                "type": "ramp",
-                "labels": {
-                    "en": [
-                        "Highly connected",
-                        "Moderately connected",
-                        "Poorly connected"
-                    ],
-                    "es": [
-                        "Altamente conectada",
-                        "Conectada moderadamente",
-                        "Poco conectada"
-                    ]
-                },
-                "stops": [
-                    "#00441b",
-                    "#71cc72",
-                    "#f7fcf5"
-                ]
-            }
-        ]
-    },
-    "wetland_ecological_connectivity": {
-        "legend_entries": [
-            {
-                "entry_id": "wetland_core",
-                "type": "value",
-                "fill": "#000000",
-                "label": {
-                    "en": "Wetland",
-                    "es": "Humedal fuente"
-                }
-            },
-            {
-                "entry_id": "wetland_ecological_network",
-                "type": "ramp",
-                "labels": {
-                    "en": [
-                        "Highly connected",
-                        "Moderately connected",
-                        "Poorly connected"
-                    ],
-                    "es": [
-                        "Altamente conectada",
-                        "Conectada moderadamente",
-                        "Poco conectada"
-                    ]
-                },
-                "stops": [
-                    "#08306b",
-                    "#6baed6",
-                    "#f7fbff"
-                ]
-            }
-        ]
-    },
-    "grassland_ecological_connectivity": {
-        "legend_entries": [
-            {
-                "entry_id": "grassland",
-                "type": "value",
-                "fill": "#000000",
-                "label": {
-                    "en": "Grassland",
-                    "es": "Pastizales fuente"
-                }
-            },
-            {
-                "entry_id": "grassland_ecological_network",
-                "type": "ramp",
-                "labels": {
-                    "en": [
-                        "Highly connected",
-                        "Moderately connected",
-                        "Poorly connected"
-                    ],
-                    "es": [
-                        "Altamente conectada",
-                        "Conectada moderadamente",
-                        "Poco conectada"
-                    ]
-                },
-                "stops": [
-                    "#7f2704",
-                    "#fd8d3c",
-                    "#fff5eb"
-                ]
-            }
-        ]
-    },
-    "ecological_opportunities": {
-        "legend_entries": [
-            {
-                "entry_id": "grassland_opportunity__high",
-                "type": "value",
-                "fill": "#623f0b",
-                "label": {
-                    "en": "Grassland opportunity: High priority",
-                    "es": "Oportunidad para pastizales: Alta"
-                }
-            },
-            {
-                "entry_id": "grassland_opportunity__medium",
-                "type": "value",
-                "fill": "#cd994b",
-                "label": {
-                    "en": "Grassland opportunity: Medium priority",
-                    "es": "Oportunidad para pastizales: Media"
-                }
-            },
-            {
-                "entry_id": "grassland_opportunity__low",
-                "type": "value",
-                "fill": "#f8d863",
-                "label": {
-                    "en": "Grassland opportunity: Low priority",
-                    "es": "Oportunidad para pastizales: Baja"
-                }
-            },
-            {
-                "entry_id": "grassland_or_wetland_opportunity__high",
-                "type": "value",
-                "fill": "#e80df7",
-                "label": {
-                    "en": "Grassland or Wetland opportunity: High priority",
-                    "es": "Oportunidad para pastizales o humedales: Alta"
-                }
-            },
-            {
-                "entry_id": "grassland_or_wetland_opportunity__medium",
-                "type": "value",
-                "fill": "#de6fe6",
-                "label": {
-                    "en": "Grassland or Wetland opportunity: Medium priority",
-                    "es": "Oportunidad para pastizales o humedales: Media"
-                }
-            },
-            {
-                "entry_id": "grassland_or_wetland_opportunity__low",
-                "type": "value",
-                "fill": "#ebaeea",
-                "label": {
-                    "en": "Grassland or Wetland opportunity: Low priority",
-                    "es": "Oportunidad para pastizales o humedales: Baja"
-                }
-            },
-            {
-                "entry_id": "wetland_opportunity__high",
-                "type": "value",
-                "fill": "#4217ea",
-                "label": {
-                    "en": "Wetland opportunity: High priority",
-                    "es": "Oportunidad para humedales: Alta"
-                }
-            },
-            {
-                "entry_id": "wetland_opportunity__medium",
-                "type": "value",
-                "fill": "#798ce8",
-                "label": {
-                    "en": "Wetland opportunity: Medium priority",
-                    "es": "Oportunidad para humedales: Media"
-                }
-            },
-            {
-                "entry_id": "wetland_opportunity__low",
-                "type": "value",
-                "fill": "#c8e8fa",
-                "label": {
-                    "en": "Wetland opportunity: Low priority",
-                    "es": "Oportunidad para humedales: Baja"
-                }
-            },
-            {
-                "entry_id": "woodand_opportunity__high",
-                "type": "value",
-                "fill": "#144222",
-                "label": {
-                    "en": "Woodand opportunity: High priority",
-                    "es": "Oportunidad para bosque: Alta"
-                }
-            },
-            {
-                "entry_id": "woodand_opportunity__medium",
-                "type": "value",
-                "fill": "#4cd955",
-                "label": {
-                    "en": "Woodand opportunity: Medium priority",
-                    "es": "Oportunidad para bosque: Media"
-                }
-            },
-            {
-                "entry_id": "woodand_opportunity__low",
-                "type": "value",
-                "fill": "#9ff280",
-                "label": {
-                    "en": "Woodand opportunity: Low priority",
-                    "es": "Oportunidad para bosque: Baja"
-                }
-            }
-        ]
-    },
-    "priority_ecological_opportunities": {
-        "legend_entries": [
-            {
-                "entry_id": "grassland_opportunity__high",
-                "type": "value",
-                "fill": "#623f0b",
-                "label": {
-                    "en": "Grassland opportunity: High priority",
-                    "es": "Oportunidad para pastizales: Alta"
-                }
-            },
-            {
-                "entry_id": "grassland_opportunity__medium",
-                "type": "value",
-                "fill": "#cd994b",
-                "label": {
-                    "en": "Grassland opportunity: Medium priority",
-                    "es": "Oportunidad para pastizales: Media"
-                }
-            },
-            {
-                "entry_id": "grassland_opportunity__low",
-                "type": "value",
-                "fill": "#f8d863",
-                "label": {
-                    "en": "Grassland opportunity: Low priority",
-                    "es": "Oportunidad para pastizales: Baja"
-                }
-            },
-            {
-                "entry_id": "grassland_or_wetland_opportunity__high",
-                "type": "value",
-                "fill": "#e80df7",
-                "label": {
-                    "en": "Grassland or Wetland opportunity: High priority",
-                    "es": "Oportunidad para pastizales o humedales: Alta"
-                }
-            },
-            {
-                "entry_id": "grassland_or_wetland_opportunity__medium",
-                "type": "value",
-                "fill": "#de6fe6",
-                "label": {
-                    "en": "Grassland or Wetland opportunity: Medium priority",
-                    "es": "Oportunidad para pastizales o humedales: Media"
-                }
-            },
-            {
-                "entry_id": "grassland_or_wetland_opportunity__low",
-                "type": "value",
-                "fill": "#ebaeea",
-                "label": {
-                    "en": "Grassland or Wetland opportunity: Low priority",
-                    "es": "Oportunidad para pastizales o humedales: Baja"
-                }
-            },
-            {
-                "entry_id": "wetland_opportunity__high",
-                "type": "value",
-                "fill": "#4217ea",
-                "label": {
-                    "en": "Wetland opportunity: High priority",
-                    "es": "Oportunidad para humedales: Alta"
-                }
-            },
-            {
-                "entry_id": "wetland_opportunity__medium",
-                "type": "value",
-                "fill": "#798ce8",
-                "label": {
-                    "en": "Wetland opportunity: Medium priority",
-                    "es": "Oportunidad para humedales: Media"
-                }
-            },
-            {
-                "entry_id": "wetland_opportunity__low",
-                "type": "value",
-                "fill": "#c8e8fa",
-                "label": {
-                    "en": "Wetland opportunity: Low priority",
-                    "es": "Oportunidad para humedales: Baja"
-                }
-            },
-            {
-                "entry_id": "woodand_opportunity__high",
-                "type": "value",
-                "fill": "#144222",
-                "label": {
-                    "en": "Woodand opportunity: High priority",
-                    "es": "Oportunidad para bosque: Alta"
-                }
-            },
-            {
-                "entry_id": "woodand_opportunity__medium",
-                "type": "value",
-                "fill": "#4cd955",
-                "label": {
-                    "en": "Woodand opportunity: Medium priority",
-                    "es": "Oportunidad para bosque: Media"
-                }
-            },
-            {
-                "entry_id": "woodand_opportunity__low",
-                "type": "value",
-                "fill": "#9ff280",
-                "label": {
-                    "en": "Woodand opportunity: Low priority",
-                    "es": "Oportunidad para bosque: Baja"
-                }
-            }
-        ]
-    },
-    "multi_benefit_ecological_opportunities": {
-        "legend_entries": [
-            {
-                "entry_id": "grassland_opportunity",
-                "type": "value",
-                "fill": "#cd994b",
-                "label": {
-                    "en": "Grassland opportunity",
-                    "es": "Oportunidad para pastizales"
-                }
-            },
-            {
-                "entry_id": "grassland_or_wetland_opportunity",
-                "type": "value",
-                "fill": "#e80df7",
-                "label": {
-                    "en": "Grassland or Wetland opportunity",
-                    "es": "Oportunidad para pastizales o humedales"
-                }
-            },
-            {
-                "entry_id": "wetland_opportunity",
-                "type": "value",
-                "fill": "#4217ea",
-                "label": {
-                    "en": "Wetland opportunity",
-                    "es": "Oportunidad para humedales"
-                }
-            },
-            {
-                "entry_id": "woodand_opportunity",
-                "type": "value",
-                "fill": "#9ff280",
-                "label": {
-                    "en": "Woodand opportunity",
-                    "es": "Oportunidad para bosque"
                 }
             }
         ]
