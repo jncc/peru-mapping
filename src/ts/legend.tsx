@@ -19,7 +19,8 @@ export type LegendEntry = {
   stops?: Array<string>,
   labels?: I8lnLabelsObj,
   min?: number,
-  max?: number
+  max?: number,
+  grid_invert_min_max?: boolean
 }
 
 export type I8lnObj = {
@@ -89,8 +90,15 @@ function createRampLegendEntry(legendEntry: LegendEntry, lang: string) {
 
     let boundary = <defs></defs>
     if (legendEntry.min != undefined && legendEntry.max != undefined) {
-      let miny = ((overallHeight - 4) * legendEntry.min) + 2
-      let height = Math.max(1, (((overallHeight - 4) * legendEntry.max) - miny + 2))
+      var miny = 0
+      var height = 0
+
+      // 0,0 point is top left of object, not bottom left, so invert min max to get correct ranges
+      let invertedMin = 1 - legendEntry.max
+      let invertedMax = 1 - legendEntry.min
+      miny = ((overallHeight - 4) * invertedMin) + 2
+      height = Math.max(1, (((overallHeight - 4) * invertedMax) - miny + 2))
+
       boundary = <rect x={1} y={miny} width={8} height={height} rx={0.1}
         stroke="#000000" strokeWidth="2" fill="none"></rect>
     }

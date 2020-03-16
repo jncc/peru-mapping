@@ -20,7 +20,7 @@ let currentLayer: string | undefined = undefined
 export function createMap(container: HTMLElement, config: Config) {
 
   map = L.map(container, { zoomControl: false, wheelDebounceTime: 300 })
-    .setView([10.8034027, -74.15481], 11)
+    .setView([-8.35, -78.8], 11)
   new L.Control.Zoom({ position: 'bottomright' }).addTo(map)
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -44,7 +44,7 @@ export function createMap(container: HTMLElement, config: Config) {
         let layerKeys = keys(feature.properties.legends)
         let orderedLayerKeys = keys(content.base_layers)
         orderedLayerKeys.forEach(layerKey => {
-          if (layerKeys.lastIndexOf(layerKey) > 0) {
+          if (layerKeys.lastIndexOf(layerKey) >= 0) {
             let currentGroupLegendEntries = feature.properties.legends[layerKey]
             let layer: MapLegend = {
               layerName: content.base_layers[layerKey as keyof typeof content.base_layers].short_title[config.language],
@@ -88,7 +88,7 @@ export function createMap(container: HTMLElement, config: Config) {
 
   // setup base maps
   for (let baseLayer of keys(content.base_layers)) {
-    let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/colombia_eo4_cultivar/wms?tiled=true', {
+    let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/peru_eo4_cultivar/wms?tiled=true', {
       layers: content.base_layers[baseLayer].wms_name,
       transparent: true,
       format: 'image/png',
@@ -100,7 +100,7 @@ export function createMap(container: HTMLElement, config: Config) {
 
   // setup overlays  
   for (let overlay of keys(content.overlay_layers)) {
-    let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/colombia_eo4_cultivar/wms?tiled=true', {
+    let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/peru_eo4_cultivar/wms?tiled=true', {
       layers: content.overlay_layers[overlay].wms_name,
       transparent: true,
       format: 'image/png',
@@ -112,7 +112,7 @@ export function createMap(container: HTMLElement, config: Config) {
 
   // setup underlays  
   for (let underlay of keys(content.underlay_layers)) {
-    let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/colombia_eo4_cultivar/wms?tiled=true', {
+    let layer = L.tileLayer.wms(process.env.GEOSERVER_URL + '/peru_eo4_cultivar/wms?tiled=true', {
       layers: content.underlay_layers[underlay].wms_name,
       transparent: true,
       format: 'image/png',

@@ -11,8 +11,28 @@
                     "es": null
                 },
                 "section_content": {
-                    "en": "<p></p>",
-                    "es": "<p></p>"
+                    "en": "Welcome to Virú Province, one of twelve provinces of the La Libertad Region in Northern Peru. Here, EO4cultivar, funded through the International Partnership Programme, run by UKSA, has identified places to focus action to deliver sustainable land management within river catchments of the Viru Valley, reaching from the coast into the Andean foothills.",
+                    "es": "Bienvenidos al Viru Provincia, La Libertad Región  de Peru. Aquí, EO4cultivar, a través de la financiación del IPP (International Partnership Programme), dirigido por UKSA, ha identificado lugares donde se puede centrar la acción a fin de lograr una gestión sostenible de la tierra dentro de las cuencas fluviales de la Zona Bananera alcanzando la Sierra Nevada de Santa Marta."
+                }
+            },
+            {
+                "section_title": {
+                    "en": null,
+                    "es": null
+                },
+                "section_content": {
+                    "en": "The mapping concerns local priorities to reduce the risk of flooding, soil erosion and to improving ecological connectivity. Places where a land management intervention can benefit ecosystem services (e.g. by slowing runoff or restoring habitats) are identified. Deploying action in places that deliver multiple benefits is likely to be most cost-effective. The outputs of this work are suitable for any organisations aiming to undertake environmental improvement work in the area.",
+                    "es": "El mapeo aborda las prioridades locales para reducir el riesgo de inundaciones y de erosión del suelo, así como mejorar la conectividad ecológica. Se identificaron los lugares en donde una intervención de gestión de suelos puede beneficiar a los servicios ecosistémicos (por ejemplo; al frenar la escorrentía o al restaurar los hábitats). Es probable que el despliegue de la acción en lugares que ofrecen múltiples beneficios sea lo más eficaz en función de los costos. Los productos de este trabajo son adecuados para cualquier organización que tenga la intención de emprender trabajos de mejora medioambiental en el área."
+                }
+            },
+            {
+                "section_title": {
+                    "en": null,
+                    "es": null
+                },
+                "section_content": {
+                    "en": "More information on the <a href=\"#\">project is available</a>, as are <a href=\"#\">reports detailing the mapping process</a>. Data used in the mapping and modelling process are available from the <a href=\"#\">JNCC Data Hub</a>.",
+                    "es": "Encontrará más información sobre el <a href=\"#\">proyecto aquí</a>, así como los <a href=\"#\">reportes que detallan el proceso del mapeo</a>. Los datos utilizados en el proceso de mapeo y modelado están disponibles en el <a href=\"#\">JNCC Data Hub.</a>"
                 }
             }
         ],
@@ -54,8 +74,8 @@
                         "es": ""
                     },
                     "section_content": {
-                        "en": "<p>Select a layer from the drop down to explore ecosystem service delivery and identify opportunities for enhancing ecosystem services in the region.</p><p><b>5k grid square with summary data:</b> This function splits the area of interest into 5km2 grids.  Select a 5km2 area you are interested in to display a summary of the ecosystem service delivery and enhancement opportunities within that 5km2.</p><p><b>Satellite Imagery:</b> This function shows the satellite images of the area of interest.</p><p><b>Zona Bananera:</b> This highlights the project's area of interest (outlined in red). The broad case study region was identified in consultation with key local stakeholders and is located within the Magdalena region in northern Colombia.</p><p><b>Rio Frio Catchment:</b> This highlights the sub-catchment area for the Rio Frio 'Cold River' (outlined in red).  This sub-catchment has been defined using modelling that identifies interconnected hydrological units within the overall area of interest.</p>",
-                        "es": "<p>Seleccione una capa de la lista que se muestra a continuación para explorar la oferta de los servicios ecosistémicos y las oportunidades en la región.</p><p>Marque la casilla correspondiente:</p><p><b>Área de interés central (5km2) – Resumen de la data</b>: Esta función divide el mapa en una cuadrícula de 5km2. Seleccione una cuadrícula de 5km2 para mostrar un resumen de oferta y oportunidades de servicios ecosistémicos dentro de esos 5km2. Al seleccionar distintas capas en la lista desplegable podrá ver la ubicación de estos servicios en dicha cuadrícula.</p><p><b>Imágenes satelitales</b>: Esta función muestra las imágenes satelitales del área de interés.</p><p><b>Zona Bananera</b>: Se resalta el área de interés (delineado en rojo). La amplitud de la región del estudio de caso fue identificada en consulta con los grupos de interés locales clave y se ubica dentro de la región del Magdalena en la zona norte de Colombia. Se definió en base a los límites de la cuenca hidrológica, la cual incluye la Zona Bananera. La Zona Bananera es de gran importancia económica en la región del Magdalena y contiene varios productores tanto de escala comercial como pequeños.</p><p><b>Cuenca del Río Frío</b>: Aquí se resalta el área de la cuenca para el Río Frío (delineado en rojo). La Cuenca del Río Frío se intersecta con las municipalidades de la Ciénaga, la Zona Bananera y Pueblo Viejo. Además, abastece las actividades agrícolas de la región.</p>"
+                        "en": "<p>Select a layer from the drop down to explore ecosystem service delivery and identify opportunities for enhancing ecosystem services in the region.</p><p><b>5k grid square with summary data:</b> This function splits the area of interest into 5km2 grids.  Select a 5km2 area you are interested in to display a summary of the ecosystem service delivery and enhancement opportunities within that 5km2.</p><p><b>Satellite Imagery:</b> This function shows the satellite images of the area of interest.</p><p><b>AOI:  Viru Valley:</b> This highlights the project's area of interest (outlined in red). The broad case study region was identified in consultation with key local stakeholders and is located within the Virú Province of the La Libertad Region in Northern Peru</p>",
+                        "es": "<p>Seleccione una capa de la lista que se muestra a continuación para explorar la oferta de los servicios ecosistémicos y las oportunidades en la región.</p><p><b>Área de interés central (5km2) – Resumen de la data</b>: Esta función divide el mapa en una cuadrícula de 5km2. Seleccione una cuadrícula de 5km2 para mostrar un resumen de oferta y oportunidades de servicios ecosistémicos dentro de esos 5km2. Al seleccionar distintas capas en la lista desplegable podrá ver la ubicación de estos servicios en dicha cuadrícula.</p><p><b>Imágenes satelitales</b>: Esta función muestra las imágenes satelitales del área de interés.</p><p>?</p>"
                     }
                 }
             ],
@@ -64,32 +84,8 @@
                 "es": ""
             }
         },
-        "habitat_map": {
-            "wms_name":"colombia_eo4_cultivar:Colombia_habitat_map_20191127_Final",
-            "legend_styles": [],
-            "short_title": {
-                "en": "Habitat map",
-                "es": "Mapa de hábitat"
-            },
-            "info_sections": [
-                {
-                    "section_title": {
-                        "en": "Habitat map",
-                        "es": "Mapa de hábitat"
-                    },
-                    "section_content": {
-                        "en": "<p>A habitat map has been produced for the study region within the Magdalena department of Colombia. This provides a baseline of type, extent and distribution of current land use and habitats.  These natural assets are ecologically and hydrologically connected throughout the watershed within the area of interest. The map can be used to help inform catchment-scale planning for sustainable land-use, focused land management interventions, and subsequent policy decisions. The map was developed for use as an input dataset for ecosystem service, risk and opportunity analyses.</p><p>The current map is based on 20 m resolution Sentinel 1 and Sentinel 2 imagery and 30 m resolution elevation data.</p>",
-                        "es": "<p>Se creó un mapa de hábitat para la región de estudio dentro del departamento del Magdalena en Colombia. Esto nos proporciona una línea base de tipo, extensión y distribución del uso actual de los suelos y hábitats. Estos activos naturales están ecológica e hidrológicamente conectados a lo largo de la cuenca dentro del área de interés. El mapa puede usarse para ayudar a informar la planificación a escala de cuenca para el uso sostenible de la tierra, intervenciones centradas en la gestión de la tierra y subsiguientes decisiones políticas. El mapa fue desarrollado para su uso como conjunto de datos de entrada para los servicios ecosistémicos y el análisis de riesgo y oportunidades.</p><p>El mapa actual se basa en imágenes de una resolución de 20m del Sentinel 1 y Sentinel 2, además de datos de elevación de una resolución de 30m.</p>"
-                    }
-                }
-            ],
-            "attribution": {
-                "en": "???",
-                "es": "???"
-            }
-        },
-        "water_runoff_moderation": {
-            "wms_name": "colombia_eo4_cultivar:colombia_surface_water_regulation_stock",
+        "moderate_surface_water_runoff": {
+            "wms_name": "peru_eo4_cultivar:peru_surface_water_regulation_stock",
             "legend_styles": [],
             "short_title": {
                 "en": "Ability of the land to moderate surface water runoff",
@@ -142,328 +138,28 @@
                         "es": "Cómo se creó el mapa:"
                     },
                     "section_content": {
-                        "en": "This map was generated by assessing key factors at each location: geology, soil, slope, habitat and management. Datasets representing each key factor were scored based on their functional contribution to mechanisms for natural regulation of overland flow: infiltration; interception; storage and sediment load control. Once scored, the datasets were combined. The current map has been created at the strategic scale and is indicative at a field level. Field visits should be made before any site-specific management decisions are taken. Additional data could be sourced to refine the maps at the local scale; methods for doing this are discussed in the project report.",
-                        "es": "Este mapa se creó al evaluar los factores clave en cada ubicación: geología, suelo, pendientes, hábitat y gestión. Los datasets que representan a cada factor clave se calificaron en base a su contribución funcional para los mecanismos de regulación natural de la escorrentía superficial: infiltración, interceptación, almacenamiento y control de la carga de sedimentos. Luego, una vez que los datasets fueron calificados, se combinaron. El mapa actual fue creado a escala estratégica y es indicativo a nivel de campo. Se deben hacer visitas de campo antes de tomar cualquier decisión de manejo de sitio. Se podrían obtener datos adicionales para mejorar los mapas a escala local. Los métodos que se usaron para este trabajo son mencionados en el informe del proyecto."
+                        "en": "This map was generated by assessing key factors at each location: geology, soil, slope, habitat and management. Habitat classes were generated using Pleiades, Sentinel 1 and Sentinel 2 satellite imagery. Datasets representing each key factor were scored based on their functional contribution to mechanisms for natural regulation of overland flow: infiltration; interception; storage and sediment load control. Once scored, the datasets were combined. The current map has been created at the strategic scale and is indicative at a field level. Field visits should be made before any site-specific management decisions are taken. Additional data could be sourced to refine the maps at the local scale; methods for doing this are discussed in the project report.",
+                        "es": "Este mapa se creó al evaluar los factores clave en cada ubicación: geología, suelo, pendientes, hábitat y gestión. Las clases de hábitat se crearon usando imágenes satelitales de Pleiades, Sentinel 1 y Sentinel 2. Los datasets que representan a cada factor clave se calificaron en base a su contribución funcional para los mecanismos de regulación natural de la escorrentía superficial: infiltración, interceptación, almacenamiento y control de la carga de sedimentos. Luego, una vez que los datasets fueron calificados, se combinaron. El mapa actual fue creado a escala estratégica y es indicativo a nivel de campo. Se deben hacer visitas de campo antes de tomar cualquier decisión de manejo de sitio. Se podrían obtener datos adicionales para mejorar los mapas a escala local. Los métodos que se usaron para este trabajo son mencionados en el informe del proyecto."
                     }
                 }
             ],
             "attribution": {
-                "en": "Data and maps created by Environment Systems Ltd (2019). Soil data: Geographic Institute Agustin Codazzi",
-                "es": "Datos y mapas creados por Environment Systems Ltd (2019). Datos de suelo: Instituto Geográfico Agustín Codazzi."
+                "en": "Derived data created by JNCC and Environment Systems Ltd. Maps created by Environment Systems Ltd (2019). Soil data: SoilGrids250m - ISRIC.",
+                "es": "Datos derivados creados por JNCC y Environment Systems Ltd Mapas creados por Environment Systems Ltd (2019) Datos de suelo: SoilGrids250m – ISRIC."
             }
         },
-        "woodland_ecological_connectivity": {
-            "wms_name": "colombia_eo4_cultivar:colombia_woodland_ecosystem_connectivity",
+        "enhance_surface_water_regulation": {
+            "wms_name": "peru_eo4_cultivar:peru_all_ops_to_enhance_surface_water_reg_revised",
             "legend_styles": [],
             "short_title": {
-                "en": "Ecological Network Connectivity - Woodland Ecosystem",
-                "es": "Conectividad de red ecológica – Ecosistema forestal"
+                "en": "Opportunities to enhance surface water regulation",
+                "es": "Oportunidades para mejorar la regulación de las aguas superficiales"
             },
             "info_sections": [
                 {
                     "section_title": {
-                        "en": "Ecological Network Connectivity - Woodland Ecosystem",
-                        "es": "Conectividad de red ecológica – Ecosistema forestal"
-                    },
-                    "section_content": {
-                        "en": "<i>Ecosystem service: Population maintenance & genetic diversity.</i>",
-                        "es": "<i>Servicio ecosistémico: Mantenimiento de la población & diversidad genética.</i>"
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "How to interpret the map:",
-                        "es": "Cómo interpretar el mapa:"
-                    },
-                    "section_content": {
-                        "en": "Dark green areas are more highly connected to the ecological network. Grey areas are existing source woodlands (excludes disturbed woodlands).",
-                        "es": "Las áreas de color verde oscuro están más conectadas con la red ecológica. Las áreas de color gris indican bosques ya existentes (excluye los bosques intervenidos)."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "What the service is:",
-                        "es": "Cuál es el servicio:"
-                    },
-                    "section_content": {
-                        "en": "The map shows the existing woodland network within which plant and animal species can move to maintain genetic diversity and sustain viable populations of woodland species. Existing woodlands act as 'source habitat', where the main population of woodland species is based. Land adjoining and close to the source habitats can be used for foraging and as dispersal routes (permeable habitats). Some habitats and land uses are more permeable than others; for example, scrub could be expected to provide greater levels of food and shelter for woodland species, whereas bare ground would provide less.",
-                        "es": "El mapa muestra la red forestal existente dentro de la cual especies animales y vegetales pueden movilizarse para mantener la diversidad genética y sostener poblaciones viables de especies forestales. Los bosques ya existentes actúan como 'hábitat fuente' donde se encuentra basada la población principal de especies forestales. Los terrenos contiguos y cercanos a los hábitats fuente pueden servir para la búsqueda de alimento y como rutas de dispersión (hábitats permeables). Algunos hábitats y usos de suelo son más permeables que otros; por ejemplo, se podría esperar que los matorrales aporten un buen nivel de alimentos y refugio para especies forestales, mientras que un suelo sin vegetación aportaría menos."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "Why it is important:",
-                        "es": "Por qué es importante:"
-                    },
-                    "section_content": {
-                        "en": "Areas of native natural and semi-natural woodlands that are connected in a landscape, forming a network, are more resilient to changing climate or land management. Inside the network, woodlands generally provide higher levels of ecosystem services, such as the ability to clean water or regulate runoff, provide timber products and support nature tourism (e.g.  bird watching). Within the network, restoration of structurally-diverse and species-rich woodlands will be far more effective as propagules, pollinators and important species will be available for colonisation.",
-                        "es": "Las áreas de bosques nativos naturales y seminaturales que están conectadas en un entorno que forma una red, son más resilientes al cambio climático o al manejo de suelos. Dentro de la red, los bosques por lo general proveen altos niveles de servicios ecosistémicos, tales como la capacidad para limpiar el agua o regular la escorrentía, brindar productos madereros y apoyar el turismo natural (avistamiento de aves). Dentro de la red, la restauración de los bosques estructuralmente diversos y ricos en especies será mucho más eficaz ya que se dispondrá de propágulos, polinizadores y especies importantes para la colonización."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "How the map was created:",
-                        "es": "Cómo se creó el mapa:"
-                    },
-                    "section_content": {
-                        "en": "The habitat classes were generated using Sentinel 1 and Sentinel 2 satellite imagery. Each habitat and land use was evaluated for its importance and role played in supporting the woodland network.",
-                        "es": "Las clases de hábitat se generaron usando las imágenes satelitales de Sentinel 1 y Sentinel 2. Se evalúo cada hábitat y uso de suelo según su importancia y el rol que juega en el apoyo a la red forestal."
-                    }
-                }
-            ],
-            "attribution": {
-                "en": "Data and maps created by Environment Systems Ltd (2019)",
-                "es": "Datos y mapas creados por Environment Systems Ltd (2019)"
-            }
-        },
-        "wetland_ecological_connectivity": {
-            "wms_name": "colombia_eo4_cultivar:colombia_wetland_ecosystem_connectivity",
-            "legend_styles": [],
-            "short_title": {
-                "en": "Ecological Network Connectivity - Wetland Ecosystem",
-                "es": "Conectividad de red ecológica – Ecosistema de humedales"
-            },
-            "info_sections": [
-                {
-                    "section_title": {
-                        "en": "Ecological Network Connectivity - Wetland Ecosystem",
-                        "es": "Conectividad de red ecológica – Ecosistema de humedales"
-                    },
-                    "section_content": {
-                        "en": "<i>Ecosystem service: Population maintenance & genetic diversity.</i>",
-                        "es": "<i>Servicio ecosistémico: Mantenimiento de la población & diversidad genética.</i>"
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "How to interpret the map:",
-                        "es": "Cómo interpretar el mapa:"
-                    },
-                    "section_content": {
-                        "en": "Darker blue areas are more highly connected to the ecological network. Black areas are existing source habitats, comprising the wetland, mangrove and waterbody habitats (except artificial waterbodies).",
-                        "es": "Las áreas de color azul oscuro están altamente conectadas a la red ecológica. Las áreas de color negro señalan los humedales fuente existentes (excluye humedales artificiales)."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "What the service is:",
-                        "es": "Cuál es el servicio:"
-                    },
-                    "section_content": {
-                        "en": "The map shows the existing wetland network within which plant and animal species can move to maintain genetic diversity and sustain viable populations of wetland species. Existing wetlands act as 'source habitat', where the main population of wetland species is based. Land adjoining and close to the source habitats can be used for foraging and as dispersal routes (permeable habitats). Some habitats and land uses are more permeable than others; for example, rivers could be expected to provide suitable conditions for many wetland species, whereas terrestrial habitats are less suitable.",
-                        "es": "El mapa muestra la red de humedales existentes dentro de la cual especies animales y vegetales pueden movilizarse para mantener la diversidad genética y sostener poblaciones viables de especies de humedal. Los humedales ya existentes actúan como 'hábitat fuente' donde se encuentra ubicada la población principal de especies de humedal. Los terrenos contiguos y cercanos a los hábitats fuente pueden servir para la búsqueda de alimento y como rutas de dispersión (hábitats permeables). Algunos hábitats y usos de suelo son más permeables que otros; por ejemplo, se podría esperar que los ríos aporten condiciones apropiadas para para varias especies de humedal, mientras que el hábitat terrestre es menos apropiado."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "Why it is important:",
-                        "es": "Por qué es importante:"
-                    },
-                    "section_content": {
-                        "en": "Areas of native natural and semi-natural wetlands that are connected in a landscape, are more resilient to changing climate or land management. Inside the network, wetlands with low chemical and nutrient levels, and structurally-diverse and species-rich emergent vegetation, generally provide a higher level of ecosystem services, such as clean freshwaters, erosion control, and nursery fisheries. Within the network, restoration of structurally-diverse and species-rich emergent vegetation will be far more effective as propagules, pollinators and important species will be available for colonisation.",
-                        "es": "Las áreas de humedales nativos naturales y seminaturales que están conectadas en un entorno, son más resilientes al cambio climático o al manejo de suelos. Dentro de la red, los humedales con bajos niveles nutrientes químicos NAD y la vegetación emergente estructuralmente diversa y rica en especies, generalmente brinda un mayor nivel de servicios ecosistémicos, tales como: agua dulce limpia, control de la erosión y criaderos de peces. Dentro de la red, la restauración de la vegetación emergente estructuralmente diversa y rica en especies será mucho más eficaz ya que se dispondrá de propágulos, polinizadores y especies importantes para la colonización."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "How the map was created:",
-                        "es": "Cómo se creó el mapa:"
-                    },
-                    "section_content": {
-                        "en": "The habitat classes were generated using Sentinel 1 and Sentinel 2 satellite imagery. Each habitat and land use was evaluated for its importance and role played in supporting the wetland network.",
-                        "es": "Las clases de hábitat se crearon usando imágenes satelitales de Sentinel 1 y Sentinel 2. Cada hábitat y uso de suelo fue evaluado por su importancia y el rol que juega en el apoyo a la red de humedales."
-                    }
-                }
-            ],
-            "attribution": {
-                "en": "Data and maps created by Environment Systems Ltd (2019)",
-                "es": "Datos y mapas creados por Environment Systems Ltd (2019)"
-            }
-        },
-        "grassland_ecological_connectivity": {
-            "wms_name": "colombia_eo4_cultivar:colombia_grassland_ecosystem_connectivity",
-            "legend_styles": [],
-            "short_title": {
-                "en": "Ecological Network Connectivity - Grassland Ecosystem",
-                "es": "Conectividad de red ecológica – Ecosistema de pastizales"
-            },
-            "info_sections": [
-                {
-                    "section_title": {
-                        "en": "Ecological Network Connectivity - Grassland Ecosystem",
-                        "es": "Conectividad de red ecológica – Ecosistema de pastizales"
-                    },
-                    "section_content": {
-                        "en": "<i>Ecosystem services: Population maintenance & genetic diversity.</i>",
-                        "es": "<i>Servicio ecosistémico: Mantenimiento de la población & diversidad genética.</i>"
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "How to interpret the map:",
-                        "es": "Cómo interpretar el mapa:"
-                    },
-                    "section_content": {
-                        "en": "Darker orange areas are more highly connected to the ecological network. Black areas are existing source grasslands.",
-                        "es": "Las áreas de color naranja oscuro están altamente conectadas a la red ecológica. Las áreas de color negro señalan los pastizales fuente existentes."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "What the service is:",
-                        "es": "Cuál es el servicio:"
-                    },
-                    "section_content": {
-                        "en": "The map shows the existing grassland network within which plant and animal species can move to maintain genetic diversity and sustain viable populations of grassland species. Existing grasslands act as 'source habitat', where the main population of grassland species is based. Land adjoining and close to the source habitats can be used for foraging and as dispersal routes (permeable habitats). Some habitats and land uses are more permeable than others; for example, scattered scrub could be expected to provide better conditions for grassland species than dense woodland.",
-                        "es": "El mapa muestra la red de pastizales existentes dentro de la cual especies animales y vegetales pueden movilizarse para mantener la diversidad genética y sostener poblaciones viables de especies de pastizal. Los pastizales existentes actúan como 'hábitat fuente' donde se encuentra ubicada la población principal de especies de pastizal. Los terrenos contiguos y cercanos a los hábitats fuente pueden servir para la búsqueda de alimento y como rutas de dispersión (hábitats permeables). Algunos hábitats y usos de suelo son más permeables que otros; por ejemplo, se podría esperar que el matorral disperso brinde mejores condiciones para las especies de pastizal que el bosque denso."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "Why it is important:",
-                        "es": "Por qué es importante:"
-                    },
-                    "section_content": {
-                        "en": "Areas of native natural and semi-natural grasslands that are connected in a landscape, are more resilient to changing climate or land management. Inside the network, structurally-diverse and species-rich grasslands generally provide a higher level of ecosystem services, such as surface water regulation. Within the network, restoration of structurally-diverse and species-rich grasslands will be far more effective as propagules, pollinators and important species will be available for colonisation.",
-                        "es": "Las áreas de pastizales nativos naturales y seminaturales que están conectadas en un entorno, son más resilientes al cambio climático o al manejo de suelos. Dentro de la red, los pastizales estructuralmente diversos y ricos en especies generalmente brindan un mayor nivel de servicios ecosistémicos, tales como: la regulación de las aguas superficiales. Dentro de la red, la restauración de pastizales estructuralmente diversos y ricos en especies será mucho más eficaz ya que se dispondrá de propágulos, polinizadores y especies importantes para la colonización."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "How the map was created:",
-                        "es": "Cómo se creó el mapa:"
-                    },
-                    "section_content": {
-                        "en": "The habitat classes were generated using Sentinel 1 and Sentinel 2 satellite imagery. Each habitat and land use was evaluated for its importance and role played in supporting the grassland network.",
-                        "es": "Las clases de hábitat se generaron usando las imágenes satelitales de Sentinel 1 y Sentinel 2. Se evalúo cada hábitat y uso de suelo según su importancia y el rol que juega en el apoyo a la red de pastizales."
-                    }
-                }
-            ],
-            "attribution": {
-                "en": "Data and maps created by Environment Systems Ltd (2019)",
-                "es": "Datos y mapas creados por Environment Systems Ltd (2019)"
-            }
-        },
-        "ecological_opportunities": {
-            "wms_name": "colombia_eo4_cultivar:colombia_all_habitat_opportunities",
-            "legend_styles": [],
-            "short_title": {
-                "en": "Opportunities to strengthen ecological networks",
-                "es": "Oportunidades para fortalecer las redes ecológicas"
-            },
-            "info_sections": [
-                {
-                    "section_title": {
-                        "en": "Opportunities to strengthen ecological networks",
-                        "es": "Oportunidades para fortalecer las redes ecológicas"
-                    },
-                    "section_content": {
-                        "en": "<i>Ecosystem service: Population maintenance & genetic diversity.</i>",
-                        "es": "<i>Servicio Ecosistémico: Mantenimiento del ciclo de vida & diversidad genética.</i>"
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "How to interpret the map:",
-                        "es": "Cómo interpretar el mapa:"
-                    },
-                    "section_content": {
-                        "en": "The map shows places where it should be possible to restore or create new habitat to strengthen the existing ecological networks, to enhance biological and genetic diversity. Places in darker shades are areas where habitat restoration/ creation are expected to be most easily implemented and more successful. For example, developing a woodland from an area of dense scrub or bare ground may be a suitable choice in both places, but is quicker, less labour intensive and less costly from the dense scrub vegetation.",
-                        "es": "El mapa muestra lugares donde sería posible restaurar o crear nuevos hábitats para fortalecer las redes de pastizales, humedales y bosques existentes, para mejorar la biodiversidad biológica y genética. Los lugares con sombras más oscuras son las áreas donde se espera que la restauración o creación de hábitat sea más fácil de implementar y más exitosa. Por ejemplo, el desarrollo de un bosque en una zona de matorral denso o de suelo desnudo puede ser adecuado en ambos lugares, sin embargo, sería más rápido, menos laborioso y menos costoso debido a la densa vegetación de matorral."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "What the service is:",
-                        "es": "Cuál es el servicio:"
-                    },
-                    "section_content": {
-                        "en": "Biodiversity is a supporting service which underpins many other ecosystem services.",
-                        "es": "La biodiversidad es un servicio de apoyo que sustenta muchos otros servicios ecosistémicos."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "How the map was created:",
-                        "es": "Cómo se creó el mapa:"
-                    },
-                    "section_content": {
-                        "en": "This map considered all places in close proximity to existing source habitat; these areas are most likely to be effective at supporting existing populations. Habitats and land use within this proximity zone were assessed as to the ease with which they could be restored to support the ecological networks. Where restoration to woodland was possible, this option was always chosen. In other places, where restoration to either grassland or wetland is possible, this is indicated.",
-                        "es": "Este mapa considera todas las áreas cercanas a hábitats originales, ya que es muy probable que estas áreas sean eficaces para sustentar a las poblaciones existentes. Los hábitats y el uso de la tierra dentro de esta zona de proximidad fueron evaluados en cuanto a la facilidad con la que podrían ser restaurados para apoyar a las redes ecológicas. En los casos en que la restauración del bosque ha sido posible, siempre se optó por esta opción. En otros lugares, donde es posible la restauración de pastizales o humedales, esto se indica."
-                    }
-                }
-            ],
-            "attribution": {
-                "en": "Data and maps created by Environment Systems Ltd ",
-                "es": "Datos y mapas creados por Environment Systems Ltd (2019)"
-            }
-        },
-        "priority_ecological_opportunities": {
-            "wms_name": "colombia_eo4_cultivar:colombia_habitat_opportunities_next_to_existing_source_habitat",
-            "legend_styles": [],
-            "short_title": {
-                "en": "Opportunities to strengthen ecological networks: priority places for action (those adjoining existing key habitats of high-biodiversity value)",
-                "es": "Oportunidades para fortalecer las redes ecológicas: lugares prioritarios para tomar acción (sitios adyacentes a hábitats clave existentes de alto valor de biodiversidad)"
-            },
-            "info_sections": [
-                {
-                    "section_title": {
-                        "en": "Opportunities to strengthen ecological networks: priority places for action (those adjoining existing key habitats of high-biodiversity value)",
-                        "es": "Oportunidades para fortalecer las redes ecológicas: lugares prioritarios para tomar acción (sitios adyacentes a hábitats clave existentes de alto valor de biodiversidad)"
-                    },
-                    "section_content": {
-                        "en": "<i>Ecosystem service: Population maintenance & genetic diversity.</i>",
-                        "es": "<i>Servicio Ecosistémico: Mantenimiento de la población & diversidad genética.</i>"
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "How to interpret the map:",
-                        "es": "Cómo interpretar el mapa:"
-                    },
-                    "section_content": {
-                        "en": "This map is a subset of the \"Opportunities to strengthen ecological networks\" map and shows only those places that adjoin existing source habitat, where habitat restoration is likely to be most successful and beneficial to existing habitat of key biodiversity value. Areas next to existing biodiversity hotspots are likely to provide most benefit to existing species populations, allowing the expansion of local native species via dispersal or territory expansion. Restoration of structurally-diverse and species-rich habitat will be far more effective close to the source habitats, as propagules, pollinators and important species will be available for colonisation.",
-                        "es": "El mapa es un subconjunto del Mapa \"Oportunidades para fortalecer las redes ecológicas\" y muestra solo aquellos lugares que están adyacentes a un hábitat original existente, donde es muy probable que la restauración del hábitat sea más exitosa y beneficiosa para el hábitat existente de valor clave para la biodiversidad. Es probable que las áreas próximas a los principales centros de biodiversidad existentes proporcionen mayores beneficios a las poblaciones de especies existentes, permitiendo la expansión de especies nativas locales a través de su dispersión o la expansión del territorio. La restauración de hábitats estructuralmente diversos y ricos en especies será mucho más eficaz cerca de los hábitats originales, ya que se dispondrá de propágulos, polinizadores y especies importantes para la colonización."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "What the service is:",
-                        "es": "Cuál es el servicio:"
-                    },
-                    "section_content": {
-                        "en": "Biodiversity is a supporting service which underpins many other ecosystem services such as soil quality, pollination and food provision.",
-                        "es": "La biodiversidad es un servicio de apoyo que sustenta muchos otros servicios ecosistémicos, tales como la calidad del suelo, la polinización y el suministro de alimentos."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "How the map was created:",
-                        "es": "Cómo se creó el mapa:"
-                    },
-                    "section_content": {
-                        "en": "This map considered places immediately adjoining existing source habitat, as defined by the ecological network maps in this series. Habitats and land uses next to the source habitats were assessed as to the ease at which they could be restored to support the grassland, wetland or woodland network.",
-                        "es": "Este mapa consideró las áreas inmediatamente cercanas a hábitats originales existentes, tal y como se define por los mapas de la red ecológica de esta serie. Se evaluaron los hábitats y los usos del suelo próximos a los hábitats originales en cuanto a la facilidad con que podrían restaurarse para el sustento de la red de pastizales, humedales o bosques."
-                    }
-                }
-            ],
-            "attribution": {
-                "en": "Data and maps created by Environment Systems Ltd (2019)",
-                "es": "Datos y mapas creados por Environment Systems Ltd (2019)"
-            }
-        },        
-        "water_regulation_opportunities": {
-            "wms_name": "colombia_eo4_cultivar:colombia_RioFrio_all_ops_to_enhance_surface_water_reg",
-            "legend_styles": [],
-            "short_title": {
-                "en": "Opportunities to enhance surface water regulation in the Rio Frio catchment",
-                "es": "Oportunidades para mejorar la regulación de las aguas superficiales en la zona de captación del Río Frío"
-            },
-            "info_sections": [
-                {
-                    "section_title": {
-                        "en": "Opportunities to enhance surface water regulation in the Rio Frio catchment",
-                        "es": "Oportunidades para mejorar la regulación de las aguas superficiales en la zona de captación del Río Frío"
+                        "en": "Opportunities to enhance surface water regulation",
+                        "es": "Oportunidades para mejorar la regulación de las aguas superficiales"
                     },
                     "section_content": {
                         "en": "<i>Ecosystem service: Regulation of overland flow.</i>",
@@ -476,7 +172,7 @@
                         "es": "Cómo interpretar el mapa:"
                     },
                     "section_content": {
-                        "en": "This map shows places with agriculture and grassland where it would be possible to improve surface water regulation to slow the flow of runoff into the river Frio. Places shown in dark blue are located in the upper catchment of the Rio Frio. Places shown in light blue are in the mid-catchment, and places shown in green are in the lower catchment. All of the coloured areas on the map are hydrologically connected, and action taken in these areas should enhance the existing water regulation capacity of the land. However, the types of action that are most appropriate, and whether these are logistically possible and cost-effective, depend on the position of the opportunity within the catchment.",
+                        "en": "This map shows places with agriculture and grassland where it would be possible to improve surface water regulation to slow the flow of runoff into watercourses. Places shown in dark blue are located in the upper catchment of the study area. Places shown in light blue are in the mid-catchment, and places shown in green are in the lower catchment. All of the coloured areas on the map are hydrologically connected, and action taken in these areas should enhance the existing water regulation capacity of the land. However, the types of action that are most appropriate, and whether these are logistically possible and cost-effective, depend on the position of the opportunity within the catchment.",
                         "es": "Este mapa muestra lugares con agricultura y pastizales en donde sería posible mejorar la regulación superficial del agua para retardar el flujo de la escorrentía hacia el Río Frío. Los lugares de color azul oscuro están ubicados en la cuenca alta del Río Frío. Los lugares en color azul claro se encuentran en la parte media de la cuenca y los de color verde, en la cuenca baja. Todas las áreas de color en el mapa están hidrológicamente conectadas, por lo que las medidas adoptadas en estos sectores deberían mejorar la capacidad existente de la regulación del agua. No obstante, los tipos de acción que serían más apropiados, y ya sea que fuesen logísticamente posibles y rentables, dependen de la posición de la oportunidad dentro de la cuenca."
                     }
                 },
@@ -496,28 +192,28 @@
                         "es": "Cómo se creó el mapa:"
                     },
                     "section_content": {
-                        "en": "This map was created by analysing the restoration potential of habitat and land use classes generated using Sentinel 1 and Sentinel 2 satellite imagery. The river basin boundary was determined by analysis of SRTM elevation data.",
-                        "es": "Este mapa fue creado al analizar el potencial de restauración del hábitat y de las clases de uso del suelo gracias a las imágenes satelitales de Sentinel 1 y Sentinel 2. La delimitación de la cuenca hidrográfica se determinó por un análisis de datos de elevación SRTM."
+                        "en": "This map was created by analysing the restoration potential of habitat and land use classes generated using Pleiades, Sentinel 1 and Sentinel 2 satellite imagery. The river basin boundary was determined by analysis of SRTM elevation data.",
+                        "es": "Este mapa fue creado al analizar el potencial de restauración del hábitat y de las clases de uso del suelo gracias a las imágenes satelitales de Pleiades, Sentinel 1 y Sentinel 2. La delimitación de la cuenca hidrográfica se determinó por un análisis de datos de elevación SRTM."
                     }
                 }
             ],
             "attribution": {
-                "en": "Data and maps created by Environment Systems Ltd (2019)",
-                "es": "Datos y mapas creados por Environment Systems Ltd (2019)"
+                "en": "Derived data created by JNCC and Environment Systems Ltd. Maps created by Environment Systems Ltd (2019).",
+                "es": "Datos derivados creados por JNCC y Environment Systems Ltd Mapas creados por Environment Systems Ltd (2019)"
             }
         },
-        "water_regulation_opportunities_high_volume": {
-            "wms_name": "colombia_eo4_cultivar:colombia_riofrio_ops_to_enhance_surface_water_reg_receiving_high_flow_volume",
+        "enhance_surface_water_regulation_high_volumes": {
+            "wms_name": "peru_eo4_cultivar:peru_ops_to_enhance_surface_water_reg_receiving_high_flow_volume",
             "legend_styles": [],
             "short_title": {
-                "en": "Opportunities to enhance surface water regulation in the Rio Frio catchment: places receiving high volumes of surface water flow",
-                "es": "Oportunidades para mejorar la regulación de las aguas superficiales en la zona de captación del Río Frío: sitios limítrofes de los principales canales de drenaje"
+                "en": "Opportunities to enhance surface water regulation: places receieving high volumes of surface water flow",
+                "es": "Oportunidades para mejorar la regulación de las aguas superficiales: sitios limítrofes de los principales canales de drenaje"
             },
             "info_sections": [
                 {
                     "section_title": {
-                        "en": "Opportunities to enhance surface water regulation in the Rio Frio catchment: places receiving high volumes of surface water flow",
-                        "es": "Oportunidades para mejorar la regulación de las aguas superficiales en la zona de captación del Río Frío: sitios limítrofes de los principales canales de drenaje"
+                        "en": "Opportunities to enhance surface water regulation: places receieving high volumes of surface water flow",
+                        "es": "Oportunidades para mejorar la regulación de las aguas superficiales: sitios limítrofes de los principales canales de drenaje"
                     },
                     "section_content": {
                         "en": "<i>Ecosystem service: Regulation of overland flow.</i>",
@@ -530,7 +226,7 @@
                         "es": "Cómo interpretar el mapa:"
                     },
                     "section_content": {
-                        "en": "This map shows places that are currently agriculture or grassland within major flow paths, where taking action to improve surface water regulation, to slow the flow of runoff into the river Frio, would be most effective. Dark brown places directly adjoin a major river, tributary or channel. They receive the largest proportion of the runoff water and may be more likely to flood; action should be most effective here. Lighter orange places are also within major flow paths but have less influence on flow into the major channels.",
+                        "en": "This map shows places that are currently agriculture or erosion gullies within major flow paths, where taking action to improve surface water regulation, to slow the flow of runoff, would be most effective. These places receive the largest proportion of the runoff water and, particularly in the lower catchment, may be more likely to flood.",
                         "es": "Este mapa muestra lugares que actualmente se usan en la agricultura y como pastizales, en donde tomar acción para mejorar la regulación de las aguas superficiales para retardar el flujo de la escorrentía hacia el Río Frío sería más eficaz. Los sitios de color marrón oscuro están dentro de subcuencas que colindan directamente con un río principal, afluente o canal; por ello, la acción a tomar sería más eficaz aquí. Los sitios de color naranja claro también se encuentran dentro de las principales corrientes, pero no colindan directamente con un canal principal."
                     }
                 },
@@ -550,7 +246,7 @@
                         "es": "Por qué es importante:"
                     },
                     "section_content": {
-                        "en": "Generally, interventions higher up the catchment should benefit a larger area downstream, but can be more challenging to implement (e.g. due to topography and accessibility). In the lower reaches of the catchment the effects of management intervention become more localised (as there is less downstream area), but may be necessary to protect important  ssets/infrastructure. In all parts of the catchment, considering the location of major flow paths and places adjacent to channels will assist assessment of risk, and the value of benefits derived from taking action in different locations.",
+                        "en": "Generally, interventions higher up the catchment should benefit a larger area downstream, but can be more challenging to implement (e.g. due to topography and accessibility). In the lower reaches of the catchment the effects of management intervention become more localised (as there is less downstream area), but may be necessary to protect important assets/infrastructure. In all parts of the catchment, considering the location of major flow paths and places adjacent to channels will assist assessment of risk, and the value of benefits derived from taking action in different locations.",
                         "es": "Por lo general, las intervenciones en la zona alta de la cuenca deberían beneficiar a una zona más extensa aguas abajo. Sin embargo, las intervenciones en los tramos medios y altos de la cuenca pueden ser más difíciles de implementar (por ejemplo; debido la topografía y a la accesibilidad). En los tramos más bajos de la cuenca, los efectos de la intervención de gestión pueden ser más localizados (ya que hay menos zonas de aguas abajo). En todas las partes de la cuenca los beneficios de acción pueden maximizarse al apuntar a las áreas más cercanas a las vías de flujo principales (mostradas en marrón)."
                     }
                 },
@@ -560,28 +256,28 @@
                         "es": "Cómo se creó el mapa:"
                     },
                     "section_content": {
-                        "en": "This map was created by analysing the restoration potential of habitat and land use classes generated using Sentinel 1 and Sentinel 2 satellite imagery, and flow paths derived from SRTM elevation data.",
-                        "es": "Este mapa fue creado al analizar el potencial de restauración del hábitat y de las clases de uso del suelo gracias a las imágenes satelitales de Sentinel 1 y Sentinel 2. Esto ha sido combinado con un análisis de datos de elevación SRTM para determinar cuencas y subcuencas hidrológicas."
+                        "en": "This map was created by analysing the restoration potential of habitat and land use classes generated using Pleiades, Sentinel 1 and Sentinel 2 satellite imagery, and flow paths derived from SRTM elevation data.",
+                        "es": "Este mapa fue creado al analizar el potencial de restauración del hábitat y de las clases de uso del suelo gracias a las imágenes satelitales de Pleiades, Sentinel 1 y Sentinel 2. Esto ha sido combinado con un análisis de datos de elevación SRTM para determinar cuencas y subcuencas hidrológicas."
                     }
                 }
             ],
             "attribution": {
-                "en": "Data and maps created by Environment Systems Ltd (2019). Sentinel-2 image: European Space Agency - ESA",
-                "es": "Datos y mapas creados por Environment Systems Ltd (2019). Imagen del Sentinel-2: Agencia Espacial Europea - ESA"
+                "en": "Derived data created by JNCC and Environment Systems Ltd.Maps created by Environment Systems Ltd (2019).",
+                "es": "Datos derivados creados por JNCC y Environment Systems Ltd Mapas creados por Environment Systems Ltd (2019)"
             }
         },
-        "precipitation_erosion_risk": {
-            "wms_name": "colombia_eo4_cultivar:colombia_precip_soil_erosion_risk",
+        "erosion_risk": {
+            "wms_name": "peru_eo4_cultivar:peru_erosion_risk_by_precipitation",
             "legend_styles": [],
             "short_title": {
-                "en": "Risk of soil erosion in the Sierra Nevada caused by precipitation",
-                "es": "Riesgo de erosión del suelo en la Sierra Nevada causado por lluvias"
+                "en": "Risk of soil erosion caused by precipitation",
+                "es": "Riesgo de erosión del suelo causado por precipitación"
             },
             "info_sections": [
                 {
                     "section_title": {
-                        "en": "Risk of soil erosion in the Sierra Nevada caused by precipitation",
-                        "es": "Riesgo de erosión del suelo en la Sierra Nevada causado por lluvias"
+                        "en": "Risk of soil erosion caused by precipitation",
+                        "es": "Riesgo de erosión del suelo causado por precipitación"
                     },
                     "section_content": {
                         "en": "<i>Ecosystem services: Conservation of soil and water quality. Limiting sediment entering rivers.</i>",
@@ -624,82 +320,18 @@
                         "es": "Cómo se creó el mapa:"
                     },
                     "section_content": {
-                        "en": "<p>This map was created using SCIMAP which is a framework for modelling and mapping diffuse pollution risk across landscapes. It considers slope, habitats and average precipitation. The map has been created using SRTM, WorldClim, Sentinel 1 and Sentinel 2 data.</p><p>The current map has been created at the strategic scale and is indicative at a field level. Field visits should be undertaken before any site-specific management decisions are taken. Additional data could be sourced to refine the maps at the local scale; methods for doing this are discussed in the project report.</p>",
-                        "es": "Este mapa fue creado usando SCIMAP el cual es un marco para la modelización y el mapeo del riesgo poblacional disperso en los distintos entornos naturales. Se considera a la pendiente, los hábitats y la precipitación promedio. El mapa ha sido creado usando también datos SRTM, WorldClim, Sentinel 1 y Sentinel 2. El mapa actual ha sido creado a escala estratégica y es indicativo a nivel de campo. Se deben realizar visitas de campo antes de tomar cualquier decisión de gestión de sitios específicos. Se podrían obtener datos adicionales para mejorar los mapas a escala local. Los métodos que se usaron para este trabajo son mencionados en el informe del proyecto."
+                        "en": "This map was created using SCIMAP which is a framework for modelling and mapping diffuse pollution risk across landscapes. It considers slope, habitats and average precipitation. The map has been created using WorldDEM, WorldClim, Pleiades, Sentinel 1 and Sentinel 2 data. The current map has been created at the strategic scale and is indicative at a field level. Field visits should be undertaken before any site-specific management decisions are taken. Additional data could be sourced to refine the maps at the local scale.",
+                        "es": "Este mapa fue creado usando SCIMAP el cual es un marco para la modelización y el mapeo del riesgo poblacional disperso en los distintos entornos naturales. Se considera a la pendiente, los hábitats y la precipitación promedio. El mapa ha sido creado usando también datos WorldDEM, WorldClim, Pleiades, Sentinel 1 y Sentinel 2. El mapa actual ha sido creado a escala estratégica y es indicativo a nivel de campo. Se deben realizar visitas de campo antes de tomar cualquier decisión de gestión de sitios específicos. Se podrían obtener datos adicionales para mejorar los mapas a escala local."
                     }
                 }
             ],
             "attribution": {
-                "en": "Data and maps created by Environment Systems Ltd (2019) SCIMAP by Sim Reaney, Durham University is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License",
-                "es": "Datos y mapas creados por Environment Systems Ltd (2019) SCIMAP por Sim Reaney, Durham University está licenciada bajo la licencia Creative Commons Atribución-NoComercial-CompartirIgual 3.0 Unported"
+                "en": "Derived data created by JNCC and Environment Systems Ltd. Maps created by Environment Systems Ltd (2019). SCIMAP by Sim Reaney, Durham University is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.",
+                "es": "Datos derivados creados por JNCC y Environment Systems Ltd Mapas creados por Environment Systems Ltd (2019) SCIMAP por Sim Reaney, Durham University cuenta con la licencia Creative Commons Atribución-NoComercial-CompartirIgual 3.0 Unported"
             }
         },
-        "wind_erosion_risk": {
-            "wms_name": "colombia_eo4_cultivar:colombia_wind_soil_erosion_risk",
-            "legend_styles": [],
-            "short_title": {
-                "en": "Risk of soil erosion caused by wind",
-                "es": "Riesgo de erosión del suelo causado por el viento"
-            },
-            "info_sections": [
-                {
-                    "section_title": {
-                        "en": "Risk of soil erosion caused by wind",
-                        "es": "Riesgo de erosión del suelo causado por el viento"
-                    },
-                    "section_content": {
-                        "en": "<i>Ecosystem services: Conservation of soil and water quality. Limiting sediment entering rivers.</i>",
-                        "es": "<i>Servicios ecosistémicos: conservación del suelo y calidad del agua. Limitación de los sedimentos que entran a los ríos.</i>"
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "How to interpret the map:",
-                        "es": "Cómo interpretar el mapa:"
-                    },
-                    "section_content": {
-                        "en": "Orange colours are places where soils are susceptible to wind erosion, with dark orange places being most susceptible.",
-                        "es": "El color naranja señala los sitios donde los suelos son susceptibles a la erosión eólica, mientras que los de color naranja oscuro muestran una mayor susceptibilidad."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "What the service is:",
-                        "es": "Cuál es el servicio:"
-                    },
-                    "section_content": {
-                        "en": "Topsoil erosion risk is a significant factor leading to loss of soil, soil quality degradation, reduction in agricultural productivity, and siltation of rivers and streams. Some soil types are more susceptible to wind erosion due to their texture, stoniness and organic matter content.",
-                        "es": "El riesgo de erosión de la capa arable es un factor significativo que conlleva a la pérdida del suelo, la degradación de la calidad del suelo, reducción en la productividad agrícola y sedimentación de los ríos y arroyos. Algunos tipos de suelo son más susceptibles a la erosión eólica debido a su textura, pedregosidad y contenido de materia orgánica."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "Why it is important:",
-                        "es": "Por qué es importante:"
-                    },
-                    "section_content": {
-                        "en": "Soil is a non-renewable resource and where it is lost through erosion, it can take hundreds to thousands of years to re-form. Losing topsoil removes a nutrient-rich growing-medium for plants, and also reduces the water infiltration capacity of the soil, leading to increased runoff. Land use management can have a large influence on wind erosion, particularly if vegetation cover is removed from dry, susceptible soils when erosive winds are likely to occur.",
-                        "es": "El suelo es un recurso no renovable y en donde se haya perdido por erosión puede tomar de cientos a miles de años para volver a formarse. La pérdida de la capa arable elimina un medio de cultivo para plantas rico en nutrientes y también reduce la capacidad de infiltración de agua en el suelto lo cual conlleva a una escorrentía incrementada. La gestión del uso de suelos puede tener una gran influencia en la erosión eólica, especialmente si se elimina la cobertura vegetal de suelos secos y susceptibles cuando es probable que ocurran vientos erosivos."
-                    }
-                },
-                {
-                    "section_title": {
-                        "en": "How the map was created:",
-                        "es": "Cómo se creó el mapa:"
-                    },
-                    "section_content": {
-                        "en": "This map is based on an analysis of soil characteristics as mapped within the Digital Soil Map of the Department of Magdalena, Republic of Colombia. Scale 1: 100,000 (2009). Soil classes and their relative abundances were assessed for their susceptibility to wind erosion, so that soils with the highest risk and which are present in over 60% of an area, are given the highest risk. Areas where the same soil type is present, but in lower proportions, are assessed as lower risk.",
-                        "es": "Este mapa está basado en un análisis de características de suelo según está mapeado dentro del Mapa Digital de Suelos del Departamento del Magdalena, Colombia. Escala 1: 100,000 (2009). Las clases de suelo y sus abundancias relativas fueron evaluadas por su susceptibilidad a la erosión eólica de tal manera que los suelos con más alto riesgo y que están presentes en un 60% del área son los que obtienen el más alto riesgo."
-                    }
-                }
-            ],
-            "attribution": {
-                "en": "Data and maps created by Environment Systems Ltd (2019). Soil data: Geographic Institute Agustín Codazzi",
-                "es": "Datos y mapas creados por Environment Systems Ltd (2019). Datos de suelo: Instituto Geográfico Agustín Codazzi"
-            }
-        },
-        "key_biodiversity_habitats": {
-            "wms_name": "colombia_eo4_cultivar:colombia_habitat_network_sources",
+        "network_sources": {
+            "wms_name": "peru_eo4_cultivar:peru_network_sources",
             "legend_styles": [],
             "short_title": {
                 "en": "Places with habitat of key importance for biodiversity",
@@ -722,8 +354,8 @@
                         "es": "Cómo interpretar el mapa:"
                     },
                     "section_content": {
-                        "en": "The map shows existing areas of natural or semi-natural grassland, wetland or woodland that are important for supporting biological and genetic diversity. Areas of disturbed woodland are not included as they are likely to be less diverse than undisturbed woodland.",
-                        "es": "El mapa muestra áreas existentes de pastizales, humedales o bosques naturales o semi-naturales que son importantes para apoyar la diversidad biológica y genética. Las áreas de bosque intervenido no han sido incluidas ya que es probable que sean menos diversas que las que no han sido intervenidas."
+                        "en": "The map shows existing areas of natural or seminatural grassland/cactus, wetland (including ephemeral watercourses) or woodland that are important for supporting biological and genetic diversity.",
+                        "es": "El mapa muestra áreas existentes de pastizales / cactus naturales o seminaturales, humedales o bosques naturales o semi-naturales que son importantes para apoyar la diversidad biológica y genética. Las áreas de bosque intervenido no han sido incluidas ya que es probable que sean menos diversas que las que no han sido intervenidas."
                     }
                 },
                 {
@@ -733,7 +365,7 @@
                     },
                     "section_content": {
                         "en": "The map shows areas of natural or semi-natural vegetation, that are likely to support populations of a wide range of species, and high overall biodiversity. Biodiversity is a supporting service which underpins many other ecosystem services such as soil quality, pollination, food provision and surface water regulation.",
-                        "es": "El mapa muestra áreas de vegetación natural o semi-natural que son proclive a apoyar poblaciones de una amplia variedad de especies y una alta biodiversidad en general. La biodiversidad es un servicio de apoyo que respalda muchos otros servicios ecosistémicos, tales como la calidad del suelo, la polinización, el suministro de alimentos y la regulación del agua superficial."
+                        "es": "El mapa muestra áreas de vegetación natural o seminatural que son proclive a apoyar poblaciones de una amplia variedad de especies y una alta biodiversidad en general. La biodiversidad es un servicio de apoyo que respalda muchos otros servicios ecosistémicos, tales como la calidad del suelo, la polinización, el suministro de alimentos y la regulación del agua superficial."
                     }
                 },
                 {
@@ -752,18 +384,18 @@
                         "es": "Cómo se creó el mapa:"
                     },
                     "section_content": {
-                        "en": "The habitat classes were generated using Sentinel 1 and Sentinel 2 satellite imagery. The map has been created at the strategic scale and is indicative at a field level. Field visits should be undertaken before any specific management decisions are taken.",
-                        "es": "Las clases de hábitat fueron generadas usando imágenes satelitales Sentinel 1 y Sentinel 2. El mapa ha sido creado a escala estratégica y es indicativo a nivel de campo. Se deben llevar a cabo visitas de campo antes de tomar cualquier decisión de manejo específica."
+                        "en": "The habitat classes were generated using Pleiades, Sentinel 1 and Sentinel 2 satellite imagery. The map has been created at the strategic scale and is indicative at a field level. Field visits should be undertaken before any specific management decisions are taken.",
+                        "es": "Las clases de hábitat fueron generadas usando imágenes satelitales Pleiades, Sentinel 1 y Sentinel 2. El mapa ha sido creado a escala estratégica y es indicativo a nivel de campo. Se deben llevar a cabo visitas de campo antes de tomar cualquier decisión de manejo específica."
                     }
                 }
             ],
             "attribution": {
-                "en": "Data and maps created by Environment Systems Ltd (2019)",
-                "es": "Datos y mapas creados por Environment Systems Ltd (2019)"
+                "en": "Derived data created by JNCC and Environment Systems Ltd. Maps created by Environment Systems Ltd (2019).",
+                "es": "Datos derivados creados por JNCC y Environment Systems Ltd Mapas creados por Environment Systems Ltd (2019)"
             }
         },
-        "key_ecosystem_service_areas": {
-            "wms_name": "colombia_eo4_cultivar:colombia_important_benefit_areas",
+        "multi_es_benefits_water_regulation": {
+            "wms_name": "peru_eo4_cultivar:peru_multiple_es_benefits_key_biodiversity_surface_water_regulation",
             "legend_styles": [],
             "short_title": {
                 "en": "Places delivering multiple ecosystem service benefits: key areas for biodiversity and surface water regulation",
@@ -772,7 +404,7 @@
             "info_sections": [
                 {
                     "section_title": {
-                        "en": "Places delivering multiple ecosystem service benefits: key areas for biodiversity and surface water regulation",
+                        "en": "Places delivering multiple ecosystem service benefits; key areas for biodiversity and surface water regulation",
                         "es": "Sitios que ofrecen múltiples beneficios de servicios ecosistémicos: áreas clave para la biodiversidad y la regulación de aguas superficiales"
                     },
                     "section_content": {
@@ -786,8 +418,8 @@
                         "es": "Cómo interpretar el mapa:"
                     },
                     "section_content": {
-                        "en": "The map identifies areas of source habitat (grassland, woodland, wetland) which coincide with areas providing high surface water regulation.",
-                        "es": "El mapa identifica las áreas de hábitat fuente (pastizales, bosque, humedales) las cuales coinciden con las áreas que brindan una alta regulación de aguas superficiales."
+                        "en": "The map identifies areas of source habitat (grassland/cactus, woodland, wetland) which coincide with areas providing high surface water regulation.",
+                        "es": "El mapa identifica las áreas de hábitat fuente (pastizales/cactus, bosque, humedales) las cuales coinciden con las áreas que brindan una alta regulación de aguas superficiales."
                     }
                 },
                 {
@@ -816,32 +448,32 @@
                         "es": "Cómo se creó el mapa:"
                     },
                     "section_content": {
-                        "en": "This map was derived by combining information from two other ecosystem service maps in this series: \"Ability of the land to moderate surface water runoff\" and \"Places with habitat of key importance for biodiversity\".",
-                        "es": "Este mapa se generó de la combinación de información de otros dos mapas de servicios ecosistémicos en estas series: \"La habilidad del suelo para regular la escorrentía superficial\" y \"Sitios con hábitat de importancia clave para la biodiversidad\"."
+                        "en": "This map was derived by combining information from two other ecosystem service maps in this series: “Ability of the land to moderate surface water runoff” (Map 1; areas with highest levels of provision) and “Places with habitat of key importance for biodiversity” (Map 5).",
+                        "es": "Este mapa se generó de la combinación de información de otros dos mapas de servicios ecosistémicos en estas series: “La habilidad del suelo para regular la escorrentía superficial” (Mapa 1; áreas con altos niveles de suministro) y “Sitios con hábitat de importancia clave para la biodiversidad” (Mapa 5)."
                     }
                 }
             ],
             "attribution": {
-                "en": "Data and maps created by Environment Systems Ltd (2019)",
-                "es": "Datos y mapas creados por Environment Systems Ltd (2019). Datos de suelo: Instituto Geográfico Agustín Codazzi"
+                "en": "Derived data created by JNCC and Environment Systems Ltd. Maps created by Environment Systems Ltd (2019). Soil data: SoilGrids250m - ISRIC.",
+                "es": "Datos derivados creados por JNCC y Environment Systems Ltd Mapas creados por Environment Systems Ltd (2019) Datos de suelo: SoilGrids250m – ISRIC."
             }
         },
-        "multi_benefit_ecological_opportunities": {
-            "wms_name": "colombia_eo4_cultivar:colombia_multibenefit_opportunities_habitat_water_regulation",
+        "woodland_ecosystem": {
+            "wms_name": "peru_eo4_cultivar:peru_ecological_network_connectivity_woodland",
             "legend_styles": [],
             "short_title": {
-                "en": "Opportunities to deliver multiple ecosystems services in the Rio Frio catchment: ecological connectivity and surface water regulation",
-                "es": "Oportunidades para generar múltiples servicios ecosistémicos: conectividad ecológica y regulación de las aguas superficiales"
+                "en": "Ecological Network Connectivity - Woodland Ecosystem",
+                "es": "Conectividad de red ecológica – Ecosistema de matorrales"
             },
             "info_sections": [
                 {
                     "section_title": {
-                        "en": "Opportunities to deliver multiple ecosystems services in the Rio Frio catchment: ecological connectivity and surface water regulation",
-                        "es": "Oportunidades para generar múltiples servicios ecosistémicos: conectividad ecológica y regulación de las aguas superficiales"
+                        "en": "Ecological Network Connectivity - Woodland Ecosystem",
+                        "es": "Conectividad de red ecológica – Ecosistema de matorrales"
                     },
                     "section_content": {
-                        "en": "<i>Ecosystem services: Regulation of overland flow. Population maintenance & genetic diversity.</i>",
-                        "es": "<i>Servicios Ecosistémicos: Regulación de la escorrentía superficial. Mantenimiento de la población & diversidad genética.</i>"
+                        "en": "<i>Ecosystem service: Population maintenance & genetic diversity</i>",
+                        "es": "<i>Servicio ecosistémico: Mantenimiento de la población & diversidad genética</i>"
                     }
                 },
                 {
@@ -850,8 +482,308 @@
                         "es": "Cómo interpretar el mapa:"
                     },
                     "section_content": {
-                        "en": "The map shows places where it should be possible to restore or create new habitat to strengthen the existing grassland, wetland or woodland ecological networks to enhance biodiversity, while simultaneously enhancing the level of surface water regulation.",
-                        "es": "El mapa muestra los lugares donde debería ser posible restaurar o crear un nuevo hábitat para fortalecer las redes ecológicas existentes de pastizales, humedales o bosque con el fin de mejorar la biodiversidad, al mismo tiempo que se mejora el nivel de regulación de las aguas superficiales."
+                        "en": "Dark green areas are more highly connected to the ecological network. Grey areas are existing source scrub.",
+                        "es": "Las áreas de color verde oscuro están más conectadas con la red ecológica. Las áreas de color gris indican matorrales ya existentes."
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "What the service is:",
+                        "es": "Cuál es el servicio:"
+                    },
+                    "section_content": {
+                        "en": "The map shows the existing scrubland network within which plant and animal species can move to maintain genetic diversity and sustain viable populations of scrubland species. Existing scrublands act as ‘source habitat’, where the main population of scrubland species is based. Land adjoining and close to the source habitats can be used for foraging and as dispersal routes (permeable habitats). Some habitats and land uses are more permeable than others; for example scrub could be expected to provide greater levels of food and shelter for scrubland species, whereas bare ground would provide less.",
+                        "es": "El mapa muestra la red de matorrales existente dentro de la cual especies animales y vegetales pueden movilizarse para mantener la diversidad genética y sostener poblaciones viables especies de matorrales. Los mattorales ya existentes actúan como ‘hábitat fuente’ donde se encuentra basada la población principal especies de matorrales. Los terrenos contiguos y cercanos a los hábitats fuente pueden servir para la búsqueda de alimento y como rutas de dispersión (hábitats permeables). Algunos hábitats y usos de suelo son más permeables que otros; por ejemplo, se podría esperar que los matorrales aporten un buen nivel de alimentos y refugio para especies de matorrales, mientras que un suelo sin vegetación aportaría menos."
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "Why it is important:",
+                        "es": "Por qué es importante:"
+                    },
+                    "section_content": {
+                        "en": "Areas of native natural and semi-natural scrublands that are connected in a landscape, forming a network, are more resilient to changing climate or land management. Inside the network, scrublands generally provide higher levels of ecosystem services, such as the ability to clean water or regulate runoff, provide timber products and support nature tourism (e.g. bird watching). Within the network, restoration of structurally-diverse and species-rich scrublands will be far more effective as propagules, pollinators and important species will be available for colonisation.",
+                        "es": "Las áreas de matorrales nativos naturales y seminaturales que están conectadas en un entorno que forma una red, son más resilientes al cambio climático o al manejo de suelos. Dentro de la red, los matorrales por lo general proveen altos niveles de servicios ecosistémicos, tales como la capacidad para limpiar el agua o regular la escorrentía, brindar productos madereros y apoyar el turismo natural (avistamiento de aves). Dentro de la red, la restauración de los matorrales estructuralmente diversos y ricos en especies será mucho más eficaz ya que se dispondrá de propágulos, polinizadores y especies importantes para la colonización."
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "How the map was created:",
+                        "es": "Cómo se creó el mapa:"
+                    },
+                    "section_content": {
+                        "en": "The habitat classes were generated using Pleiades, Sentinel 1 and Sentinel 2 satellite imagery. Each habitat and land use was evaluated for its importance and role played in supporting the scrubland network.",
+                        "es": "Las clases de hábitat se generaron usando las imágenes satelitales de Pleiades, Sentinel 1 y Sentinel 2. Se evalúo cada hábitat y uso de suelo según su importancia y el rol que juega en el apoyo a la red de matorrales."
+                    }
+                }
+            ],
+            "attribution": {
+                "en": "Derived data created by JNCC and Environment Systems Ltd. Maps created by Environment Systems Ltd (2019).",
+                "es": "Datos derivados creados por JNCC y Environment Systems Ltd. Mapas creados por Environment Systems Ltd (2019)."
+            }
+        },
+        "wetland_ecosystem": {
+            "wms_name": "peru_eo4_cultivar:peru_ecological_network_connectivity_wetland",
+            "legend_styles": [],
+            "short_title": {
+                "en": "Ecological Network Connectivity - Wetland Ecosystem",
+                "es": "Conectividad de red ecológica – Ecosistema de humedales"
+            },
+            "info_sections": [
+                {
+                    "section_title": {
+                        "en": "Ecological Network Connectivity - Wetland Ecosystem",
+                        "es": "Conectividad de red ecológica – Ecosistema de humedales"
+                    },
+                    "section_content": {
+                        "en": "<i>Ecosystem service: Population maintenance & genetic diversity.</i>",
+                        "es": "<i>Servicio ecosistémico: Mantenimiento de la población & diversidad genética.</i>"
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "How to interpret the map:",
+                        "es": "Cómo interpretar el mapa:"
+                    },
+                    "section_content": {
+                        "en": "Darker blue areas are more highly connected to the ecological network. Black areas are existing source habitats, comprising permanent and ephemeral river channels, and wetland habitats (excluding reservoirs).",
+                        "es": "Las áreas de color azul oscuro están más altamente conectadas a la red ecológica. Las áreas de color negro son hábitats originales que comprenden canales fluviales permanentes y efímeros, también hábitats de humedales (excluyendo reservorios)."
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "What the service is:",
+                        "es": "Cuál es el servicio:"
+                    },
+                    "section_content": {
+                        "en": "The map shows the existing wetland network within which plant and animal species can move to maintain genetic diversity and sustain viable populations of wetland species. Existing wetlands act as ‘source habitat’, where the main population of wetland species is based. Land adjoining and close to the source habitats can be used for foraging and as dispersal routes (permeable habitats). Some habitats and land uses are more permeable than others; for example rivers could be expected to provide suitable conditions for many wetland species, whereas terrestrial habitats are less suitable.",
+                        "es": "El mapa muestra la red de humedales existentes dentro de la cual especies animales y vegetales pueden movilizarse para mantener la diversidad genética y sostener poblaciones viables de especies de humedal. Los humedales ya existentes actúan como ‘hábitat fuente’ donde se encuentra ubicada la población principal de especies de humedal. Los terrenos contiguos y cercanos a los hábitats fuente pueden servir para la búsqueda de alimento y como rutas de dispersión (hábitats permeables). Algunos hábitats y usos de suelo son más permeables que otros; por ejemplo, se podría esperar que los ríos aporten condiciones apropiadas para para varias especies de humedal, mientras que el hábitat terrestre es menos apropiado."
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "Why it is important:",
+                        "es": "Por qué es importante:"
+                    },
+                    "section_content": {
+                        "en": "Areas of native natural and semi-natural wetlands that are connected in a landscape, are more resilient to changing climate or land management. Inside the network, wetlands with low chemical and nutrient levels, and structurally-diverse and species-rich emergent vegetation, generally provide a higher level of ecosystem services, such as clean freshwaters, erosion control, and nursery fisheries. Within the network, restoration of structurally-diverse and species-rich emergent vegetation will be far more effective as propagules, pollinators and important species will be available for colonisation.",
+                        "es": "Las áreas de humedales nativos naturales y seminaturales que están conectadas en un entorno, son más resilientes al cambio climático o al manejo de suelos. Dentro de la red, los humedales con bajos niveles nutrientes químicos NAD y la vegetación emergente estructuralmente diversa y rica en especies, generalmente brinda un mayor nivel de servicios ecosistémicos, tales como: agua dulce limpia, control de la erosión y criaderos de peces. Dentro de la red, la restauración de la vegetación emergente estructuralmente diversa y rica en especies será mucho más eficaz ya que se dispondrá de propágulos, polinizadores y especies importantes para la colonización."
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "How the map was created:",
+                        "es": "Cómo se creó el mapa:"
+                    },
+                    "section_content": {
+                        "en": "The habitat classes were generated using Pleiades, Sentinel 1 and Sentinel 2 satellite imagery. Each habitat and land use was evaluated for its importance and role played in supporting the wetland network.",
+                        "es": "Las clases de hábitat se crearon usando imágenes satelitales de Pleiades, Sentinel 1 y Sentinel 2. Cada hábitat y uso de suelo fue evaluado por su importancia y el rol que juega en el apoyo a la red de humedales."
+                    }
+                }
+            ],
+            "attribution": {
+                "en": "Derived data created by JNCC and Environment Systems Ltd. Maps created by Environment Systems Ltd (2019).",
+                "es": "Datos derivados creados por JNCC y Environment Systems Ltd. Mapas creados por Environment Systems Ltd (2019)."
+            }
+        },
+        "grassland_ecosystem": {
+            "wms_name": "peru_eo4_cultivar:peru_ecological_network_connectivity_grassland",
+            "legend_styles": [],
+            "short_title": {
+                "en": "Ecological network connectivity - Grassland Ecosystem",
+                "es": "Conectividad de red ecológica – Ecosistema de pastizales"
+            },
+            "info_sections": [
+                {
+                    "section_title": {
+                        "en": "Ecological network connectivity - Grassland Ecosystem",
+                        "es": "Conectividad de red ecológica – Ecosistema de pastizales"
+                    },
+                    "section_content": {
+                        "en": "<i>Ecosystem services: Population maintenance & genetic diversity.</i>>",
+                        "es": "<i>Servicio ecosistémico: Mantenimiento de la población & diversidad genética</i>"
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "How to interpret the map:",
+                        "es": "Cómo interpretar el mapa:"
+                    },
+                    "section_content": {
+                        "en": "Darker orange areas are more highly connected to the ecological network. Black areas are existing source grasslands.",
+                        "es": "Las áreas de color naranja oscuro están altamente conectadas a la red ecológica. Las áreas de color negro señalan los pastizales fuente existentes."
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "What the service is:",
+                        "es": "Cuál es el servicio:"
+                    },
+                    "section_content": {
+                        "en": "The map shows the existing grassland and cactus habitat network within which plant and animal species can move to maintain genetic diversity and sustain viable populations of grassland/cactus habitat species. Existing grasslands act as ‘source habitat’, where the main population of grassland species is based. Land adjoining and close to the source habitats can be used for foraging and as dispersal routes (permeable habitats). Some habitats and land uses are more permeable than others; for example scattered scrub could be expected to provide better conditions for grassland species than dense woodland.",
+                        "es": "El mapa muestra la red de pastizales existentes dentro de la cual especies animales y vegetales pueden movilizarse para mantener la diversidad genética y sostener poblaciones viables de especies de hábitat de pastizal/cactus. Los pastizales existentes actúan como ‘hábitat fuente’ donde se encuentra ubicada la población principal de especies de pastizal. Los terrenos contiguos y cercanos a los hábitats fuente pueden servir para la búsqueda de alimento y como rutas de dispersión (hábitats permeables). Algunos hábitats y usos de suelo son más permeables que otros; por ejemplo, se podría esperar que el matorral disperso brinde mejores condiciones para las especies de pastizal que el bosque denso."
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "Why it is important:",
+                        "es": "Por qué es importante:"
+                    },
+                    "section_content": {
+                        "en": "Areas of native natural and semi-natural grasslands that are connected in a landscape, are more resilient to changing climate or land management. Inside the network, structurally-diverse and species-rich grasslands generally provide a higher level of ecosystem services, such as surface water regulation. Within the network, restoration of structurally-diverse and species-rich grasslands will be far more effective as propagules, pollinators and important species will be available for colonisation.",
+                        "es": "Las áreas de pastizales nativos naturales y seminaturales que están conectadas en un entorno, son más resilientes al cambio climático o al manejo de suelos. Dentro de la red, los pastizales estructuralmente diversos y ricos en especies generalmente brindan un mayor nivel de servicios ecosistémicos, tales como: la regulación de las aguas superficiales. Dentro de la red, la restauración de pastizales estructuralmente diversos y ricos en especies será mucho más eficaz ya que se dispondrá de propágulos, polinizadores y especies importantes para la colonización."
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "How the map was created:",
+                        "es": "Cómo se creó el mapa:"
+                    },
+                    "section_content": {
+                        "en": "The habitat classes were generated using Pleiades, Sentinel 1 and Sentinel 2 satellite imagery. Each habitat and land use was evaluated for its importance and role played in supporting the grassland network.",
+                        "es": "Las clases de hábitat se generaron usando las imágenes satelitales de Pleiades, Sentinel 1 y Sentinel 2. Se evalúo cada hábitat y uso de suelo según su importancia y el rol que juega en el apoyo a la red de pastizales."
+                    }
+                }
+            ],
+            "attribution": {
+                "en": "Derived data created by JNCC and Environment Systems Ltd. Maps created by Environment Systems Ltd (2019).",
+                "es": "Datos derivados creados por JNCC y Environment Systems Ltd. Mapas creados por Environment Systems Ltd (2019)."
+            }
+        },
+        "habitat_opportunities": {
+            "wms_name": "peru_eo4_cultivar:peru_all_habitat_opportunities",
+            "legend_styles": [],
+            "short_title": {
+                "en": "Opportunities to strengthen ecological networks",
+                "es": "Oportunidades para fortalecer las redes ecológicas"
+            },
+            "info_sections": [
+                {
+                    "section_title": {
+                        "en": "Opportunities to strengthen ecological networks",
+                        "es": "Oportunidades para fortalecer las redes ecológicas"
+                    },
+                    "section_content": {
+                        "en": "<i>Ecosystem service: Population maintenance & genetic diversity.</i>",
+                        "es": "<i>Servicio Ecosistémico: Mantenimiento del ciclo de vida & diversidad genética</i>"
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "How to interpret the map:",
+                        "es": "Cómo interpretar el mapa:"
+                    },
+                    "section_content": {
+                        "en": "The map shows places where it should be possible to restore or create new habitat to strengthen the existing ecological networks, to enhance biological and genetic diversity. Places in darker shades are areas where habitat restoration/creation are expected to be most easily implemented and more successful. For example, developing a woodland from an area of dense scrub or bare ground may be a suitable choice in both places, but restoration is quicker, less labour intensive and less costly from the dense scrub vegetation, and on shallower slopes.",
+                        "es": "El mapa muestra lugares donde sería posible restaurar o crear nuevos hábitats para mantener las redes ecológicas existentes para mejorar la diversidad biológica y genética. Los lugares de color oscuro son áreas donde la restauración o creación de hábitats se espera que sean más fáciles de implementar y más exitosos. Por ejemplo, la creación de un bosque en una zona de matorral denso o de suelo desnudo puede ser una opción adecuada en ambos lugares, sin embargo, la restauración es más rápida, menos intensiva en mano de obra y menos costosa debido a la densa vegetación de matorrales y en pendientes menos profundas."
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "What the service is:",
+                        "es": "Cuál es el servicio:"
+                    },
+                    "section_content": {
+                        "en": "Biodiversity is a supporting service which underpins many other ecosystem services.",
+                        "es": "La biodiversidad es un servicio de apoyo que sustenta muchos otros servicios ecosistémicos."
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "How the map was created:",
+                        "es": "Cómo se creó el mapa:"
+                    },
+                    "section_content": {
+                        "en": "This map considered all places where the existing habitat type could be enhanced to strengthen ecological networks. However, places in close proximity to existing source habitat are most likely to be effective at supporting existing populations (shown in Map 11). Field margin areas were mapped through analysis of Sentinel-2 imagery, and used to refine the opportunity selection within the permanently cropped areas. Habitats and land use were assessed as to the ease with which they could be restored to support the ecological networks. Where restoration to woodland was possible, this option was chosen, except in cases located in close proximity to existing source wetland habitat; in these places, the wetland option was chosen.",
+                        "es": "Este mapa ha considerado todos los lugares donde el tipo de hábitat existente podría mejorarse para fortalecer las redes ecológicas. Sin embargo, los lugares cercanos a hábitats originales existentes pueden ser más efectivos para apoyar poblaciones existentes (ver Mapa 11). Las áreas de margen de campo fueron mapeadas a través de análisis de las imágenes del Sentinel-2 y se usaron para refinar la oportunidad de selección dentro de las áreas de cultivo permanente. Los hábitats y el uso del suelo fueron evaluados en cuanto a la facilidad con la que podrían ser restaurados para soportar las redes ecológicas. Se optó por la restauración de bosques en áreas donde fue posible, excepto en casos donde había cercanía a hábitats existentes originales de humedales, en esos casos se optó por la restauración de humedales."
+                    }
+                }
+            ],
+            "attribution": {
+                "en": "Derived data created by JNCC and Environment Systems Ltd. Maps created by Environment Systems Ltd (2019).",
+                "es": "Datos derivados creados por JNCC y Environment Systems Ltd. Mapas creados por Environment Systems Ltd (2019)."
+            }
+        },
+        "priority_habitat": {
+            "wms_name": "peru_eo4_cultivar:peru_habitat_opportunities_next_to_existing_source_habitat",
+            "legend_styles": [],
+            "short_title": {
+                "en": "Opportunities to strengthen ecological networks: priority places for action (those adjoining existing key habitats of high-biodiversity value)",
+                "es": "Oportunidades para fortalecer las redes ecológicas: lugares prioritarios para tomar acción (sitios adyacentes a hábitats clave existentes de alto valor de biodiversidad)"
+            },
+            "info_sections": [
+                {
+                    "section_title": {
+                        "en": "Opportunities to strengthen ecological networks: priority places for action (those adjoining existing key habitats of high-biodiversity value)",
+                        "es": "Oportunidades para fortalecer las redes ecológicas: lugares prioritarios para tomar acción (sitios adyacentes a hábitats clave existentes de alto valor de biodiversidad)"
+                    },
+                    "section_content": {
+                        "en": "<i>Ecosystem service: Population maintenance & genetic diversity</i>",
+                        "es": "<i>Servicio Ecosistémico: Mantenimiento de la población & diversidad genética</i>"
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "How to interpret the map:",
+                        "es": "Cómo interpretar el mapa:"
+                    },
+                    "section_content": {
+                        "en": "This map is a subset of Map 10 and shows only those places that adjoin existing source habitat, where habitat restoration is likely to be most successful and beneficial to existing habitat of key biodiversity value. Areas next to existing biodiversity hotspots are likely to provide most benefit to existing species populations, allowing the expansion of local native species via dispersal or territory expansion. Restoration of structurally-diverse and species-rich habitat will be far more effective close to the source habitats, as propagules, pollinators and important species will be available for colonisation.",
+                        "es": "El mapa es un subconjunto del Mapa 10 y muestra solo aquellos lugares que están adyacentes a un hábitat original existente, donde es muy probable que la restauración del hábitat sea más exitosa y beneficiosa para el hábitat existente de valor clave para la biodiversidad. Es probable que las áreas próximas a los principales centros de biodiversidad existentes proporcionen mayores beneficios a las poblaciones de especies existentes, permitiendo la expansión de especies nativas locales a través de su dispersión o la expansión del territorio. La restauración de hábitats estructuralmente diversos y ricos en especies será mucho más eficaz cerca de los hábitats originales, ya que se dispondrá de propágulos, polinizadores y especies importantes para la colonización."
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "What the service is:",
+                        "es": "Cuál es el servicio:"
+                    },
+                    "section_content": {
+                        "en": "Biodiversity is a supporting service which underpins many other ecosystem services such as soil quality, pollination and food provision.",
+                        "es": "La biodiversidad es un servicio de apoyo que sustenta muchos otros servicios ecosistémicos, tales como la calidad del suelo, la polinización y el suministro de alimentos."
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "How the map was created:",
+                        "es": "Cómo se creó el mapa:"
+                    },
+                    "section_content": {
+                        "en": "This map considers places immediately adjoining existing source habitat, as defined by the ecological network maps in this series. Habitats and land uses next to the source habitats were assessed as to the ease at which they could be restored to support the wetland or woodland network. In this analysis, the 'wetland' network includes both permanent wetlands and ephemeral watercourses.",
+                        "es": "Este mapa consideró las áreas inmediatamente cercanas a hábitats originales existentes, tal y como se define por los mapas de la red ecológica de esta serie. Se evaluaron los hábitats y los usos del suelo próximos a los hábitats originales en cuanto a la facilidad con que podrían restaurarse para el sustento de la red de humedales o bosques. En este análisis, la red de 'humedales' incluye tanto humedales permanentes como cauces efímeros."
+                    }
+                }
+            ],
+            "attribution": {
+                "en": "Derived data created by JNCC and Environment Systems Ltd. Maps created by Environment Systems Ltd (2019).",
+                "es": "Datos derivados creados por JNCC y Environment Systems Ltd. Mapas creados por Environment Systems Ltd (2019)."
+            }
+        },
+        "habitat_water_regulation": {
+            "wms_name": "peru_eo4_cultivar:peru_multibenefit_opportunities_habitat_water_regulation",
+            "legend_styles": [],
+            "short_title": {
+                "en": "Opportunities to deliver multiple ecosystem services: ecological connectivity and surface water regulation",
+                "es": "Oportunidades para generar múltiples servicios ecosistémicos: conectividad ecológica y regulación de las aguas superficiales"
+            },
+            "info_sections": [
+                {
+                    "section_title": {
+                        "en": "Opportunities to deliver multiple ecosystem services: ecological connectivity and surface water regulation",
+                        "es": "Oportunidades para generar múltiples servicios ecosistémicos: conectividad ecológica y regulación de las aguas superficiales"
+                    },
+                    "section_content": {
+                        "en": "<i>Ecosystem services: Regulation of overland flow.</i><br /><i>Population maintenance & genetic diversity.</i>",
+                        "es": "<i>Servicios Ecosistémicos: Regulación de la escorrentía superficial.</i><br /><i>Mantenimiento de la población & diversidad genética.</i"
+                    }
+                },
+                {
+                    "section_title": {
+                        "en": "How to interpret the map:",
+                        "es": "Cómo interpretar el mapa:"
+                    },
+                    "section_content": {
+                        "en": "The map shows places where it should be possible to restore or create new habitat to strengthen the existing wetland or woodland ecological networks to enhance biodiversity, while simultaneously enhancing the level of surface water regulation.",
+                        "es": "El mapa muestra los lugares donde debería ser posible restaurar o crear un nuevo hábitat para fortalecer las redes ecológicas existentes de humedales o bosque con el fin de mejorar la biodiversidad, al mismo tiempo que se mejora el nivel de regulación de las aguas superficiales."
                     }
                 },
                 {
@@ -880,14 +812,38 @@
                         "es": "Cómo se creó el mapa:"
                     },
                     "section_content": {
-                        "en": "This map is derived by combining information from two other ecosystem service maps in this series: \"Opportunities to enhance surface water regulation in the Rio Frio catchment\" and \"Opportunities to strengthen ecological networks\". It identifies places that could be restored to support the ecological networks, and which currently provide relatively low surface water regulation.",
-                        "es": "Este mapa se obtiene combinando la información de otros dos mapas de servicios ecosistémicos de esta serie: \"Oportunidades para mejorar la regulación de las aguas superficiales en la zona de captación del Río Frío\" y \"Oportunidades para fortalecer las redes ecológicas\". Identifica los lugares que podrían ser restaurados para apoyar las redes ecológicas, y que actualmente proporcionan una regulación de aguas superficiales relativamente baja."
+                        "en": "This map is derived by combining information from two other ecosystem service maps in this series: \"Opportunities to enhance surface water regulation\" (Map 2) and \"Opportunities to strengthen ecological networks\" (Map 10). It identifies places that could be restored to support the ecological networks, and which currently provide relatively low surface water regulation.",
+                        "es": "Este mapa se obtiene combinando la información de otros dos mapas de servicios ecosistémicos de esta serie: ‘Oportunidades para mejorar la regulación de las aguas superficiales (Mapa 2) y ‘Oportunidades para fortalecer las redes ecológicas’ (Mapa 10). Identifica los lugares que podrían ser restaurados para apoyar las redes ecológicas, y que actualmente proporcionan una regulación de aguas superficiales relativamente baja."
                     }
                 }
             ],
             "attribution": {
-                "en": "Data and maps created by Environment Systems Ltd (2019). Soil data: Geographic institute Agustin Codazzi. Sentinel-2 image: European Space Agency - ESA",
-                "es": "Datos y mapas creados por Environment Systems Ltd (2019). Datos de suelo: Instituto Geográfico Agustin Codazzi. Imagen del Sentinel-2: Agencia Espacial Europea - ESA"
+                "en": "Derived data created by JNCC and Environment Systems Ltd. Maps created by Environment Systems Ltd (2019). Soil data: SoilGrids250m - ISRIC",
+                "es": "Datos derivados creados por JNCC y Environment Systems Ltd. Mapas creados por Environment Systems Ltd (2019). Datos de suelo: SoilGrids250m – ISRIC."
+            }
+        },
+        "habitat_map": {
+            "wms_name": "peru_eo4_cultivar:peru_habitat_map",
+            "legend_styles": [],
+            "short_title": {
+                "en": "Habitat map",
+                "es": "Mapa de hábitat"
+            },
+            "info_sections": [
+                {
+                    "section_title": {
+                        "en": "Habitat map",
+                        "es": "Mapa de hábitat"
+                    },
+                    "section_content": {
+                        "en": "<p>Habitat maps are a key component to understanding the distribution and extent of features across the landscape. They help facilitate better management practices, ecosystem service mapping, interpreting and targeting biodiversity monitoring and delivering policies such as those related to sustainable livelihood development.  The map provides a baseline of type, extent and distribution of current land use and habitats.</p><p>The current map was created in 2017 and is based on 10m resolution Sentinel 1 and Sentinel 2 imagery, 2m resolution Pleiades data and 12m resolution WorldDEM elevation data.</p>",
+                        "es": "?"
+                    }
+                }
+            ],
+            "attribution": {
+                "en": "???",
+                "es": "???"
             }
         }
     },
@@ -906,46 +862,33 @@
                 "es": "JNCC"
             }
         },
-        "zona_bananera": {
-            "wms_name": "colombia_eo4_cultivar:colombia_aoi_main_catchment",
+        "peru_aoi": {
+            "wms_name": "peru_eo4_cultivar:peru_aoi",
             "display_legend": false,
             "display_sidebar": true,
             "short_title": {
-                "en": "Zona Bananera",
-                "es": "Zona Bananera"
+                "en": "AOI: Viru Valley",
+                "es": "AOI: Viru Valley"
             },
             "info_sections": [],
             "attribution": {
-                "en": "JNCC and Environment Systems with Assistance from ASBAMA, Tecbaco and Fundeban",
-                "es": "JNCC and Environment Systems with Assistance from ASBAMA, Tecbaco and Fundeban"
-            }
-        },
-        "rio_frio": {
-            "wms_name": "colombia_eo4_cultivar:opportunities_aoi_rio_frio_catchment",
-            "display_legend": false,
-            "display_sidebar": true,
-            "short_title": {
-                "en": "Rio Frio catchment",
-                "es": "Cuenca del Río Frío"
-            },
-            "info_sections": [],
-            "attribution": {
-                "en": "JNCC and Environment Systems with Assistance from ASBAMA, Tecbaco and Fundeban",
-                "es": "JNCC and Environment Systems with Assistance from ASBAMA, Tecbaco and Fundeban"
+                "en": "Environment Systems Ltd",
+                "es": "Environment Systems Ltd"
             }
         }
     },
     "underlay_layers": {
         "satellite_imagery": {
-            "wms_name": "colombia_eo4_cultivar:satellite_imagery",
+            "wms_name": "peru_eo4_cultivar:peru_satellite_image",
             "display_legend": false,
+            "display_sidebar": true,
             "short_title": {
                 "en": "Satellite imagery",
-                "es": "Imágenes satelitales"
+                "es": "Capa satelital"
             },
             "attribution": {
-                "en": "Landsat-8 image courtesy of the USGS",
-                "es": "Imagen del Landsat-8 cortesía del USGS"
+                "en": "Sentinel 1 and Sentinel 2, Pleiades, WorldDEM",
+                "es": "Sentinel 1 and Sentinel 2, Pleiades, WorldDEM"
             }
         }
     }

@@ -6,7 +6,7 @@ import re
 # A Zone file (i.e. grids) that we want to scan through when, could be practically any standard
 # polygon/multipolygon, the only requirement is that each zone/grid must have a unique id attribute
 # field, example for this project is stored alongside this script
-zoneFile = './grids.geojson'
+zoneFile = './wgs84_5k_grid.geojson'
 # Output file location
 output = './gridsout.geojson'
 
@@ -31,6 +31,7 @@ def fullMergeDict(D1, D2):
 def formatStr(input):
     input = re.sub(r'([\(\)\{\}\[\]])', '', input)
     input = re.sub(r'([^\w])', '_', input.lower())
+    input = re.sub(r'[_]+', '_', input)
     return input
 
 
@@ -93,7 +94,7 @@ def getVectorFeaturesInLocation(input, zones, attributeField, strFormattingFunct
     return output
 
 
-def getRasterStatsByLocation(input, zones, min=None, max=None):
+def getRasterStatsByLocation(input, zones, invert_grid_min_max=False, min=None, max=None, stops=None):
     # If we aren't supplied with a min / max to the range then extract it from the source
     # raster
     if (not (min != None and max != None)):
@@ -153,18 +154,60 @@ def getRasterStatsByLocation(input, zones, min=None, max=None):
         'INPUT_RASTER': input,
         'INPUT_VECTOR': zones_output,
         'RASTER_BAND': 1,
-        'STATS': [5, 6]}
+        'STATISTICS': [5, 6]}
     )
     output = {}
 
     # Do a little bit of housekeeping the results (reduce to 2 decimal places) and
     # normalize the data to be in the min/max range (between 0 and 1)
     for zone in zones_output.getFeatures():
+        input_min = zone.attribute('_min')
+        input_max = zone.attribute('_max')
+
+        output_min = 0.0
+        output_max = 1.0
+
+        if (stops != None):
+            stop_percentage = (1 / len(stops)) 
+            max_stop = len(stops) - 1
+
+            if (input_min > min):
+                min_stop = 0
+                for stop in range(len(stops)):
+                    if stops[stop] <= input_min:
+                        min_stop = stop
+                        break
+                if stop == 0:
+                    output_min = ((stops[min_stop + 1] - stops[min_stop]) / (input_min)) * stop_percentage
+                else:
+                    output_min = (stop_percentage * (min_stop - 1)) + (((stops[min_stop] - stops[min_stop - 1]) / (input_min - stops[min_stop - 1])) * stop_percentage)
+            
+            if (input_max < max):
+                for stop in range(len(stops)):
+                    if stops[stop] >= input_max:
+                        max_stop = stop
+                        break
+                if input_max == 0:
+                    output_max = 0.0
+                elif stop == 0:
+                    output_max = ((stops[max_stop + 1] - stops[max_stop]) / (input_max)) * stop_percentage
+                else:
+                    output_max = (stop_percentage * (max_stop - 1)) + (((stops[max_stop] - stops[max_stop - 1]) / (input_max - stops[max_stop -1])) * stop_percentage)
+
+        else:
+            output_min = float('%.2f' % (normalize(min, max, 0, 1, input_min)))
+            output_max = float('%.2f' % (normalize(min, max, 0, 1, input_max)))
+
+        if (invert_grid_min_max):
+            inverted_output_min = 1 - output_max
+            inverted_output_max = 1 - output_min
+            output_min = float('%.2f' % inverted_output_min)
+            output_max = float('%.2f' % inverted_output_max)
 
         output[zone['id']] = {
-            'min': float('%.2f' % (normalize(min, max, 0, 1, zone.attribute('_min')))),
-            'max': float('%.2f' % (normalize(min, max, 0, 1, zone.attribute('_max'))))
-        }
+                'min': output_min,
+                'max': output_max
+            }
 
     proj.removeMapLayer(zones_output)
 
@@ -201,150 +244,152 @@ def normalize(min, max, outmin, outmax, value):
 
 maps = [
     {
-        'name': 'Map_1',
-        'output_name': 'water_runoff_moderation',
+        'name': '1. Ability of the land to moderate surface water runoff',
+        'output_name': 'moderate_surface_water_runoff',
         'vector': {},
         'ramp': {
             'Ability of the land to moderate surface water runoff': {
-                'name': 'water_runoff_moderation_ramp',
-                'min': 10.0,
-                'max': 620.0
-
+                'name': 'moderate_surface_water_runoff',
+                'min': 41.0,
+                'max': 266,
+                'inverted': False
             }
         }
     },
     {
-        'name': 'Map_2',
-        'output_name': 'key_biodiversity_habitats',
+        'name': '2. Opportunities to enhance surface water regulation',
+        'output_name': 'enhance_surface_water_regulation',
         'vector': {
-            'Colombia_network_source_habitat_wetland': 'Core',
-            'Colombia_network_source_habitat_grassland': 'Core',
-            'Colombia_network_source_habitat_woodland': 'Core'
+            'Opportunities to enhance surface water regulation': 'Catchmnt'
         },
         'ramp': {}
     },
     {
-        'name': 'Map_3',
-        'output_name': 'woodland_ecological_connectivity',
+        'name': '3. Opportunities to enhance surface water regulation: places receieving high volumes of surface water flow',
+        'output_name': 'enhance_surface_water_regulation_high_volumes',
         'vector': {
-            'Colombia_network_source_habitat_woodland': 'Core',
+            'Opportunities to enhance surface water regulation: places receieving high volumes of surface water flow': 'Catchmnt',
+        },
+        'ramp': {}
+    },
+    {
+        'name': '4. Risk of erosion caused by precipitation',
+        'output_name': 'erosion_risk',
+        'vector': {
+            'Erosion channels': None,
+            'Urban and roads': None,
+            'Area_excluded_from_erosion_risk_analysis': None
         },
         'ramp': {
-            'Woodland ecological network': {
-                'name': 'woodland_ecological_network',
+            '4. Risk of erosion caused by precipitation': {
+                'name': 'risk_of_erosion_caused_by_precipitation',
                 'min': 0.0,
-                'max': 300500.0
+                'max': 0.899,
+                'stops': [
+                    0,
+                    0.0167,
+                    0.0334,
+                    0.05,
+                    0.899
+                ],
+                'inverted': False
             }
         }
     },
     {
-        'name': 'Map_4',
-        'output_name': 'wetland_ecological_connectivity',
+        'name': '5. Places with habitat of key importance for biodiversity',
+        'output_name': 'network_sources',
         'vector': {
-            'Colombia_network_source_habitat_wetland': 'Core',
+            'Grassland and cactus habitats': 'Core',
+            'Wetland habitats (including ephemeral watercourses)': 'Core',
+            'Woodland habitats': 'Core'
+        },
+        'ramp': {}
+    },
+    {
+        'name': '6. Places delivering multiple ecosystem service benefits; key areas for biodiversity and surface water regulation',
+        'output_name': 'multi_es_benefits_water_regulation',
+        'vector': {
+            'Areas important for both biodiversity and surface water regulation': None,
+            'Urban and roads': None
+        },
+        'ramp': {}
+    },
+    {
+        'name': '7. Ecological Network Connectivity - Woodland Ecosystem',
+        'output_name': 'woodland_ecosystem',
+        'vector': {
+            'Source woodland': None
+        },
+        'ramp': {
+            'Woodland Ecological network': {
+                'name': 'woodland_ecological_network',
+                'min': 0.0,
+                'max': 140000.0,
+                'inverted': True
+            }
+        }
+    },
+    {
+        'name': '8. Ecological Network Connectivity - Wetland Ecosystem',
+        'output_name': 'wetland_ecosystem',
+        'vector': {
+            'Source wetland': None
         },
         'ramp': {
             'Wetland ecological network': {
                 'name': 'wetland_ecological_network',
                 'min': 0.0,
-                'max': 43500.0
+                'max': 30000.0,
+                'inverted': True
             }
         }
     },
     {
-        'name': 'Map_5',
-        'output_name': 'grassland_ecological_connectivity',
+        'name': '9. Ecological network connectivity - Grassland Ecosystem',
+        'output_name': 'grassland_ecosystem',
         'vector': {
-            'Colombia_network_source_habitat_grassland': 'Core',
+            'Source grassland/cactus habitat': None
         },
         'ramp': {
-            'Grassland ecological network': {
-                'name': 'grassland_ecological_network',
+            'Grassland/cactus ecological network': {
+                'name': 'grassland_cactus_ecological_network',
                 'min': 0.0,
-                'max': 160000.0
+                'max': 90000.0,
+                'inverted': True
             }
         }
     },
     {
-        'name': 'Map_6',
-        'output_name': 'key_ecosystem_service_areas',
+        'name': '10. Opportunities to strengthen ecological networks',
+        'output_name': 'habitat_opportunities',
         'vector': {
-            'Urban and roads': None,
-            'Colombia_multiple_ES_stock_biodiv_surface_water_reg': 'Stock'
+            'Opportunities to strengthen ecological networks': 'Legend'
         },
         'ramp': {}
     },
     {
-        'name': 'Map_7',
-        'output_name': 'precipitation_erosion_risk',
+        'name': '11. Opportunities to strengthen ecological networks: priority places for action',
+        'output_name': 'priority_habitat',
         'vector': {
-            'Area_excluded_from_erosion_risk_analysis': 'AltZone',
-            'Erosion channel': None,
-            'Urban and roads': None,
-        },
-        'ramp': {
-            'Colombia_Precip_Erosion_Risk': {
-                'name': 'colombia_precip_erosion_risk',
-                'min': 0.0,
-                'max': 0.0667042
-            }
-        }
-    },
-    {
-        'name': 'Map_8',
-        'output_name': 'wind_erosion_risk',
-        'vector': {
-            'Urban and roads': None,
-            'Rivers': None,
-            'colombia_soil_wind_erosion_risk': 'WindErosio',
+            'Opportunities to strengthen ecological networks: priority places for action': 'Legend',
         },
         'ramp': {}
     },
     {
-        'name': 'Map_9',
-        'output_name': 'water_regulation_opportunities',
+        'name': '12. Opportunities to deliver multiple ecosystem services: ecological connectivity and surface water regulation',
+        'output_name': 'habitat_water_regulation',
         'vector': {
-            'Colombia_RioFrio_all_ops_to_enhance_surface_water_reg_revised': 'Catchment'
+            'Opportunities to deliver multiple ecosystem services: ecological connectivity and surface water regulation': 'FinOp',
         },
         'ramp': {}
     },
     {
-        'name': 'Map_10',
-        'output_name': 'water_regulation_opportunities_high_volume',
-        'vector': {
-            'Colombia_RioFrio_ops_to_enhance_surface_water_reg_receiving_high_flow_volume': 'RioFrio'
-        },
-        'ramp': {}
-    },
-    {
-        'name': 'Map_11',
-        'output_name': 'ecological_opportunities',
-        'vector': {
-            'Ease of restoration': 'Legend',
-        },
-        'ramp': {}
-    },
-    {
-        'name': 'Map_12',
-        'output_name': 'priority_ecological_opportunities',
-        'vector': {
-            'Colombia_habitat_opportunities_next_to_existing_source_habitat': 'Legend',
-        },
-        'ramp': {}
-    },
-    {
-        'name': 'Map_13',
-        'output_name': 'multi_benefit_ecological_opportunities',
-        'vector': {
-            'Colombia_multibenefit_opportunities_habitat_water_regulation': 'MainOp',
-        },
-        'ramp': {}
-    },
-    {
-        'name': 'Map_14',
+        'name': '13. Habitat map',
         'output_name': 'habitat_map',
         'vector': {
-            'Colombia_habitat_map_20191127_Final-fixed-unicode': 'Summary'
+            'ExtractedFeatureOutputs': 'Context',
+            'Peru_Viru_HabitatMap_20190524_Final': 'Class'
         },
         'ramp': {}
     }
@@ -414,12 +459,10 @@ for mapGroup in maps:
             elif (layer.name() in mapGroup['ramp'].keys()):
                 print('Extracting raster ramp layer ' + layer.name())
                 if ('min' in mapGroup['ramp'][layer.name()] and 'max' in mapGroup['ramp'][layer.name()]):
-                    extracted = getRasterStatsByLocation(layer, zones, mapGroup['ramp'][layer.name(
-                    )]['min'], mapGroup['ramp'][layer.name()]['max'])
+                    extracted = getRasterStatsByLocation(layer, zones, mapGroup['ramp'][layer.name()]['inverted'], mapGroup['ramp'][layer.name()]['min'], mapGroup['ramp'][layer.name()]['max'], (mapGroup['ramp'][layer.name()]['stops'] if 'stops' in mapGroup['ramp'][layer.name()] else None))
                 else:
                     extracted = getRasterStatsByLocation(layer, zones)
-                outputs[mapGroup['output_name']]['ramp'][mapGroup['ramp']
-                                                         [layer.name()]['name']] = extracted
+                outputs[mapGroup['output_name']]['ramp'][mapGroup['ramp'][layer.name()]['name']] = extracted
             else:
                 print('Skipping layer ' + layer.name())
         else:
