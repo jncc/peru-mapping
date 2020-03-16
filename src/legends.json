@@ -448,7 +448,7 @@
                 "type": "value",
                 "label": {
                     "en": "Acacia tree belts",
-                    "es": "?"
+                    "es": "Acacia cinturón de árbol"
                 }
             },
             {
@@ -457,7 +457,7 @@
                 "type": "value",
                 "label": {
                     "en": "Bare rock",
-                    "es": "?"
+                    "es": "Roca desnuda"
                 }
             },
             {
@@ -466,7 +466,7 @@
                 "type": "value",
                 "label": {
                     "en": "Bare sand",
-                    "es": "?"
+                    "es": "Arena desnuda"
                 }
             },
             {
@@ -475,7 +475,7 @@
                 "type": "value",
                 "label": {
                     "en": "Bare sand - coastal - beach",
-                    "es": "?"
+                    "es": "Arena desnuda - costera - playa"
                 }
             },
             {
@@ -484,7 +484,7 @@
                 "type": "value",
                 "label": {
                     "en": "Croplands - permanent cover",
-                    "es": "?"
+                    "es": "Cultivos - cobertura permanente"
                 }
             },
             {
@@ -493,7 +493,7 @@
                 "type": "value",
                 "label": {
                     "en": "Croplands - trees & scrub/bushes - dense",
-                    "es": "?"
+                    "es": "Cultivos - árboles y matorrales / arbustos - denso"
                 }
             },
             {
@@ -502,7 +502,7 @@
                 "type": "value",
                 "label": {
                     "en": "Croplands - trees & scrub/bushes - scattered",
-                    "es": "?"
+                    "es": "Cultivos - árboles y matorrales / arbustos - dispersos"
                 }
             },
             {
@@ -511,7 +511,7 @@
                 "type": "value",
                 "label": {
                     "en": "Ephemeral river channel",
-                    "es": "?"
+                    "es": "Canal fluvial efímero"
                 }
             },
             {
@@ -520,7 +520,7 @@
                 "type": "value",
                 "label": {
                     "en": "Erosion gully - bare rock",
-                    "es": "?"
+                    "es": "Barranco de erosión - roca desnuda"
                 }
             },
             {
@@ -529,7 +529,7 @@
                 "type": "value",
                 "label": {
                     "en": "Erosion gully - dense scrub",
-                    "es": "?"
+                    "es": "Barranco de erosión - matorral denso"
                 }
             },
             {
@@ -538,7 +538,7 @@
                 "type": "value",
                 "label": {
                     "en": "Erosion gully - scattered scrub",
-                    "es": "?"
+                    "es": "Barranco de erosión - matorral disperso"
                 }
             },
             {
@@ -547,7 +547,7 @@
                 "type": "value",
                 "label": {
                     "en": "Linear Vegetated Areas",
-                    "es": "?"
+                    "es": "Zonas Vegetadas Lineales"
                 }
             },
             {
@@ -556,7 +556,7 @@
                 "type": "value",
                 "label": {
                     "en": "Permanent river channel",
-                    "es": "?"
+                    "es": "Canal fluvial permanente"
                 }
             },
             {
@@ -565,7 +565,7 @@
                 "type": "value",
                 "label": {
                     "en": "Reservoir",
-                    "es": "?"
+                    "es": "Depósito"
                 }
             },
             {
@@ -574,7 +574,7 @@
                 "type": "value",
                 "label": {
                     "en": "Sand dune with vegetation",
-                    "es": "?"
+                    "es": "Duna de arena con vegetación"
                 }
             },
             {
@@ -583,7 +583,7 @@
                 "type": "value",
                 "label": {
                     "en": "Scrub/bushes - dense - Andean",
-                    "es": "?"
+                    "es": "Matorral / Arbusto - denso - Andea"
                 }
             },
             {
@@ -592,7 +592,7 @@
                 "type": "value",
                 "label": {
                     "en": "Scrub/bushes - scattered - Andean",
-                    "es": "?"
+                    "es": "Matorral / Arbusto - dispersos - Andea"
                 }
             },
             {
@@ -601,7 +601,7 @@
                 "type": "value",
                 "label": {
                     "en": "Scrub/bushes - scattered - Andean - seasonal grass flushes",
-                    "es": "?"
+                    "es": "Matorral / Arbusto - dispersos - Andea - hierba estacional"
                 }
             },
             {
@@ -610,7 +610,7 @@
                 "type": "value",
                 "label": {
                     "en": "Shelter belts",
-                    "es": "?"
+                    "es": "Cinturón de refugio"
                 }
             },
             {
@@ -619,7 +619,7 @@
                 "type": "value",
                 "label": {
                     "en": "Urban",
-                    "es": "?"
+                    "es": "Urbano"
                 }
             },
             {
@@ -628,7 +628,7 @@
                 "type": "value",
                 "label": {
                     "en": "Water regions",
-                    "es": "?"
+                    "es": "Regiones de agua"
                 }
             },
             {
@@ -637,7 +637,7 @@
                 "type": "value",
                 "label": {
                     "en": "Wetland",
-                    "es": "?"
+                    "es": "Humedal"
                 }
             }
         ]
