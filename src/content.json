@@ -842,8 +842,8 @@
                 }
             ],
             "attribution": {
-                "en": "???",
-                "es": "???"
+                "en": "Data created by JNCC and Environment Systems Ltd (2017).  Map created by JNCC (2017). Derived from: Sentinel-1 and Sentinel-2 imagery European Space Agency and Pleiades. Elevation data: WorldDEM",
+                "es": "Data created by JNCC and Environment Systems Ltd (2017).  Map created by JNCC (2017). Derived from: Sentinel-1 and Sentinel-2 imagery European Space Agency and Pleiades. Elevation data: WorldDEM"
             }
         }
     },
