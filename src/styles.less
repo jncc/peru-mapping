@@ -32,6 +32,7 @@ html, body {
     border-color: @darker-green;
     outline: none;
     box-shadow: none;
+    cursor: pointer;
   }
   .btn.btn-primary.active.focus,
   .btn.btn-primary.active:focus,
@@ -44,6 +45,7 @@ html, body {
     border-color: @darker-green;
     outline: none;
     box-shadow: none;
+    cursor: pointer;
   }
 }
 
@@ -131,7 +133,7 @@ h6 {
   width: 25px;
   height: 25px;
   border-radius: 50%; 
-  background: #2D7A29;
+  background: @green;
   cursor: pointer;
 }
 
@@ -139,6 +141,59 @@ h6 {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #2D7A29;
+  background: @green;
+  cursor: pointer;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+  .opacitySlider {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 5px;
+    box-sizing: content-box;
+    background: transparent;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+  }
+
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #d3d3d3;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #d3d3d3;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #d3d3d3;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #d3d3d3;
+  }  
+  input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background: @green;
+    cursor: pointer;
+  }
+}
+
+.grid-button:hover {
   cursor: pointer;
 }

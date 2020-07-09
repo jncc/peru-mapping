@@ -237,6 +237,10 @@
    width: 100%;
 }
 
+#grid-button:hover {
+  cursor: pointer;
+}
+
 #grid-button label {
    float:left;
    margin-bottom: 0rem;
