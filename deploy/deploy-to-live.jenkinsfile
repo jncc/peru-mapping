@@ -24,7 +24,8 @@ pipeline {
                     deleteDir()
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: env.GIT_CREDENTIALS_ID,
                         usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD']]) {
-                        sh 'echo $GIT_USERNAME'
+                        sh 'echo "the username is $GIT_USERNAME" > git_username.txt'
+                        sh 'cat git_username.txt'
                         sh 'git clone https://github.com/jncc/eo-data-processing.git'
                     }
                 }
