@@ -34,7 +34,7 @@ pipeline {
                         sh 'ls'
                         sh 'git add --all'
                         sh 'git commit -a -m "Jenkins build ' + env.BUILD_NUMBER + '" --author "Jenkins <jenkins@jncc.gov.uk>"'
-                        sh 'git push --force'
+                        sh 'git push --force --repo https://$GIT_USERNAME:$GIT_PASSWORD@github.com/jncc/peru-mapping.git'
                     }
                 }
             }
