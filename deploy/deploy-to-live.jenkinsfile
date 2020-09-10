@@ -26,9 +26,7 @@ pipeline {
                         usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD']]) {
                         sh 'git --version'
                         sh 'git config --local credential.helper "!p() { echo username=\\$GIT_USERNAME; echo password=\\$GIT_PASSWORD; }; p"'
-                        sh 'git config user.name "test_username"'
-                        sh 'git config user.name'
-                        sh 'git clone https://github.com/jncc/eo-data-processing.git'
+                        sh 'git clone https://$GIT_USERNAME:$GIT_PASSWORD@github.com/jncc/eo-data-processing.git'
                     }
                 }
             }
