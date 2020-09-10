@@ -24,9 +24,17 @@ pipeline {
                     deleteDir()
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: env.GIT_CREDENTIALS_ID,
                         usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD']]) {
-                        sh 'git --version'
-                        sh 'git config --local credential.helper "!p() { echo username=\\$GIT_USERNAME; echo password=\\$GIT_PASSWORD; }; p"'
-                        sh 'git clone https://$GIT_USERNAME:$GIT_PASSWORD@github.com/jncc/eo-data-processing.git'
+                        sh 'git clone https://github.com/jncc/peru-mapping.git . --branch=gh-pages --depth 1'
+                        sh 'git config --local user.name $GIT_USERNAME'
+                        sh 'git config --local user.password $GIT_PASSWORD'
+                        sh 'cp -r ../master/dist/* .'
+                        sh 'echo "Creating Github Pages CNAME file..."'
+                        sh 'echo "peru-mapping.jncc.gov.uk" > CNAME'
+                        sh 'cat CNAME'
+                        sh 'ls'
+                        sh 'git add --all'
+                        sh 'git commit -a -m "Jenkins build ' + env.BUILD_NUMBER + '" --author "Jenkins <jenkins@jncc.gov.uk>"'
+                        sh 'git push --force'
                     }
                 }
             }
