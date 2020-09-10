@@ -24,7 +24,7 @@ pipeline {
                     deleteDir()
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: env.GIT_CREDENTIALS_ID,
                         usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD']]) {
-                        sh 'git config --local credential.helper "!p() { echo username=\\$GIT_USERNAME; echo password=\\$GIT_PASSWORD; }; p"'
+                        sh 'echo $GIT_USERNAME'
                         sh 'git clone https://github.com/jncc/eo-data-processing.git'
                     }
                 }
