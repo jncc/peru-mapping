@@ -172,8 +172,8 @@
                         "es": "Cómo interpretar el mapa:"
                     },
                     "section_content": {
-                        "en": "This map shows places with agriculture and grassland where it would be possible to improve surface water regulation to slow the flow of runoff into watercourses. Places shown in dark blue are located in the upper catchment of the study area. Places shown in light blue are in the mid-catchment, and places shown in green are in the lower catchment. All of the coloured areas on the map are hydrologically connected, and action taken in these areas should enhance the existing water regulation capacity of the land. However, the types of action that are most appropriate, and whether these are logistically possible and cost-effective, depend on the position of the opportunity within the catchment.",
-                        "es": "Este mapa muestra lugares con agricultura y pastizales en donde sería posible mejorar la regulación superficial del agua para retardar el flujo de la escorrentía hacia el Río Frío. Los lugares de color azul oscuro están ubicados en la cuenca alta del Río Frío. Los lugares en color azul claro se encuentran en la parte media de la cuenca y los de color verde, en la cuenca baja. Todas las áreas de color en el mapa están hidrológicamente conectadas, por lo que las medidas adoptadas en estos sectores deberían mejorar la capacidad existente de la regulación del agua. No obstante, los tipos de acción que serían más apropiados, y ya sea que fuesen logísticamente posibles y rentables, dependen de la posición de la oportunidad dentro de la cuenca."
+                        "en": "This map shows places with agriculture, scrub or bushes where it would be possible to improve surface water regulation to slow the flow of runoff into watercourses. Places shown in dark blue are located in the upper catchment of the study area. Places shown in light blue are in the mid-catchment, and places shown in green are in the lower catchment. All of the coloured areas on the map are hydrologically connected, and action taken in these areas should enhance the existing water regulation capacity of the land. However, the types of action that are most appropriate, and whether these are logistically possible and cost-effective, depend on the position of the opportunity within the catchment.",
+                        "es": "Este mapa muestra lugares con agricultura, matorrales o arbustos en donde sería posible mejorar la regulación superficial del agua para retardar el flujo de la escorrentía hacia el Río Frío. Los lugares de color azul oscuro están ubicados en la cuenca alta del Río Frío. Los lugares en color azul claro se encuentran en la parte media de la cuenca y los de color verde, en la cuenca baja. Todas las áreas de color en el mapa están hidrológicamente conectadas, por lo que las medidas adoptadas en estos sectores deberían mejorar la capacidad existente de la regulación del agua. No obstante, los tipos de acción que serían más apropiados, y ya sea que fuesen logísticamente posibles y rentables, dependen de la posición de la oportunidad dentro de la cuenca."
                     }
                 },
                 {
@@ -354,8 +354,8 @@
                         "es": "Cómo interpretar el mapa:"
                     },
                     "section_content": {
-                        "en": "The map shows existing areas of natural or seminatural grassland/cactus, wetland (including ephemeral watercourses) or woodland that are important for supporting biological and genetic diversity.",
-                        "es": "El mapa muestra áreas existentes de pastizales / cactus naturales o seminaturales, humedales o bosques naturales o semi-naturales que son importantes para apoyar la diversidad biológica y genética. Las áreas de bosque intervenido no han sido incluidas ya que es probable que sean menos diversas que las que no han sido intervenidas."
+                        "en": "The map shows existing areas of natural or seminatural scrub/bushes, wetland (including ephemeral watercourses) or woodland that are important for supporting biological and genetic diversity.",
+                        "es": "El mapa muestra áreas existentes de matorrales / arbustos naturales o seminaturales, humedales o bosques naturales o semi-naturales que son importantes para apoyar la diversidad biológica y genética. Las áreas de bosque intervenido no han sido incluidas ya que es probable que sean menos diversas que las que no han sido intervenidas."
                     }
                 },
                 {
@@ -418,8 +418,8 @@
                         "es": "Cómo interpretar el mapa:"
                     },
                     "section_content": {
-                        "en": "The map identifies areas of source habitat (grassland/cactus, woodland, wetland) which coincide with areas providing high surface water regulation.",
-                        "es": "El mapa identifica las áreas de hábitat fuente (pastizales/cactus, bosque, humedales) las cuales coinciden con las áreas que brindan una alta regulación de aguas superficiales."
+                        "en": "The map identifies areas of source habitat (scrub/bushes, woodland, wetland) which coincide with areas providing high surface water regulation.",
+                        "es": "El mapa identifica las áreas de hábitat fuente (matorrales / arbustos, bosque, humedales) las cuales coinciden con las áreas que brindan una alta regulación de aguas superficiales."
                     }
                 },
                 {
@@ -590,14 +590,14 @@
             "wms_name": "peru_eo4_cultivar:peru_ecological_network_connectivity_grassland",
             "legend_styles": [],
             "short_title": {
-                "en": "Ecological network connectivity - Grassland Ecosystem",
-                "es": "Conectividad de red ecológica – Ecosistema de pastizales"
+                "en": "Ecological network connectivity - Scrubland Ecosystem",
+                "es": "Conectividad de la Red Ecológica - Matorrales ecosistema"
             },
             "info_sections": [
                 {
                     "section_title": {
-                        "en": "Ecological network connectivity - Grassland Ecosystem",
-                        "es": "Conectividad de red ecológica – Ecosistema de pastizales"
+                        "en": "Ecological network connectivity - Scrubland Ecosystem",
+                        "es": "Conectividad de la Red Ecológica - Matorrales ecosistema"
                     },
                     "section_content": {
                         "en": "<i>Ecosystem services: Population maintenance & genetic diversity.</i>",
@@ -610,8 +610,8 @@
                         "es": "Cómo interpretar el mapa:"
                     },
                     "section_content": {
-                        "en": "Darker orange areas are more highly connected to the ecological network. Black areas are existing source grasslands.",
-                        "es": "Las áreas de color naranja oscuro están altamente conectadas a la red ecológica. Las áreas de color negro señalan los pastizales fuente existentes."
+                        "en": "Darker orange areas are more highly connected to the ecological network. Black areas are existing source scrubland ecosystem.",
+                        "es": "Las áreas de color naranja oscuro están altamente conectadas a la red ecológica. Las áreas de color negro señalan los matorrales ecosistema fuente existentes."
                     }
                 },
                 {
@@ -620,8 +620,8 @@
                         "es": "Cuál es el servicio:"
                     },
                     "section_content": {
-                        "en": "The map shows the existing grassland and cactus habitat network within which plant and animal species can move to maintain genetic diversity and sustain viable populations of grassland/cactus habitat species. Existing grasslands act as \"source habitat\", where the main population of grassland species is based. Land adjoining and close to the source habitats can be used for foraging and as dispersal routes (permeable habitats). Some habitats and land uses are more permeable than others; for example scattered scrub could be expected to provide better conditions for grassland species than dense woodland.",
-                        "es": "El mapa muestra la red de pastizales existentes dentro de la cual especies animales y vegetales pueden movilizarse para mantener la diversidad genética y sostener poblaciones viables de especies de hábitat de pastizal/cactus. Los pastizales existentes actúan como \"hábitat fuente\" donde se encuentra ubicada la población principal de especies de pastizal. Los terrenos contiguos y cercanos a los hábitats fuente pueden servir para la búsqueda de alimento y como rutas de dispersión (hábitats permeables). Algunos hábitats y usos de suelo son más permeables que otros; por ejemplo, se podría esperar que el matorral disperso brinde mejores condiciones para las especies de pastizal que el bosque denso."
+                        "en": "The map shows the existing scrub/bushes habitat network within which plant and animal species can move to maintain genetic diversity and sustain viable populations of scrub/bushes habitat species. Existing scrubland ecosystem act as \"source habitat\", where the main population of scrub/bushes species is based. Land adjoining and close to the source habitats can be used for foraging and as dispersal routes (permeable habitats). Some habitats and land uses are more permeable than others; for example scattered scrub could be expected to provide better conditions for scrubland species than dense woodland.",
+                        "es": "El mapa muestra la red de matorrales / arbustos existentes dentro de la cual especies animales y vegetales pueden movilizarse para mantener la diversidad genética y sostener poblaciones viables de especies de hábitat de matorrales / arbustos. Los matorrales ecosistema existentes actúan como \"hábitat fuente\" donde se encuentra ubicada la población principal de especies de matorrales / arbustos. Los terrenos contiguos y cercanos a los hábitats fuente pueden servir para la búsqueda de alimento y como rutas de dispersión (hábitats permeables). Algunos hábitats y usos de suelo son más permeables que otros; por ejemplo, se podría esperar que el matorral disperso brinde mejores condiciones para las especies de matorrales que el bosque denso."
                     }
                 },
                 {
@@ -630,8 +630,8 @@
                         "es": "Por qué es importante:"
                     },
                     "section_content": {
-                        "en": "Areas of native natural and semi-natural grasslands that are connected in a landscape, are more resilient to changing climate or land management. Inside the network, structurally-diverse and species-rich grasslands generally provide a higher level of ecosystem services, such as surface water regulation. Within the network, restoration of structurally-diverse and species-rich grasslands will be far more effective as propagules, pollinators and important species will be available for colonisation.",
-                        "es": "Las áreas de pastizales nativos naturales y seminaturales que están conectadas en un entorno, son más resilientes al cambio climático o al manejo de suelos. Dentro de la red, los pastizales estructuralmente diversos y ricos en especies generalmente brindan un mayor nivel de servicios ecosistémicos, tales como: la regulación de las aguas superficiales. Dentro de la red, la restauración de pastizales estructuralmente diversos y ricos en especies será mucho más eficaz ya que se dispondrá de propágulos, polinizadores y especies importantes para la colonización."
+                        "en": "Areas of native scrubland that are connected in a landscape, are more resilient to changing climate or land management. Inside the network, structurally-diverse and species-rich scrubland generally provide a higher level of ecosystem services, such as surface water regulation. Within the network, restoration of structurally-diverse and species-rich scrubland will be far more effective as propagules, pollinators and important species will be available for colonisation.",
+                        "es": "Las áreas de matorrales nativos naturales y seminaturales que están conectadas en un entorno, son más resilientes al cambio climático o al manejo de suelos. Dentro de la red, los matorrales estructuralmente diversos y ricos en especies generalmente brindan un mayor nivel de servicios ecosistémicos, tales como: la regulación de las aguas superficiales. Dentro de la red, la restauración de matorrales estructuralmente diversos y ricos en especies será mucho más eficaz ya que se dispondrá de propágulos, polinizadores y especies importantes para la colonización."
                     }
                 },
                 {
@@ -640,8 +640,8 @@
                         "es": "Cómo se creó el mapa:"
                     },
                     "section_content": {
-                        "en": "The habitat classes were generated using Pleiades, Sentinel 1 and Sentinel 2 satellite imagery. Each habitat and land use was evaluated for its importance and role played in supporting the grassland network.",
-                        "es": "Las clases de hábitat se generaron usando las imágenes satelitales de Pleiades, Sentinel 1 y Sentinel 2. Se evalúo cada hábitat y uso de suelo según su importancia y el rol que juega en el apoyo a la red de pastizales."
+                        "en": "The habitat classes were generated using Pleiades, Sentinel 1 and Sentinel 2 satellite imagery. Each habitat and land use was evaluated for its importance and role played in supporting the scrubland network.",
+                        "es": "Las clases de hábitat se generaron usando las imágenes satelitales de Pleiades, Sentinel 1 y Sentinel 2. Se evalúo cada hábitat y uso de suelo según su importancia y el rol que juega en el apoyo a la red de matorrales."
                     }
                 }
             ],

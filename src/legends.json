@@ -154,8 +154,8 @@
                 "fill": "#d99550",
                 "type": "value",
                 "label": {
-                    "en": "Grassland & cactus habitats",
-                    "es": "Hábitat de pastizales & cactus"
+                    "en": "Scrub and bushes habitats",
+                    "es": "Hábitat de matorrales y arbustos"
                 }
             },
             {
@@ -275,8 +275,8 @@
                 "fill": "#000000",
                 "type": "value",
                 "label": {
-                    "en": "Grassland/cactus Network Source",
-                    "es": "Pastizales/cactus fuente"
+                    "en": "Scrub/bushes Network Source",
+                    "es": "Matorrales / arbustos fuente"
                 }
             },
             {
