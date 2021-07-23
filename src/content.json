@@ -43,6 +43,20 @@
         "opacity_slider": {
             "en": "Opacity",
             "es": "Opacidad"
+        },
+        "sponsors": {
+            "eo4c": { 
+                "link": {
+                    "en": "https://jncc.gov.uk/our-work/eo4cultivar/",
+                    "es": "https://jncc.gov.uk/our-work/eo4cultivar-lengua-espanola/"
+                }
+            },
+            "uksa": {
+                "link": {
+                    "en": "https://spaceforsmartergovernment.uk/about-us/",
+                    "es": "https://spaceforsmartergovernment.uk/about-us/"
+                }
+            }         
         }
     },
     "grid_panel": {
