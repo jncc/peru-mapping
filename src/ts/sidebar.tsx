@@ -50,12 +50,12 @@ export function createSidebar(map: L.Map, config: Config) {
       let sponsorLinks = L.DomUtil.create('div', '')
 
       let eo4cLink = L.DomUtil.create('span', '')
-      eo4cLink.innerHTML = '<a href=""><img class="mr-4 p-1 centered" style="width: 4rem; height: 4rem;"' +
+      eo4cLink.innerHTML = '<a href="' + content.info_panel.sponsors.eo4c.link[config.language] + '"><img class="mr-4 p-1 centered" style="width: 4rem; height: 4rem;"' +
         'title="EO4 Cultivar" alt="EO4 Cultivar" src="' + require('../images/eo4c.jpg') + '"></img></a>'
       sponsorLinks.appendChild(eo4cLink)
 
       let uksaLink = L.DomUtil.create('span', '')
-      uksaLink.innerHTML = '<a href=""><img class="mr-4 p-1 centered" style="height: 4rem;" title="UK Space Agency" '
+      uksaLink.innerHTML = '<a href="' + content.info_panel.sponsors.uksa.link[config.language] + '"><img class="mr-4 p-1 centered" style="height: 4rem;" title="UK Space Agency" '
         + 'alt="UK Space Agency" src="' + require('../images/uksa.jpg') + '" /></a>'
       sponsorLinks.appendChild(uksaLink)
 
