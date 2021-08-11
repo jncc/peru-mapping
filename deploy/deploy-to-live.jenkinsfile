@@ -25,7 +25,10 @@ pipeline {
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: env.GIT_CREDENTIALS_ID,
                         usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD']]) {
                         sh 'git clone https://github.com/jncc/peru-mapping.git . --branch=gh-pages --depth 1'
+                        sh 'git rm -rf .'
+                        sh 'git clean -fxd'
                         sh 'cp -r ../master/dist/* .'
+                        sh 'sed -i "s/x-version-stamp/' + env.BUILD_NUMBER + '.' + env.GIT_COMMIT + '/g" *.html'
                         sh 'echo "Creating Github Pages CNAME file..."'
                         sh 'echo "peru-mapping.jncc.gov.uk" > CNAME'
                         sh 'cat CNAME'
